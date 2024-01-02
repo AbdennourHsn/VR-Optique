@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc855cc6593441d696382ad19fb2e4a, type: 3}
+  m_Name: "136.Vision de pr\xE9s Test N 19"
+  m_EditorClassIdentifier: 
+  id: 136
+  beforAudio: 
+  name: "Vision de pr\xE9s Test N 19"
+  label: "Vision de pr\xE9s Test N\xB0 5"
+  questionString: L'image est-elle stable ?
+  time: 2
+  audio: image stable
+  visibales:
+  - PRES
+  - PRES-LETTERS
+  hiddens:
+  - vpcover
+  - vlcover
+  - vicover
+  - filter_title
+  - deviceFar
+  - INTER
+  - PRES-BARRET
+  - PRES-UPPER-NT
+  - PRES-MIDDLE-NT
+  - short_holes_show
+  - lettersContainer
+  - INT-LETTERS
+  - P11G
+  - P12Y
+  - P13R
+  - P21R
+  - P22G
+  - P23Y
+  - P24B
+  - P31B
+  - P32G
+  - P33R
+  options:
+  - label: OUI
+    image_name: OUI
+    image_selected: OUI-S
+    nextQ: 138
+    NextQestion: {fileID: 11400000, guid: 9d7d41ea79b04469eba87df85fc5d2ba, type: 2}
+    resultCode: 
+    iSselected: 1
+  - label: Non
+    image_name: NON
+    image_selected: NON-S
+    nextQ: 137
+    NextQestion: {fileID: 11400000, guid: 9f0c993558be04b188e7d14acac3461c, type: 2}
+    resultCode: 
+    iSselected: 0
+  layouts:
+  - name: positive
+    value: 0
+  - name: negative
+    value: 0
+  action: 

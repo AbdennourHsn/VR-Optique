@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc855cc6593441d696382ad19fb2e4a, type: 3}
+  m_Name: "88.Vision interm\xE9diaire Test N 12"
+  m_EditorClassIdentifier: 
+  id: 88
+  beforAudio: 
+  name: "Vision interm\xE9diaire Test N 12"
+  label: "Vision interm\xE9diaire Test N\xB0 4"
+  questionString: "a partire de ces images lequel\n vous avez vu dans l'apparail"
+  time: 0
+  audio: pictures audio
+  visibales:
+  - INTER
+  - INT-LETTERS
+  - INT-BG-Letters
+  - INT-12B
+  - INT-13B
+  - INT-32B
+  - INT-33B
+  hiddens:
+  - vpcover
+  - vlcover
+  - vicover
+  - filter_title
+  - PRES-LETTERS
+  - deviceFar
+  - INT-NT-DOTS
+  - INT-NT-DOTS-U
+  - lettersContainer
+  - INT-barrette
+  - PRES
+  options:
+  - label: 88-5-1
+    image_name: 88-5-1
+    image_selected: 88-5-1-S
+    nextQ: 89
+    NextQestion: {fileID: 11400000, guid: 93648b3e6bd8e405790df111da293a5f, type: 2}
+    resultCode: COR
+    iSselected: 1
+  - label: 88-5-4
+    image_name: 88-5-4
+    image_selected: 88-5-4-S
+    nextQ: 91
+    NextQestion: {fileID: 11400000, guid: 9949a810e190e435e8af1e0ee7782ce7, type: 2}
+    resultCode: HR
+    iSselected: 0
+  - label: 88-5-2
+    image_name: 88-5-2
+    image_selected: 88-5-2-S
+    nextQ: 91
+    NextQestion: {fileID: 11400000, guid: 9949a810e190e435e8af1e0ee7782ce7, type: 2}
+    resultCode: HO
+    iSselected: 0
+  - label: 88-5-5
+    image_name: 88-5-5
+    image_selected: 88-5-5-S
+    nextQ: 91
+    NextQestion: {fileID: 11400000, guid: 9949a810e190e435e8af1e0ee7782ce7, type: 2}
+    resultCode: HR/INV
+    iSselected: 0
+  - label: 88-5-3
+    image_name: 88-5-3
+    image_selected: 88-5-3-S
+    nextQ: 91
+    NextQestion: {fileID: 11400000, guid: 9949a810e190e435e8af1e0ee7782ce7, type: 2}
+    resultCode: HO/INV
+    iSselected: 0
+  layouts:
+  - name: middleLettersContainer
+    value: 0.12195299
+  action: 

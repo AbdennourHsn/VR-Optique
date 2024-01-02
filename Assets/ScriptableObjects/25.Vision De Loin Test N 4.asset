@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc855cc6593441d696382ad19fb2e4a, type: 3}
+  m_Name: 25.Vision De Loin Test N 4
+  m_EditorClassIdentifier: 
+  id: 25
+  beforAudio: 
+  name: Vision De Loin Test N 4
+  label: "Vision De Loin Test N\xB0 4"
+  questionString: Combien de cercles voyez-vous ?
+  time: 0
+  audio: Combien de cercles
+  visibales:
+  - barrette
+  - 1 block
+  - 8 block
+  - 4 - 5 Holes
+  hiddens:
+  - vpcover
+  - vlcover
+  - vicover
+  - filter_title
+  - PRES-LETTERS
+  - 3 - 6 Holes
+  - 2 block
+  - 7 block
+  - NB1
+  - NB2
+  - NB3
+  - NG1
+  - NG2
+  - NG3
+  - NR1
+  - NR2
+  - NR3
+  - LettersBoxes
+  - lettersContainer
+  - INTER
+  - INT-LETTERS
+  - PRES
+  - PRES-LETTERS
+  options:
+  - label: 2
+    image_name: 2
+    image_selected: 2-S
+    nextQ: 30
+    NextQestion: {fileID: 11400000, guid: c65870187e8774fb9b9349a32e3b3a9c, type: 2}
+    resultCode: NT
+    iSselected: 1
+  - label: 3
+    image_name: 3
+    image_selected: 3-S
+    nextQ: 26
+    NextQestion: {fileID: 11400000, guid: 968e61286276d49588c1a86b64b8fd87, type: 2}
+    resultCode: 
+    iSselected: 0
+  - label: 4
+    image_name: 4
+    image_selected: 4-S
+    nextQ: 27
+    NextQestion: {fileID: 11400000, guid: d6d6c33cc5287421d9e4f7f93b33b0b9, type: 2}
+    resultCode: 
+    iSselected: 0
+  layouts:
+  - name: 2F
+    value: 0.085
+  - name: 2R
+    value: 0.085
+  - name: 2B
+    value: 0.085
+  - name: 2G
+    value: 0.085
+  - name: 2Y
+    value: 0.085
+  action: 

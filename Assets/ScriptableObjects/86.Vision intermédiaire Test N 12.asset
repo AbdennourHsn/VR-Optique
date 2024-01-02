@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc855cc6593441d696382ad19fb2e4a, type: 3}
+  m_Name: "86.Vision interm\xE9diaire Test N 12"
+  m_EditorClassIdentifier: 
+  id: 86
+  beforAudio: 
+  name: "Vision interm\xE9diaire Test N 12"
+  label: "Vision interm\xE9diaire Test N\xB0 4"
+  questionString: Voyez-vous un point noir au centre des 2 cercles ?
+  time: 0
+  audio: 2
+  visibales:
+  - INTER
+  - INT-LETTERS
+  - INT-BG-Letters
+  - INT-12B
+  - INT-13B
+  - INT-32B
+  - INT-33B
+  - INT-NT-DOTS-U
+  hiddens:
+  - vpcover
+  - vlcover
+  - vicover
+  - filter_title
+  - PRES-LETTERS
+  - deviceFar
+  - INT-NT-DOTS
+  - lettersContainer
+  - INT-barrette
+  - PRES
+  options:
+  - label: OUI
+    image_name: OUI
+    image_selected: OUI-S
+    nextQ: 91
+    NextQestion: {fileID: 11400000, guid: 9949a810e190e435e8af1e0ee7782ce7, type: 2}
+    resultCode: HR/SUP
+    iSselected: 1
+  - label: Non
+    image_name: NON
+    image_selected: NON-S
+    nextQ: 87
+    NextQestion: {fileID: 11400000, guid: 8efa0f74e2727443d9d23a73b44db0c9, type: 2}
+    resultCode: 
+    iSselected: 0
+  layouts:
+  - name: middleLettersContainer
+    value: 0.12195299
+  action: 

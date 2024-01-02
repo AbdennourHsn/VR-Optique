@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc855cc6593441d696382ad19fb2e4a, type: 3}
+  m_Name: "98.Vision interm\xE9diaire Test N 13"
+  m_EditorClassIdentifier: 
+  id: 98
+  beforAudio: 
+  name: "Vision interm\xE9diaire Test N 13"
+  label: "Vision interm\xE9diaire Test N\xB0 5"
+  questionString: "Avez-vous vu des cercles \ndisparaitre puis r\xE9apparaitre ?"
+  time: 0
+  audio: 9
+  visibales:
+  - INTER
+  - INT-LETTERS
+  - INT-BG-Letters
+  hiddens:
+  - vpcover
+  - vlcover
+  - vicover
+  - filter_title
+  - PRES-LETTERS
+  - deviceFar
+  - INT-NT-DOTS
+  - INT-NT-DOTS-U
+  - lettersContainer
+  - INT-barrette
+  - INT-12B
+  - INT-13B
+  - INT-32B
+  - INT-33B
+  - PRES
+  options:
+  - label: NON
+    image_name: NON
+    image_selected: NON-S
+    nextQ: 100
+    NextQestion: {fileID: 11400000, guid: 07c97c447c81d4ff88b1864a46454d51, type: 2}
+    resultCode: COR
+    iSselected: 1
+  - label: UN PEU
+    image_name: UN PEU
+    image_selected: UN PEU-S
+    nextQ: 100
+    NextQestion: {fileID: 11400000, guid: 07c97c447c81d4ff88b1864a46454d51, type: 2}
+    resultCode: COR/INH
+    iSselected: 0
+  - label: BOUCOUP
+    image_name: BOUCOUP
+    image_selected: BOUCOUP-S
+    nextQ: 100
+    NextQestion: {fileID: 11400000, guid: 07c97c447c81d4ff88b1864a46454d51, type: 2}
+    resultCode: COR/INH+
+    iSselected: 0
+  layouts:
+  - name: middleLettersContainer
+    value: 0.12195299
+  action: 

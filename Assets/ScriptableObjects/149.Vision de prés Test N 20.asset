@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc855cc6593441d696382ad19fb2e4a, type: 3}
+  m_Name: "149.Vision de pr\xE9s Test N 20"
+  m_EditorClassIdentifier: 
+  id: 149
+  beforAudio: 
+  name: "Vision de pr\xE9s Test N 20"
+  label: "Vision de pr\xE9s Test N\xB0 6"
+  questionString: "a partire de ces images lequel\n vous avez vu dans l'apparail"
+  time: 0
+  audio: pictures audio
+  visibales:
+  - PRES
+  - PRES-LETTERS
+  hiddens:
+  - vpcover
+  - vlcover
+  - vicover
+  - filter_title
+  - SHOW_MIDDLE
+  - deviceFar
+  - INTER
+  - PRES-BARRET
+  - PRES-UPPER-NT
+  - PRES-MIDDLE-NT
+  - short_holes_show
+  - lettersContainer
+  - INT-LETTERS
+  - P11G
+  - P12Y
+  - P13R
+  - P21R
+  - P22G
+  - P23Y
+  - P24B
+  - P31B
+  - P32G
+  - P33R
+  - PRES-UPPER-NT
+  - PRES-MIDDLE-NT
+  options:
+  - label: 149-3-1
+    image_name: 149-3-1
+    image_selected: 149-3-1-S
+    nextQ: 151
+    NextQestion: {fileID: 11400000, guid: ced9d0909fca04f65a6f82b5aaad9cd0, type: 2}
+    resultCode: COR
+    iSselected: 1
+  - label: 149-3-2
+    image_name: 149-3-2
+    image_selected: 149-3-2-S
+    nextQ: 153
+    NextQestion: {fileID: 11400000, guid: 5e33f7a54d108423ca01958832414c11, type: 2}
+    resultCode: HR
+    iSselected: 0
+  - label: 149-3-3
+    image_name: 149-3-3
+    image_selected: 149-3-3-S
+    nextQ: 153
+    NextQestion: {fileID: 11400000, guid: 5e33f7a54d108423ca01958832414c11, type: 2}
+    resultCode: HO
+    iSselected: 0
+  layouts: []
+  action: 

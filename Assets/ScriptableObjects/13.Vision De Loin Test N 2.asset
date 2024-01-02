@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc855cc6593441d696382ad19fb2e4a, type: 3}
+  m_Name: 13.Vision De Loin Test N 2
+  m_EditorClassIdentifier: 
+  id: 13
+  beforAudio: 
+  name: Vision De Loin Test N 2
+  label: "Vision De Loin Test N\xB0 2"
+  questionString: "a partire de ces images lequel\n vous avez vu dans l'apparail
+    ?"
+  time: 0
+  audio: pictures audio
+  visibales:
+  - 3 - 6 Holes
+  hiddens:
+  - vpcover
+  - vlcover
+  - vicover
+  - filter_title
+  - barrette
+  - 4 - 5 Holes
+  - 1 block
+  - 2 block
+  - 7 block
+  - 8 block
+  - NB1
+  - NB2
+  - NB3
+  - NG1
+  - NG2
+  - NG3
+  - NR1
+  - NR2
+  - NR3
+  - LettersBoxes
+  - lettersContainer
+  - INTER
+  - INT-LETTERS
+  - PRES
+  - PRES-LETTERS
+  options:
+  - label: 13-3-1
+    image_name: 13-3-1
+    image_selected: 13-3-1-S
+    nextQ: 15
+    NextQestion: {fileID: 11400000, guid: 265078ebfc99d45e782096bf0094666e, type: 2}
+    resultCode: COR
+    iSselected: 1
+  - label: 13-3-2
+    image_name: 13-3-2
+    image_selected: 13-3-2-S
+    nextQ: 17
+    NextQestion: {fileID: 11400000, guid: db4f0142162a94727ad77153fe22e02c, type: 2}
+    resultCode: HR
+    iSselected: 0
+  - label: 13-3-3
+    image_name: 13-3-3
+    image_selected: 13-3-3-S
+    nextQ: 17
+    NextQestion: {fileID: 11400000, guid: db4f0142162a94727ad77153fe22e02c, type: 2}
+    resultCode: HO
+    iSselected: 0
+  layouts: []
+  action: 

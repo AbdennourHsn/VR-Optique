@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc855cc6593441d696382ad19fb2e4a, type: 3}
+  m_Name: 34.Vision De Loin Test N 5
+  m_EditorClassIdentifier: 
+  id: 34
+  beforAudio: 
+  name: Vision De Loin Test N 5
+  label: "Vision De Loin Test N\xB0 5"
+  questionString: Dans quel cercle voyez-vous le point noir ?
+  time: 0
+  audio: 3
+  visibales:
+  - 3 - 6 Holes
+  - 1 block
+  - 2 block
+  - 7 block
+  - 8 block
+  - LettersBoxes
+  - lettersContainer
+  - NB2
+  - NR2
+  hiddens:
+  - vpcover
+  - vlcover
+  - vicover
+  - filter_title
+  - PRES-LETTERS
+  - barrette
+  - 4 - 5 Holes
+  - NB3
+  - NG1
+  - NR1
+  - NR3
+  - 1G
+  - 1R
+  - 1Y
+  - 2R
+  - 2G
+  - 2Y
+  - 2B
+  - 3B
+  - 3G
+  - 3R
+  - INTER
+  - INT-LETTERS
+  - PRES
+  - PRES-LETTERS
+  options:
+  - label: D
+    image_name: D
+    image_selected: D-S
+    nextQ: 38
+    NextQestion: {fileID: 11400000, guid: ea57e0b988970476bb77e7a1cb601a2f, type: 2}
+    resultCode: NTL
+    iSselected: 1
+  - label: E
+    image_name: E
+    image_selected: E-S
+    nextQ: 38
+    NextQestion: {fileID: 11400000, guid: ea57e0b988970476bb77e7a1cb601a2f, type: 2}
+    resultCode: NTR
+    iSselected: 0
+  layouts:
+  - name: middleLettersContainer
+    value: 0.12195299
+  action: 

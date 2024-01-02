@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc855cc6593441d696382ad19fb2e4a, type: 3}
+  m_Name: 51.Vision De Loin Test N 7
+  m_EditorClassIdentifier: 
+  id: 51
+  beforAudio: 
+  name: Vision De Loin Test N 7
+  label: "Vision De Loin Test N\xB0 7"
+  questionString: "Avez-vous vu des cercles \ndisparaitre puis r\xE9apparaitre ?"
+  time: 0
+  audio: 9
+  visibales:
+  - 3 - 6 Holes
+  - barrette
+  - LettersBoxes
+  - lettersContainer
+  hiddens:
+  - vpcover
+  - vlcover
+  - vicover
+  - filter_title
+  - PRES-LETTERS
+  - 4 - 5 Holes
+  - 1 block
+  - 2 block
+  - 7 block
+  - 8 block
+  - NB1
+  - NB2
+  - NB3
+  - NG1
+  - NG2
+  - NG3
+  - NR1
+  - NR2
+  - NR3
+  - 1G
+  - 1R
+  - 1Y
+  - 2R
+  - 2G
+  - 2Y
+  - 2B
+  - 3B
+  - 3G
+  - 3R
+  - INTER
+  - INT-LETTERS
+  - PRES
+  options:
+  - label: NON
+    image_name: NON
+    image_selected: NON-S
+    nextQ: 53
+    NextQestion: {fileID: 11400000, guid: f5fcbced95e7342d891c71abc777e37a, type: 2}
+    resultCode: COR
+    iSselected: 1
+  - label: UN PEU
+    image_name: UN PEU
+    image_selected: UN PEU-S
+    nextQ: 53
+    NextQestion: {fileID: 11400000, guid: f5fcbced95e7342d891c71abc777e37a, type: 2}
+    resultCode: COR/INH
+    iSselected: 0
+  - label: BOUCOUP
+    image_name: BOUCOUP
+    image_selected: BOUCOUP-S
+    nextQ: 53
+    NextQestion: {fileID: 11400000, guid: f5fcbced95e7342d891c71abc777e37a, type: 2}
+    resultCode: COR/INH+
+    iSselected: 0
+  layouts:
+  - name: middleLettersContainer
+    value: 0.12195299
+  action: 

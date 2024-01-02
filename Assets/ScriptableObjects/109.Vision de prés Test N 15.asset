@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc855cc6593441d696382ad19fb2e4a, type: 3}
+  m_Name: "109.Vision de pr\xE9s Test N 15"
+  m_EditorClassIdentifier: 
+  id: 109
+  beforAudio: 
+  name: "Vision de pr\xE9s Test N 15"
+  label: "Vision de pr\xE9s Test N\xB0 1"
+  questionString: " Voyez-vous un point noir\n au centre de chaque cercle ?"
+  time: 0
+  audio: 2
+  visibales:
+  - PRES
+  - PRES-UPPER-NT
+  hiddens:
+  - vpcover
+  - vlcover
+  - vicover
+  - filter_title
+  - PRES-LETTERS
+  - deviceFar
+  - INTER
+  - PRES-BARRET
+  - short_holes_show
+  - lettersContainer
+  - INT-LETTERS
+  options:
+  - label: OUI
+    image_name: OUI
+    image_selected: OUI-S
+    nextQ: 114
+    NextQestion: {fileID: 11400000, guid: 6dd600ff11cb04edea86db72c710b6db, type: 2}
+    resultCode: HO/SUP
+    iSselected: 1
+  - label: Non
+    image_name: NON
+    image_selected: NON-S
+    nextQ: 110
+    NextQestion: {fileID: 11400000, guid: b78b594f94f0043dcb592c2110e13226, type: 2}
+    resultCode: 
+    iSselected: 0
+  layouts: []
+  action: 

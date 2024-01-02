@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc855cc6593441d696382ad19fb2e4a, type: 3}
+  m_Name: "110.Vision de pr\xE9s Test N 15"
+  m_EditorClassIdentifier: 
+  id: 110
+  beforAudio: 
+  name: "Vision de pr\xE9s Test N 15"
+  label: "Vision de pr\xE9s Test N\xB0 1"
+  questionString: 'Dans quel cercle voyez-vous
+
+    le point noir ?'
+  time: 0
+  audio: upper circles dt
+  visibales:
+  - PRES
+  - PRES-UPPER-NT
+  hiddens:
+  - vpcover
+  - vlcover
+  - vicover
+  - filter_title
+  - PRES-LETTERS
+  - deviceFar
+  - INTER
+  - PRES-BARRET
+  - short_holes_show
+  - lettersContainer
+  - INT-LETTERS
+  - PRES-MIDDLE-NT
+  options:
+  - label: ROUGE
+    image_name: ROUGE
+    image_selected: ROUGE-S
+    nextQ: 114
+    NextQestion: {fileID: 11400000, guid: 6dd600ff11cb04edea86db72c710b6db, type: 2}
+    resultCode: NTL
+    iSselected: 1
+  - label: BLUE
+    image_name: BLUE
+    image_selected: BLUE-S
+    nextQ: 114
+    NextQestion: {fileID: 11400000, guid: 6dd600ff11cb04edea86db72c710b6db, type: 2}
+    resultCode: NTR
+    iSselected: 0
+  layouts: []
+  action: 

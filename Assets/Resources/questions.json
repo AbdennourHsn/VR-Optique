@@ -1,0 +1,5491 @@
+{
+    "questions":[
+    {
+      "id":0,
+      "name":"Vision De Loin Test N 1",
+      "label":"Vision De Loin Test N° 1",
+      "questionString": "L'image est-elle stable ?",
+      "visibales": ["3 - 6 Holes", "1 block", "2 block", "7 block", "8 block"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","barrette", "4 - 5 Holes","NB2","NB3","NG1","NG2","NR1","NR2","NR3","LettersBoxes","lettersContainer" ,"INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":2,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":1,
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":1,
+      "name":"Vision De Loin Test N 1",
+      "label":"Vision De Loin Test N° 1",
+      "beforAudio":"helper first",
+      "questionString": "L'image est-elle stable ?",
+      "visibales": ["3 - 6 Holes", "1 block", "2 block", "7 block", "8 block"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","barrette", "4 - 5 Holes","NB2","NB3","NG1","NG2","NR1","NR2","NR3","LettersBoxes","lettersContainer" ,"INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+       {
+        "label":"OUI",
+        "image_name":"OUI",
+        "image_selected":"OUI-S",
+        "nextQ":2,
+        "iSselected":true
+       },
+       {
+        "label":"Non",
+        "image_name":"NON",
+        "image_selected":"NON-S",
+        "nextQ":8,
+        "resultCode":"NS",
+        "iSselected":false
+       }
+      ]
+    },
+    {
+      "id":2,
+      "name":"Vision De Loin Test N 1",
+      "label":"Vision De Loin Test N° 1",
+      "questionString": "Combien de cercles voyez-vous ?",
+      "visibales": ["3 - 6 Holes", "1 block", "2 block", "7 block", "8 block"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","barrette", "4 - 5 Holes","NB2","NB3","NG1","NG2","NR1","NR2","NR3","LettersBoxes","lettersContainer" ,"INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"Combien de cercles",
+      "options":[
+        {
+         "label":"2",
+         "image_name":"2",
+         "image_selected":"2-S",
+         "nextQ":3,
+         "iSselected":true
+        },
+        {
+         "label":"3",
+         "image_name":"3",
+         "image_selected":"3-S",
+         "nextQ":8,
+         "resultCode":"HO/SUP",
+         "iSselected":false
+        },
+        {
+          "label":"4",
+          "image_name":"4",
+          "image_selected":"4-S",
+          "nextQ":5,
+          "iSselected":false
+         }
+      ]
+    },
+    {
+      "id":3,
+      "name":"Vision De Loin Test N 1",
+      "label":"Vision De Loin Test N° 1",
+      "questionString": "Voyez-vous un point noir au centre des 2 cercles ?",
+      "visibales": ["3 - 6 Holes", "1 block", "2 block", "7 block", "8 block","NB2","NR2"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","barrette", "4 - 5 Holes","NB3","NG1","NG2","NR1","NR3","LettersBoxes","lettersContainer" ,"INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"2",
+      "options":[
+        {
+         "label":"OUI",
+         "image_name":"OUI",
+         "image_selected":"OUI-S",
+         "nextQ":8,
+         "resultCode":"HR/SUP",
+         "iSselected":true
+        },
+        {
+         "label":"Non",
+         "image_name":"NON",
+         "image_selected":"NON-S",
+         "nextQ":4,
+         "iSselected":false
+        }
+       ]
+    },
+    {
+      "id":4,
+      "name":"Vision De Loin Test N 1",
+      "label":"Vision De Loin Test N° 1",
+      "questionString": "Dans quel cercle voyez-vous le point noir ?",
+      "visibales": ["3 - 6 Holes", "1 block", "2 block", "7 block", "8 block","NB2","NR2"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","barrette", "4 - 5 Holes","NB3","NG1","NG2","NR1","NR3","LettersBoxes","lettersContainer" ,"INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"3",
+      "options":[
+        {
+         "label":"ROUGE",
+         "image_name":"ROUGE",
+         "image_selected":"ROUGE-S",
+         "nextQ":8,
+         "resultCode":"NTL",
+         "iSselected":true
+        },
+        {
+         "label":"BLUE",
+         "image_name":"BLUE",
+         "image_selected":"BLUE-S",
+         "resultCode":"NTR",
+         "nextQ":8,
+         "iSselected":false
+        }
+       ]
+    },
+    {
+      "id":5,
+      "name":"Vision De Loin Test N 1",
+      "label":"Vision De Loin Test N° 1",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail",
+      "visibales": ["3 - 6 Holes", "1 block", "2 block", "7 block", "8 block"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","barrette", "4 - 5 Holes","NB3","NG1","NG2","NR1","NR3","NB2","NR2","LettersBoxes","lettersContainer" ,"INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+         "label":"5-5-1",
+         "image_name":"5-5-1",
+         "image_selected":"5-5-1-S",
+         "nextQ":6,
+         "resultCode":"COR",
+         "iSselected":true
+        } ,
+        {
+          "label":"5-5-4",
+          "image_name":"5-5-4",
+          "image_selected":"5-5-4-S",
+          "nextQ":8,
+          "resultCode":"HR",
+          "iSselected":false
+        },
+        {
+          "label":"5-5-2",
+          "image_name":"5-5-2",
+          "image_selected":"5-5-2-S",
+          "nextQ":8,
+          "resultCode":"HO",
+          "iSselected":false
+        },
+        {
+          "label":"5-5-3",
+          "image_name":"5-5-3",
+          "image_selected":"5-5-3-S",
+          "nextQ":8,
+          "resultCode":"HO/INV",
+          "iSselected":false
+        },
+
+        {
+          "label":"5-5-5",
+          "image_name":"5-5-5",
+          "image_selected":"5-5-5-S",
+          "nextQ":8,
+          "resultCode":"HR/INV",
+          "iSselected":false
+        }
+       ]
+    }, 
+    {
+      "id":6,
+      "name":"Vision De Loin Test N 1",
+      "label":"Vision De Loin Test N° 1",
+      "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+      "visibales": ["3 - 6 Holes", "1 block", "2 block", "7 block", "8 block"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","barrette", "4 - 5 Holes","NB3","NG1","NG2","NR1","NR3","NB2","NR2","LettersBoxes","lettersContainer" ,"INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"9",
+      "options":[
+        {
+          "label":"NON",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":8,
+          "resultCode":"COR",
+          "iSselected":true
+         },
+         {
+          "label":"UN PEU",
+          "image_name":"UN PEU",
+          "image_selected":"UN PEU-S",
+          "nextQ":8,
+          "resultCode":"COR/INH",
+          "iSselected":false
+         },
+         {
+          "label":"BOUCOUP",
+          "image_name":"BOUCOUP",
+          "image_selected":"BOUCOUP-S",
+          "nextQ":8,
+          "resultCode":"COR/INH+",
+          "iSselected":false
+         }
+      ]
+    },  
+    
+    {
+      "id":8,
+      "name":"Vision De Loin Test N 2",
+      "label":"Vision De Loin Test N° 2",
+      "questionString": "L’image est-elle stable ?",
+      "visibales": [ "3 - 6 Holes"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title", "barrette","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","LettersBoxes","lettersContainer","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":10,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":9,
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":9,
+      "name":"Vision De Loin Test N 2",
+      "label":"Vision De Loin Test N° 2",
+      "beforAudio":"helper first",
+      "questionString": "L’image est-elle stable ?",
+      "visibales": [ "3 - 6 Holes"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title", "barrette","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","LettersBoxes","lettersContainer","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":10,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":17,
+          "resultCode":"NS",
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":10,
+      "name":"Vision De Loin Test N 2",
+      "label":"Vision De Loin Test N° 2",
+      "questionString": "Combien de cercles voyez-vous ?",
+      "visibales": [ "3 - 6 Holes"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title", "barrette","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","LettersBoxes","lettersContainer","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"Combien de cercles",
+      "options":[
+        {
+          "label":"6",
+          "image_name":"6",
+          "image_selected":"6-S",
+          "nextQ":11,
+          "iSselected":true
+        },{
+          "label":"10",
+          "image_name":"10",
+          "image_selected":"10-S",
+          "nextQ":13,
+          "iSselected":false
+        },{
+          "label":"11",
+          "image_name":"11",
+          "image_selected":"11-S",
+          "nextQ":17,
+          "resultCode":"HO/SUP/DP",
+          "iSselected":false
+        },{
+          "label":"12",
+          "image_name":"12",
+          "image_selected":"12-S",
+          "nextQ":14,
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":11,
+      "name":"Vision De Loin Test N 2",
+      "label":"Vision De Loin Test N° 2",
+      "questionString": "Sur la ligne du haut,\n Voyez-vous un point noir\n au centre de chaque cercle ?",
+      "visibales": [ "3 - 6 Holes","NG1","NR1"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title", "barrette","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB3","NB2","NG2","NG3","NR2","NR3","LettersBoxes","lettersContainer","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"upper circles",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":17,
+          "resultCode":"HR/SUP/DP",
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":12,
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":12,
+      "name":"Vision De Loin Test N 2",
+      "label":"Vision De Loin Test N° 2",
+      "questionString": "Sur la ligne du haut,\n de quelle est \nle cercle qui a \nun point noir au milieu ?",
+      "visibales": [ "3 - 6 Holes","NG1","NR1"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title", "barrette","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB1","NB2","NB3","NG2","NG3","NR2","NR3","LettersBoxes","lettersContainer","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"upper circles dt",
+      "options":[
+        {
+         "label":"VERT",
+         "image_name":"VERT",
+         "image_selected":"VERT-S",
+         "resultCode":"NTL",
+         "nextQ":17,
+         "iSselected":false
+        },
+        {
+          "label":"ROUGE",
+          "image_name":"ROUGE",
+          "image_selected":"ROUGE-S",
+          "nextQ":17,
+          "resultCode":"NTR",
+          "iSselected":true
+         }
+      ]
+    },
+    {
+      "id":13,
+      "name":"Vision De Loin Test N 2",
+      "label":"Vision De Loin Test N° 2",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail ?",
+      "visibales": [ "3 - 6 Holes"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title", "barrette","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","LettersBoxes","lettersContainer","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+          "label":"13-3-1",
+          "image_name":"13-3-1",
+          "image_selected":"13-3-1-S",
+          "nextQ":15,
+          "resultCode":"COR",
+          "iSselected":true
+         },
+         {
+           "label":"13-3-2",
+           "image_name":"13-3-2",
+           "image_selected":"13-3-2-S",
+           "nextQ":17,
+           "resultCode":"HR",
+           "iSselected":false
+         },
+         {
+           "label":"13-3-3",
+           "image_name":"13-3-3",
+           "image_selected":"13-3-3-S",
+           "nextQ":17,
+           "resultCode":"HO",
+           "iSselected":false
+         }
+      ]
+    },
+    {
+      "id":14,
+      "name":"Vision De Loin Test N 2",
+      "label":"Vision De Loin Test N° 2",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail ?",
+      "visibales": [ "3 - 6 Holes"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title", "barrette","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","LettersBoxes","lettersContainer","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+          "label":"15-4-1",
+          "image_name":"15-4-1",
+          "image_selected":"15-4-1-S",
+          "nextQ":17,
+          "resultCode":"HR/MDP",
+          "iSselected":true
+         },
+         {
+           "label":"15-4-3",
+           "image_name":"15-4-3",
+           "image_selected":"15-4-3-S",
+           "nextQ":17,
+           "resultCode":"HO/MDP",
+           "iSselected":false
+         },
+         {
+           "label":"15-4-2",
+           "image_name":"15-4-2",
+           "image_selected":"15-4-2-S",
+           "nextQ":17,
+           "resultCode":"HR/INV/DP",
+           "iSselected":false
+         },
+         {
+          "label":"15-4-4",
+          "image_name":"15-4-4",
+          "image_selected":"15-4-4-S",
+          "nextQ":17,
+          "resultCode":"HO/INV/DP",
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":15,
+      "name":"Vision De Loin Test N 2",
+      "label":"Vision De Loin Test N° 2",
+      "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+      "visibales": [ "3 - 6 Holes"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title", "barrette","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","LettersBoxes","lettersContainer","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"9",
+      "options":[
+        {
+          "label":"NON",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":17,
+          "resultCode":"COR",
+          "iSselected":true
+         },
+         {
+          "label":"UN PEU",
+          "image_name":"UN PEU",
+          "image_selected":"UN PEU-S",
+          "nextQ":17,
+          "resultCode":"COR/INH",
+          "iSselected":false
+         },
+         {
+          "label":"BOUCOUP",
+          "image_name":"BOUCOUP",
+          "image_selected":"BOUCOUP-S",
+          "nextQ":17,
+          "resultCode":"COR/INH+",
+          "iSselected":false
+         }
+      ]
+    },
+    
+    
+
+    {
+      "id":17,
+      "name":"Vision De Loin Test N 3",
+      "label":"Vision De Loin Test N° 3",  
+      "questionString": "L'image est-elle stable ?",
+      "visibales": [ "3 - 6 Holes", "barrette"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","LettersBoxes","lettersContainer","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":19,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":18,
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":18,
+      "name":"Vision De Loin Test N 3",
+      "label":"Vision De Loin Test N° 3",
+      "beforAudio":"helper first",
+      "questionString": "L'image est-elle stable ?",
+      "visibales": [ "3 - 6 Holes", "barrette"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","LettersBoxes","lettersContainer","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":19,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":23,
+          "resultCode":"NS",
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":19,
+      "name":"Vision De Loin Test N 3",
+      "label":"Vision De Loin Test N° 3",
+      "questionString": "Combien de cercles voyez-vous ?",
+      "visibales": [ "3 - 6 Holes", "barrette"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","LettersBoxes","lettersContainer","INTER","INT-LETTERS","PRES","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"Combien de cercles",
+      "options":[
+        {
+          "label":"3",
+          "image_name":"3",
+          "image_selected":"3-S",
+          "nextQ":23,
+          "resultCode":"NT",
+          "iSselected":true
+        },{
+          "label":"4",
+          "image_name":"4",
+          "image_selected":"4-S",
+          "nextQ":21,
+          "resultCode":"COR",
+          "iSselected":false
+        },{
+          "label":"5",
+          "image_name":"5",
+          "image_selected":"5-S",
+          "nextQ":23,
+          "resultCode":"HO/SUP/DP",
+          "iSselected":false
+        },{
+          "label":"6",
+          "image_name":"6",
+          "image_selected":"6-S",
+          "nextQ":20,
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":20,
+      "name":"Vision De Loin Test N 3",
+      "label":"Vision De Loin Test N° 3",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail ?",
+      "visibales": [ "3 - 6 Holes", "barrette"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","LettersBoxes","lettersContainer","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+         {
+          "label":"20-2-1",
+          "image_name":"20-2-1",
+          "image_selected":"20-2-1-S",
+          "nextQ":23,
+          "resultCode":"HR/DP",
+          "iSselected":true
+         },
+         {
+          "label":"20-2-2",
+          "image_name":"20-2-2",
+          "image_selected":"20-2-2-S",
+          "nextQ":23,
+          "resultCode":"HO/INV/DP",
+          "iSselected":false
+         }
+      ]
+    },
+    {
+      "id":21,
+      "name":"Vision De Loin Test N 3",
+      "label":"Vision De Loin Test N° 3",
+      "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+      "visibales": [ "3 - 6 Holes", "barrette"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","LettersBoxes","lettersContainer","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"9",
+      "options":[
+        {
+          "label":"NON",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":23,
+          "resultCode":"COR",
+          "iSselected":true
+         },
+         {
+          "label":"UN PEU",
+          "image_name":"UN PEU",
+          "image_selected":"UN PEU-S",
+          "nextQ":23,
+          "resultCode":"COR/INH",
+          "iSselected":false
+         },
+         {
+          "label":"BOUCOUP",
+          "image_name":"BOUCOUP",
+          "image_selected":"BOUCOUP-S",
+          "nextQ":23,
+          "resultCode":"COR/INH+",
+          "iSselected":false
+         }
+      ]
+    },
+    
+    {
+      "id":23,
+      "name":"Vision De Loin Test N 4",
+      "label":"Vision De Loin Test N° 4",
+      "questionString": "L'image est-elle stable ?",
+      "visibales": ["barrette", "1 block", "8 block", "4 - 5 Holes"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","3 - 6 Holes", "2 block", "7 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","LettersBoxes","lettersContainer","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":25,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":24,
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+        {
+          "name": "2F",
+          "value": 0.085
+        },
+        {
+          "name": "2R",
+          "value": 0.085
+        },
+        {
+          "name": "2B",
+          "value": 0.085
+        },
+        {
+          "name": "2G",
+          "value": 0.085
+        },
+        {
+          "name": "2Y",
+          "value": 0.085
+        }
+      ]
+    },
+    {
+      "id":24,
+      "name":"Vision De Loin Test N 4",
+      "label":"Vision De Loin Test N° 4",
+      "questionString": "L'image est-elle stable ?",
+      "beforAudio":"helper first",
+      "visibales": ["barrette", "1 block", "8 block", "4 - 5 Holes"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","3 - 6 Holes", "2 block", "7 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","LettersBoxes","lettersContainer","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":25,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":30,
+          "resultCode":"NS",
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+        {
+          "name": "2F",
+          "value": 0.085
+        },
+        {
+          "name": "2R",
+          "value": 0.085
+        },
+        {
+          "name": "2B",
+          "value": 0.085
+        },
+        {
+          "name": "2G",
+          "value": 0.085
+        },
+        {
+          "name": "2Y",
+          "value": 0.085
+        }
+      ]
+    },
+    {
+      "id":25,
+      "name":"Vision De Loin Test N 4",
+      "label":"Vision De Loin Test N° 4",
+      "questionString": "Combien de cercles voyez-vous ?",
+      "visibales": ["barrette", "1 block", "8 block", "4 - 5 Holes"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","3 - 6 Holes", "2 block", "7 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","LettersBoxes","lettersContainer","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"Combien de cercles",
+      "options":[
+        {
+          "label":"2",
+          "image_name":"2",
+          "image_selected":"2-S",
+          "nextQ":30,
+          "resultCode":"NT",
+          "iSselected":true
+        },
+        {
+          "label":"3",
+          "image_name":"3",
+          "image_selected":"3-S",
+          "nextQ":26,
+          "iSselected":false
+        },
+        {
+          "label":"4",
+          "image_name":"4",
+          "image_selected":"4-S",
+          "nextQ":27,
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+        {
+          "name": "2F",
+          "value": 0.085
+        },
+        {
+          "name": "2R",
+          "value": 0.085
+        },
+        {
+          "name": "2B",
+          "value": 0.085
+        },
+        {
+          "name": "2G",
+          "value": 0.085
+        },
+        {
+          "name": "2Y",
+          "value": 0.085
+        }
+      ]
+    },
+    {
+      "id":26,
+      "name":"Vision De Loin Test N 4",
+      "label":"Vision De Loin Test N° 4",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail ?",
+      "visibales": ["barrette", "1 block", "8 block", "4 - 5 Holes"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","3 - 6 Holes", "2 block", "7 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","LettersBoxes","lettersContainer","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+         {
+          "label":"26-3-1",
+          "image_name":"26-3-1",
+          "image_selected":"26-3-1-S",
+          "nextQ":28,
+          "resultCode":"COR",
+          "iSselected":true
+         },
+         {
+          "label":"26-3-2",
+          "image_name":"26-3-2",
+          "image_selected":"26-3-2-S",
+          "nextQ":30,
+          "resultCode":"HO",
+          "iSselected":false
+         },
+         {
+          "label":"26-3-3",
+          "image_name":"26-3-3",
+          "image_selected":"26-3-3-S",
+          "nextQ":30,
+          "resultCode":"HR",
+          "iSselected":false
+         }
+      ],
+      "layouts": [
+        {
+          "name": "2F",
+          "value": 0.085
+        },
+        {
+          "name": "2R",
+          "value": 0.085
+        },
+        {
+          "name": "2B",
+          "value": 0.085
+        },
+        {
+          "name": "2G",
+          "value": 0.085
+        },
+        {
+          "name": "2Y",
+          "value": 0.085
+        }
+      ]
+    },
+    {
+      "id":27,
+      "name":"Vision De Loin Test N 4",
+      "label":"Vision De Loin Test N° 4",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail ?",
+      "visibales": ["barrette", "1 block", "8 block", "4 - 5 Holes"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","3 - 6 Holes", "2 block", "7 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","LettersBoxes","lettersContainer","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+         {
+          "label":"27-2-1",
+          "image_name":"27-2-1",
+          "image_selected":"27-2-1-S",
+          "nextQ":30,
+          "resultCode":"HR/DP",
+          "iSselected":true
+         },
+         {
+          "label":"27-2-2",
+          "image_name":"27-2-2",
+          "image_selected":"27-2-2-S",
+          "nextQ":30,
+          "resultCode":"HO/DP",
+          "iSselected":false
+         }
+      ],
+      "layouts": [
+        {
+          "name": "2F",
+          "value": 0.085
+        },
+        {
+          "name": "2R",
+          "value": 0.085
+        },
+        {
+          "name": "2B",
+          "value": 0.085
+        },
+        {
+          "name": "2G",
+          "value": 0.085
+        },
+        {
+          "name": "2Y",
+          "value": 0.085
+        }
+      ]
+    },
+    {
+      "id":28,
+      "name":"Vision De Loin Test N 4",
+      "label":"Vision De Loin Test N° 4",
+      "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+      "visibales": ["barrette", "1 block", "8 block", "4 - 5 Holes"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","3 - 6 Holes", "2 block", "7 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","LettersBoxes","lettersContainer","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"9",
+      "options":[
+        {
+          "label":"NON",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":30,
+          "resultCode":"COR",
+          "iSselected":true
+         },
+         {
+          "label":"UN PEU",
+          "image_name":"UN PEU",
+          "image_selected":"UN PEU-S",
+          "nextQ":30,
+          "resultCode":"COR/INH",
+          "iSselected":false
+         },
+         {
+          "label":"BOUCOUP",
+          "image_name":"BOUCOUP",
+          "image_selected":"BOUCOUP-S",
+          "nextQ":30,
+          "resultCode":"COR/INH+",
+          "iSselected":false
+         }
+      ],
+      "layouts": [
+        {
+          "name": "2F",
+          "value": 0.085
+        },
+        {
+          "name": "2R",
+          "value": 0.085
+        },
+        {
+          "name": "2B",
+          "value": 0.085
+        },
+        {
+          "name": "2G",
+          "value": 0.085
+        },
+        {
+          "name": "2Y",
+          "value": 0.085
+        }
+      ]
+    },
+    
+    {
+      "id":30,
+      "name":"Vision De Loin Test N 5",
+      "label":"Vision De Loin Test N° 5",
+      "questionString": "L'image est-elle stable ?",
+      "visibales": ["3 - 6 Holes", "1 block", "2 block", "7 block", "8 block","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","barrette", "4 - 5 Holes","NB2","NB3","NG1","NG2","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R","letters container" ,"INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":32,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":31,
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":31,
+      "name":"Vision De Loin Test N 5",
+      "label":"Vision De Loin Test N° 5",
+      "beforAudio":"helper first",
+      "questionString": "L'image est-elle stable ?",
+      "visibales": ["3 - 6 Holes", "1 block", "2 block", "7 block", "8 block","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","barrette", "4 - 5 Holes","NB2","NB3","NG1","NG2","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R" ,"INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+       {
+        "label":"OUI",
+        "image_name":"OUI",
+        "image_selected":"OUI-S",
+        "nextQ":32,
+        "iSselected":true
+       },
+       {
+        "label":"Non",
+        "image_name":"NON",
+        "image_selected":"NON-S",
+        "nextQ":38,
+        "resultCode":"NS",
+        "iSselected":false
+       }
+      ],
+      "layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":32,
+      "name":"Vision De Loin Test N 5",
+      "label":"Vision De Loin Test N° 5",
+      "questionString": "Combien de cercles voyez-vous ?",
+      "visibales": ["3 - 6 Holes", "1 block", "2 block", "7 block", "8 block","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","barrette", "4 - 5 Holes","NB2","NB3","NG1","NG2","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R" ,"INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"Combien de cercles",
+      "options":[
+        {
+         "label":"2",
+         "image_name":"2",
+         "image_selected":"2-S",
+         "nextQ":33,
+         "iSselected":true
+        },
+        {
+         "label":"3",
+         "image_name":"3",
+         "image_selected":"3-S",
+         "nextQ":38,
+         "resultCode":"HO/SUP",
+         "iSselected":false
+        },
+        {
+          "label":"4",
+          "image_name":"4",
+          "image_selected":"4-S",
+          "nextQ":35,
+          "iSselected":false
+         }
+      ],
+      "layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":33,
+      "name":"Vision De Loin Test N 5",
+      "label":"Vision De Loin Test N° 5",
+      "questionString": "Voyez-vous un point noir au centre des 2 cercles ?",
+      "visibales": ["3 - 6 Holes", "1 block", "2 block", "7 block", "8 block","LettersBoxes","lettersContainer","NB2","NR2"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","barrette", "4 - 5 Holes","NB3","NG1","NG2","NR1","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R" ,"INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"2",
+      "options":[
+        {
+         "label":"OUI",
+         "image_name":"OUI",
+         "image_selected":"OUI-S",
+         "nextQ":38,
+         "resultCode":"HR/SUP",
+         "iSselected":true
+        },
+        {
+         "label":"Non",
+         "image_name":"NON",
+         "image_selected":"NON-S",
+         "nextQ":34,
+         "iSselected":false
+        }
+       ],
+       "layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":34,
+      "name":"Vision De Loin Test N 5",
+      "label":"Vision De Loin Test N° 5",
+      "questionString": "Dans quel cercle voyez-vous le point noir ?",
+      "visibales": ["3 - 6 Holes", "1 block", "2 block", "7 block", "8 block","LettersBoxes","lettersContainer","NB2","NR2"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","barrette", "4 - 5 Holes","NB3","NG1","NR1","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R" ,"INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"3",
+      "options":[
+        {
+         "label":"D",
+         "image_name":"D",
+         "image_selected":"D-S",
+         "nextQ":38,
+         "resultCode":"NTL",
+         "iSselected":true
+        },
+        {
+         "label":"E",
+         "image_name":"E",
+         "image_selected":"E-S",
+         "resultCode":"NTR",
+         "nextQ":38,
+         "iSselected":false
+        }
+       ],
+       "layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":35,
+      "name":"Vision De Loin Test N 5",
+      "label":"Vision De Loin Test N° 5",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail",
+      "visibales": ["3 - 6 Holes", "1 block", "2 block", "7 block", "8 block","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","barrette", "4 - 5 Holes","NB2","NB3","NG1","NG2","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R" ,"INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+         "label":"35-5-1",
+         "image_name":"35-5-1",
+         "image_selected":"35-5-1-S",
+         "nextQ":36,
+         "resultCode":"COR",
+         "iSselected":true
+        },
+        {
+          "label":"35-5-2",
+          "image_name":"35-5-2",
+          "image_selected":"35-5-2-S",
+          "nextQ":38,
+          "resultCode":"HO",
+          "iSselected":false
+        },
+        {
+          "label":"35-5-4",
+          "image_name":"35-5-4",
+          "image_selected":"35-5-4-S",
+          "nextQ":38,
+          "resultCode":"HR",
+          "iSselected":false
+        },
+        {
+          "label":"35-5-5",
+          "image_name":"35-5-5",
+          "image_selected":"35-5-5-S",
+          "nextQ":38,
+          "resultCode":"HR/INV",
+          "iSselected":false
+        },
+        {
+          "label":"35-5-3",
+          "image_name":"35-5-3",
+          "image_selected":"35-5-3-S",
+          "nextQ":38,
+          "resultCode":"HO/INV",
+          "iSselected":false
+        }
+       ],
+       "layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },  
+    {
+      "id":36,
+      "name":"Vision De Loin Test N 5",
+      "label":"Vision De Loin Test N° 5",
+      "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+      "visibales": ["3 - 6 Holes", "1 block", "2 block", "7 block", "8 block","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","barrette", "4 - 5 Holes","NB2","NB3","NG1","NG2","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R" ,"INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"9",
+      "options":[
+        {
+          "label":"NON",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":38,
+          "resultCode":"COR",
+          "iSselected":true
+         },
+         {
+          "label":"UN PEU",
+          "image_name":"UN PEU",
+          "image_selected":"UN PEU-S",
+          "nextQ":38,
+          "resultCode":"COR/INH",
+          "iSselected":false
+         },
+         {
+          "label":"BOUCOUP",
+          "image_name":"BOUCOUP",
+          "image_selected":"BOUCOUP-S",
+          "nextQ":38,
+          "resultCode":"COR/INH+",
+          "iSselected":false
+         }
+      ],
+      "layouts": [
+       {
+         "name": "middleLettersContainer",
+         "value": 0.12195299
+       }
+     ]
+    }, 
+    
+    {
+      "id":38,
+      "name":"Vision De Loin Test N 6",
+      "label":"Vision De Loin Test N° 6",
+      "questionString": "L’image est-elle stable ?",
+      "visibales": [ "3 - 6 Holes","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title", "barrette","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":40,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":39,
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+       {
+         "name": "middleLettersContainer",
+         "value": 0.12195299
+       }
+     ]
+    },
+    {
+      "id":39,
+      "name":"Vision De Loin Test N 6",
+      "label":"Vision De Loin Test N° 6",
+      "beforAudio":"helper first",
+      "questionString": "L’image est-elle stable ?",
+      "visibales": [ "3 - 6 Holes","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title", "barrette","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":40,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":47,
+          "resultCode":"NS",
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+       {
+         "name": "middleLettersContainer",
+         "value": 0.12195299
+       }
+     ]
+    },
+    {
+      "id":40,
+      "name":"Vision De Loin Test N 6",
+      "label":"Vision De Loin Test N° 6",
+      "questionString": "Combien de cercles voyez-vous ?",
+      "visibales": [ "3 - 6 Holes","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title", "barrette","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"Combien de cercles",
+      "options":[
+        {
+          "label":"6",
+          "image_name":"6",
+          "image_selected":"6-S",
+          "nextQ":41,
+          "iSselected":true
+        },{
+          "label":"10",
+          "image_name":"10",
+          "image_selected":"10-S",
+          "nextQ":43,
+          "iSselected":false
+        },{
+          "label":"11",
+          "image_name":"11",
+          "image_selected":"11-S",
+          "nextQ":47,
+          "resultCode":"HO/SUP/DP",
+          "iSselected":false
+        },{
+          "label":"12",
+          "image_name":"12",
+          "image_selected":"12-S",
+          "nextQ":44,
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+       {
+         "name": "middleLettersContainer",
+         "value": 0.12195299
+       }
+     ]
+    },
+    {
+      "id":41,
+      "name":"Vision De Loin Test N 6",
+      "label":"Vision De Loin Test N° 6",
+      "questionString": "Sur la ligne du haut,\n Voyez-vous un point noir\n au centre de chaque cercle ?",
+      "visibales": [ "3 - 6 Holes","LettersBoxes","lettersContainer","NG1","NR1"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title", "barrette","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB2","NB3","NG2","NG3","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"upper circles",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":47,
+          "resultCode":"HR/SUP/DP",
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":42,
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+       {
+         "name": "middleLettersContainer",
+         "value": 0.12195299
+       }
+     ]
+    },
+    {
+      "id":42,
+      "name":"Vision De Loin Test N 6",
+      "label":"Vision De Loin Test N° 6",
+      "questionString": "Sur la ligne du haut,\n quelle est \nle cercle qui a \nun point noir au milieu ?",
+      "visibales": [ "3 - 6 Holes","LettersBoxes","lettersContainer","NG1","NR1"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","PRES","INTER" , "barrette","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB2","NB3","NG2","NG3","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"upper circles dt",
+      "options":[
+        {
+         "label":"Q",
+         "image_name":"Q",
+         "image_selected":"Q-S",
+         "resultCode":"NTL",
+         "nextQ":47,
+         "iSselected":false
+        },
+        {
+          "label":"I",
+          "image_name":"I",
+          "image_selected":"I-S",
+          "nextQ":47,
+          "resultCode":"NTR",
+          "iSselected":true
+         }
+      ],
+      "layouts": [
+       {
+         "name": "middleLettersContainer",
+         "value": 0.12195299
+       }
+     ]
+    },
+    {
+      "id":43,
+      "name":"Vision De Loin Test N 6",
+      "label":"Vision De Loin Test N° 6",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail ?",
+      "visibales": [ "3 - 6 Holes","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","PRES","INTER" , "barrette","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+          "label":"43-3-1",
+          "image_name":"43-3-1",
+          "image_selected":"43-3-1-S",
+          "nextQ":45,
+          "resultCode":"COR",
+          "iSselected":true
+         },
+         {
+           "label":"43-3-2",
+           "image_name":"43-3-2",
+           "image_selected":"43-3-2-S",
+           "nextQ":47,
+           "resultCode":"HR",
+           "iSselected":false
+         },
+         {
+           "label":"43-3-3",
+           "image_name":"43-3-3",
+           "image_selected":"43-3-3-S",
+           "nextQ":47,
+           "resultCode":"HO",
+           "iSselected":false
+         }
+      ],
+      "layouts": [
+       {
+         "name": "middleLettersContainer",
+         "value": 0.12195299
+       }
+     ]
+    },
+    {
+      "id":44,
+      "name":"Vision De Loin Test N 6",
+      "label":"Vision De Loin Test N° 6",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail ?",
+      "visibales": [ "3 - 6 Holes","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title", "barrette","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+          "label":"45-4-1",
+          "image_name":"45-4-1",
+          "image_selected":"45-4-1-S",
+          "nextQ":47,
+          "resultCode":"HR/MDP",
+          "iSselected":true
+         },
+         {
+           "label":"45-4-3",
+           "image_name":"45-4-3",
+           "image_selected":"45-4-3-S",
+           "nextQ":47,
+           "resultCode":"HO/MDP",
+           "iSselected":false
+         },
+         {
+           "label":"45-4-2",
+           "image_name":"45-4-2",
+           "image_selected":"45-4-2-S",
+           "nextQ":47,
+           "resultCode":"HR/INV/DP",
+           "iSselected":false
+         },
+         {
+          "label":"45-4-4",
+          "image_name":"45-4-4",
+          "image_selected":"45-4-4-S",
+          "nextQ":47,
+          "resultCode":"HO/INV/DP",
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+       {
+         "name": "middleLettersContainer",
+         "value": 0.12195299
+       }
+     ]
+    }   ,
+     {
+      "id":45,
+      "name":"Vision De Loin Test N 6",
+      "label":"Vision De Loin Test N° 6",
+      "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+      "visibales": [ "3 - 6 Holes","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","PRES","INTER" ,"barrette","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R","INTER","INT-LETTERS","PRES","PRES-LETTERS"],
+      "time":0,
+      "audio":"9",
+      "options":[
+        {
+          "label":"NON",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":47,
+          "resultCode":"COR",
+          "iSselected":true
+         },
+         {
+          "label":"UN PEU",
+          "image_name":"UN PEU",
+          "image_selected":"UN PEU-S",
+          "nextQ":47,
+          "resultCode":"COR/INH",
+          "iSselected":false
+         },
+         {
+          "label":"BOUCOUP",
+          "image_name":"BOUCOUP",
+          "image_selected":"BOUCOUP-S",
+          "nextQ":47,
+          "resultCode":"COR/INH+",
+          "iSselected":false
+         }
+      ],
+      "layouts": [
+       {
+         "name": "middleLettersContainer",
+         "value": 0.12195299
+       }
+     ]
+    },
+    
+    {
+      "id":47,
+      "name":"Vision De Loin Test N 7", 
+      "label":"Vision De Loin Test N° 7", 
+      "questionString": "L'image est-elle stable ?",
+      "visibales": [ "3 - 6 Holes", "barrette","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R","INTER","INT-LETTERS","PRES"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":49,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":48,
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+       {
+         "name": "middleLettersContainer",
+         "value": 0.12195299
+       }
+     ]
+    },
+    {
+      "id":48,
+      "name":"Vision De Loin Test N 7",
+      "label":"Vision De Loin Test N° 7",   
+      "beforAudio":"helper first",
+      "questionString": "L'image est-elle stable ?",
+      "visibales": [ "3 - 6 Holes", "barrette","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R","INTER","INT-LETTERS","PRES"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":49,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":53,
+          "resultCode":"NS",
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+       {
+         "name": "middleLettersContainer",
+         "value": 0.12195299
+       }
+     ]
+    },
+    {
+      "id":49,
+      "name":"Vision De Loin Test N 7",
+      "label":"Vision De Loin Test N° 7",
+      "questionString": "Combien de cercles voyez-vous ?",
+      "visibales": [ "3 - 6 Holes", "barrette","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R","INTER","INT-LETTERS","PRES"],
+      "time":0,
+      "audio":"Combien de cercles",
+      "options":[
+        {
+          "label":"3",
+          "image_name":"3",
+          "image_selected":"3-S",
+          "nextQ":53,
+          "resultCode":"NT",
+          "iSselected":true
+        },{
+          "label":"4",
+          "image_name":"4",
+          "image_selected":"4-S",
+          "nextQ":51,
+          "resultCode":"COR",
+          "iSselected":false
+        },{
+          "label":"5",
+          "image_name":"5",
+          "image_selected":"5-S",
+          "nextQ":53,
+          "resultCode":"HO/SUP/DP",
+          "iSselected":false
+        },{
+          "label":"6",
+          "image_name":"6",
+          "image_selected":"6-S",
+          "nextQ":50,
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+       {
+         "name": "middleLettersContainer",
+         "value": 0.12195299
+       }
+     ]
+    },{
+      "id":50,
+      "name":"Vision De Loin Test N 7",
+      "label":"Vision De Loin Test N° 7",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail ?",
+      "visibales": [ "3 - 6 Holes", "barrette","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R","INTER","INT-LETTERS","PRES"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+         {
+          "label":"50-2-1",
+          "image_name":"50-2-1",
+          "image_selected":"50-2-1-S",
+          "nextQ":53,
+          "resultCode":"HR/DP",
+          "iSselected":true
+         },
+         {
+          "label":"50-2-2",
+          "image_name":"50-2-2",
+          "image_selected":"50-2-2-S",
+          "nextQ":53,
+          "resultCode":"HR/INV/DP",
+          "iSselected":false
+         }
+      ],
+      "layouts": [
+       {
+         "name": "middleLettersContainer",
+         "value": 0.12195299
+       }
+     ]
+    }
+    ,
+    {
+      "id":51,
+      "name":"Vision De Loin Test N 7",
+      "label":"Vision De Loin Test N° 7",
+      "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+      "visibales": [ "3 - 6 Holes", "barrette","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","4 - 5 Holes", "1 block", "2 block", "7 block", "8 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R","INTER","INT-LETTERS","PRES"],
+      "time":0,
+      "audio":"9",
+      "options":[
+        {
+          "label":"NON",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":53,
+          "resultCode":"COR",
+          "iSselected":true
+         },
+         {
+          "label":"UN PEU",
+          "image_name":"UN PEU",
+          "image_selected":"UN PEU-S",
+          "nextQ":53,
+          "resultCode":"COR/INH",
+          "iSselected":false
+         },
+         {
+          "label":"BOUCOUP",
+          "image_name":"BOUCOUP",
+          "image_selected":"BOUCOUP-S",
+          "nextQ":53,
+          "resultCode":"COR/INH+",
+          "iSselected":false
+         }
+      ],
+      "layouts": [
+       {
+         "name": "middleLettersContainer",
+         "value": 0.12195299
+       }
+     ]
+    },
+    
+    
+    {
+      "id":53,
+      "name":"Vision De Loin Test N 8",
+      "label":"Vision De Loin Test N° 8",
+      "questionString": "L'image est-elle stable ?",
+      "visibales": ["barrette", "1 block", "8 block", "4 - 5 Holes","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","3 - 6 Holes", "2 block", "7 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R","INTER","PRES","INT-LETTERS"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":55,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":54,
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+        {
+          "name": "2ND-LETTERS",
+          "value": 0.085
+        },{
+          "name":"middleLettersContainer",
+          "value":0.15151
+        }
+      ]
+    },
+    {
+      "id":54,
+      "name":"Vision De Loin Test N 8",
+      "label":"Vision De Loin Test N° 8",
+      "questionString": "L'image est-elle stable ?",
+      "beforAudio":"helper first",
+      "visibales": ["barrette", "1 block", "8 block", "4 - 5 Holes","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","3 - 6 Holes", "2 block", "7 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R","INTER","INT-LETTERS","PRES"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":55,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":60,
+          "resultCode":"NS",
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+        {
+          "name": "2ND-LETTERS",
+          "value": 0.085
+        },{
+          "name":"middleLettersContainer",
+          "value":0.15151
+        }
+      ]
+    },
+    {
+      "id":55,
+      "name":"Vision De Loin Test N 8",
+      "label":"Vision De Loin Test N° 8",
+      "questionString": "Combien de cercles voyez-vous ?",
+      "visibales": ["barrette", "1 block", "8 block", "4 - 5 Holes","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","3 - 6 Holes", "2 block", "7 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R","INTER","INT-LETTERS","PRES"],
+      "time":0,
+      "audio":"Combien de cercles",
+      "options":[
+        {
+          "label":"2",
+          "image_name":"2",
+          "image_selected":"2-S",
+          "nextQ":60,
+          "resultCode":"NT",
+          "iSselected":true
+        },
+        {
+          "label":"3",
+          "image_name":"3",
+          "image_selected":"3-S",
+          "nextQ":56,
+          "iSselected":false
+        },
+        {
+          "label":"4",
+          "image_name":"4",
+          "image_selected":"4-S",
+          "nextQ":57,
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+        {
+          "name": "2ND-LETTERS",
+          "value": 0.085
+        },{
+          "name":"middleLettersContainer",
+          "value":0.15151
+        }
+      ]
+    },
+    {
+      "id":56,
+      "name":"Vision De Loin Test N 8",
+      "label":"Vision De Loin Test N° 8",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail ?",
+      "visibales": ["barrette", "1 block", "8 block", "4 - 5 Holes","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","3 - 6 Holes", "2 block", "7 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R","INTER","INT-LETTERS","PRES"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+         {
+          "label":"56-3-1",
+          "image_name":"56-3-1",
+          "image_selected":"56-3-1-S",
+          "nextQ":58,
+          "resultCode":"COR",
+          "iSselected":true
+         },
+         {
+          "label":"56-3-2",
+          "image_name":"56-3-2",
+          "image_selected":"56-3-2-S",
+          "nextQ":60,
+          "resultCode":"HO",
+          "iSselected":false
+         },
+         {
+          "label":"56-3-3",
+          "image_name":"56-3-3",
+          "image_selected":"56-3-3-S",
+          "nextQ":60,
+          "resultCode":"HR",
+          "iSselected":false
+         }
+      ],
+      "layouts": [
+        {
+          "name": "2ND-LETTERS",
+          "value": 0.085
+        },{
+          "name":"middleLettersContainer",
+          "value":0.15151
+        }
+      ]
+    },
+    {
+      "id":57,
+      "name":"Vision De Loin Test N 8",
+      "label":"Vision De Loin Test N° 8",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail ?",
+      "visibales": ["barrette", "1 block", "8 block", "4 - 5 Holes","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","3 - 6 Holes", "2 block", "7 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R","INTER","INT-LETTERS","PRES"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+         {
+          "label":"57-2-1",
+          "image_name":"57-2-1",
+          "image_selected":"57-2-1-S",
+          "nextQ":60,
+          "resultCode":"HR/DP",
+          "iSselected":true
+         },
+         {
+          "label":"57-2-2",
+          "image_name":"57-2-2",
+          "image_selected":"57-2-2-S",
+          "nextQ":60,
+          "resultCode":"HO/DP",
+          "iSselected":false
+         }
+      ],
+      "layouts": [
+        {
+          "name": "2ND-LETTERS",
+          "value": 0.085
+        },{
+          "name":"middleLettersContainer",
+          "value":0.15151
+        }
+      ]
+    },
+    {
+      "id":58,
+      "name":"Vision De Loin Test N 8",
+      "label":"Vision De Loin Test N° 8",
+      "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+      "visibales": ["barrette", "1 block", "8 block", "4 - 5 Holes","LettersBoxes","lettersContainer"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","3 - 6 Holes", "2 block", "7 block","NB1","NB2","NB3","NG1","NG2","NG3","NR1","NR2","NR3","1G","1R","1Y","2R","2G","2Y","2B","3B","3G","3R","INTER","INT-LETTERS","PRES"],
+      "time":0,
+      "audio":"9",
+      "options":[
+        {
+          "label":"NON",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":60,
+          "resultCode":"COR",
+          "iSselected":true
+         },
+         {
+          "label":"UN PEU",
+          "image_name":"UN PEU",
+          "image_selected":"UN PEU-S",
+          "nextQ":60,
+          "resultCode":"COR/INH",
+          "iSselected":false
+         },
+         {
+          "label":"BOUCOUP",
+          "image_name":"BOUCOUP",
+          "image_selected":"BOUCOUP-S",
+          "nextQ":60,
+          "resultCode":"COR/INH+",
+          "iSselected":false
+         }
+      ],
+      "layouts": [
+        {
+          "name": "2ND-LETTERS",
+          "value": 0.085
+        },{
+          "name":"middleLettersContainer",
+          "value":0.15151
+        }
+      ]
+    },
+    
+    {
+      "id":60,
+      "name":"Vision intermédiaire Test N 9",
+      "label":"Vision intermédiaire Test N° 1",
+      "questionString": "L'image est-elle stable ?",
+      "visibales":["INTER"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-barrette","INT-LETTERS","LettersBoxes","INT-BG-Letters","PRES","deviceFar"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":62,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":61,
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":61,
+      "name":"Vision intermédiaire Test N 9",
+      "label":"Vision intermédiaire Test N° 1",
+      "questionString": "L'image est-elle stable ?",
+      "beforAudio":"helper first",
+      "visibales":["INTER"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-barrette","INT-LETTERS","INT-BG-Letters","PRES","deviceFar","deviceFar"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":62,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":68,
+          "resultCode":"NS",
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":62,
+      "name":"Vision intermédiaire Test N 9",
+      "label":"Vision intermédiaire Test N° 1",
+      "visibales":["INTER"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-barrette","INT-LETTERS","INT-BG-Letters","PRES","deviceFar"],
+      "questionString": "Combien de cercles voyez-vous ?",
+      "time":0,
+      "audio":"Combien de cercles",
+      "options":[
+        {
+          "label":"2",
+          "image_name":"2",
+          "image_selected":"2-S",
+          "nextQ":63,
+          "iSselected":true
+        },
+        {
+          "label":"3",
+          "image_name":"3",
+          "image_selected":"3-S",
+          "nextQ":68,
+          "resultCode":"HR/SUP", 
+          "iSselected":false
+        },
+        {
+          "label":"4",
+          "image_name":"4",
+          "image_selected":"4-S",
+          "nextQ":65,
+          "iSselected":false
+        }
+      ]
+    },
+    {
+        "id":63,
+        "name":"Vision intermédiaire Test N 9",
+        "label":"Vision intermédiaire Test N° 1",
+        "questionString": "Voyez-vous un point noir au \ncentre des 2 cercles ?",
+        "visibales":["INTER","INT-NT-DOTS","INT-NT-DOTS-U","PRES"],
+        "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","lettersContainer","INT-barrette","INT-LETTERS","INT-BG-Letters","PRES","deviceFar"],
+        "time":0,
+        "audio":"2",
+        "options":[
+            {
+             "label":"OUI",
+             "image_name":"OUI",
+             "image_selected":"OUI-S",
+             "nextQ":68,
+             "resultCode":"HR/SUP",
+             "iSselected":true
+            },
+            {
+             "label":"Non",
+             "image_name":"NON",
+             "image_selected":"NON-S",
+             "nextQ":64,
+             "iSselected":false
+            }
+           ]
+    },
+    {
+        "id":64,
+        "name":"Vision intermédiaire Test N 9",
+        "label":"Vision intermédiaire Test N° 1",
+        "questionString": "Dans quel cercle voyez-vous\nle point noir ?",
+        "visibales":["INTER","INT-NT-DOTS","INT-NT-DOTS-U","PRES"],
+        "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-barrette","INT-LETTERS","INT-BG-Letters","INT-LETTERS","INT-BG-Letters","PRES","deviceFar"],
+        "time":0,
+        "audio":"3",
+        "options":[
+            {
+            "label":"ROUGE",
+            "image_name":"ROUGE",
+            "image_selected":"ROUGE-S",
+            "nextQ":68,
+            "resultCode":"NTL",
+            "iSselected":true
+            },
+            {
+            "label":"BLUE",
+            "image_name":"BLUE",
+            "image_selected":"BLUE-S",
+            "resultCode":"NTR",
+            "nextQ":68,
+            "iSselected":false
+            }
+        ]
+    },
+    {
+        "id":65,
+        "name":"Vision intermédiaire Test N 9",
+        "label":"Vision intermédiaire Test N° 1",
+        "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail",
+        "visibales":["INTER","PRES"],
+        "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","INT-barrette","INT-LETTERS","INT-BG-Letters","PRES","deviceFar"],
+        "time":0,
+        "audio":"pictures audio",
+        "options":[
+          {
+           "label":"65-5-1",
+           "image_name":"65-5-1",
+           "image_selected":"65-5-1-S",
+           "nextQ":66,
+           "resultCode":"COR",
+           "iSselected":true
+          },
+          {
+            "label":"65-5-4",
+            "image_name":"65-5-4",
+            "image_selected":"65-5-4-S",
+            "nextQ":68,
+            "resultCode":"HR",
+            "iSselected":false
+          },
+          {
+            "label":"65-5-2",
+            "image_name":"65-5-2",
+            "image_selected":"65-5-2-S",
+            "nextQ":68,
+            "resultCode":"HO",
+            "iSselected":false
+          },
+          {
+            "label":"65-5-3",
+            "image_name":"65-5-3",
+            "image_selected":"65-5-3-S",
+            "nextQ":68,
+            "resultCode":"HO/INV",
+            "iSselected":false
+          },
+          {
+            "label":"65-5-5",
+            "image_name":"65-5-5",
+            "image_selected":"65-5-5-S",
+            "nextQ":68,
+            "resultCode":"HR/INV",
+            "iSselected":false
+          }
+         ]
+    },
+    {
+        "id":66,
+        "name":"Vision intermédiaire Test N 9",
+        "label":"Vision intermédiaire Test N° 1",
+        "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+        "visibales":["INTER","PRES"],
+        "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","INT-barrette","INT-LETTERS","INT-BG-Letters","PRES","deviceFar"],
+        "time":0,
+        "audio":"9",
+        "options":[
+          {
+            "label":"NON",
+            "image_name":"NON",
+            "image_selected":"NON-S",
+            "nextQ":68,
+            "resultCode":"COR",
+            "iSselected":true
+           },
+           {
+            "label":"UN PEU",
+            "image_name":"UN PEU",
+            "image_selected":"UN PEU-S",
+            "nextQ":68,
+            "resultCode":"COR/INH",
+            "iSselected":false
+           },
+           {
+            "label":"BOUCOUP",
+            "image_name":"BOUCOUP",
+            "image_selected":"BOUCOUP-S",
+            "nextQ":68,
+            "resultCode":"COR/INH+",
+            "iSselected":false
+           }
+        ]
+    },
+  
+    {
+        "id":68,
+        "name":"Vision intermédiaire Test N 10",
+        "label":"Vision intermédiaire Test N° 2",
+        "questionString": "L'image est-elle stable ?",
+        "visibales":["INTER"],
+        "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","INT-NT-DOTS-U","lettersContainer","INT-barrette","INT-12B","INT-13B","INT-32B","INT-33B","INT-LETTERS","INT-BG-Letters","PRES"],
+        "time":2,
+        "audio":"image stable",
+        "options":[
+          {
+            "label":"OUI",
+            "image_name":"OUI",
+            "image_selected":"OUI-S",
+            "nextQ":70,
+            "iSselected":true
+          },
+          {
+            "label":"Non",
+            "image_name":"NON",
+            "image_selected":"NON-S",
+            "nextQ":69,
+            "iSselected":false
+          }
+        ]
+    },
+    {
+        "id":69,
+        "name":"Vision intermédiaire Test N 10",
+        "label":"Vision intermédiaire Test N° 2",
+        "questionString": "L'image est-elle stable ?",
+        "beforAudio":"helper first",
+        "visibales":["INTER"],
+        "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","INT-NT-DOTS-U","lettersContainer","INT-barrette","INT-12B","INT-13B","INT-32B","INT-33B","INT-LETTERS","INT-BG-Letters","PRES"],
+        "time":2,
+        "audio":"image stable",
+        "options":[
+          {
+            "label":"OUI",
+            "image_name":"OUI",
+            "image_selected":"OUI-S",
+            "nextQ":70,
+            "iSselected":true
+          },
+          {
+            "label":"Non",
+            "image_name":"NON",
+            "image_selected":"NON-S",
+            "nextQ":77,
+            "resultCode":"NS",
+            "iSselected":false
+          }
+        ]
+    },    
+    {
+        "id":70,
+        "name":"Vision intermédiaire Test N 10",
+        "label":"Vision intermédiaire Test N° 2",
+        "questionString": "Combien de cercles voyez-vous ?",
+        "visibales":["INTER"],
+        "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","INT-NT-DOTS-U","lettersContainer","INT-barrette","INT-12B","INT-13B","INT-32B","INT-33B","INT-LETTERS","INT-BG-Letters","PRES"],
+        "time":0,
+        "audio":"Combien de cercles",
+        "options":[
+          {
+            "label":"6",
+            "image_name":"6",
+            "image_selected":"6-S",
+            "nextQ":71,
+            "iSselected":true
+          },{
+            "label":"10",
+            "image_name":"10",
+            "image_selected":"10-S",
+            "nextQ":73,
+            "iSselected":false
+          },{
+            "label":"11",
+            "image_name":"11",
+            "image_selected":"11-S",
+            "nextQ":77,
+            "resultCode":"HO/SUP/DP",
+            "iSselected":false
+          },{
+            "label":"12",
+            "image_name":"12",
+            "image_selected":"12-S",
+            "nextQ":74,
+            "iSselected":false
+          }
+        ]
+    },
+    {
+        "id":71,
+        "name":"Vision intermédiaire Test N 10",
+        "label":"Vision intermédiaire Test N° 2",
+        "questionString": "Sur la ligne du haut,\n Voyez-vous un point noir\n au centre de chaque cercle ?",
+        "audio":"upper circles",
+        "visibales":["INTER","INT-NT-DOTS"],
+        "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","lettersContainer","INT-NT-DOTS-U","INT-barrette","INT-12B","INT-13B","INT-32B","INT-33B","INT-LETTERS","INT-BG-Letters","PRES"],
+        "options":[
+          {
+           "label":"OUI",
+           "image_name":"OUI",
+           "image_selected":"OUI-S",
+           "nextQ":77,
+           "resultCode":"HR/SUP",
+           "iSselected":true
+          },
+          {
+           "label":"Non",
+           "image_name":"NON",
+           "image_selected":"NON-S",
+           "nextQ":72,
+           "iSselected":false
+          }
+         ]
+    },
+    {
+        "id":72,
+        "name":"Vision intermédiaire Test N 10",
+        "label":"Vision intermédiaire Test N° 2",
+        "questionString": "Sur la ligne du haut,\n quelle est \nle cercle qui a \nun point noir au milieu ?",
+        "visibales":["INTER","INT-NT-DOTS"],
+        "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","lettersContainer","INT-NT-DOTS-U","INT-barrette","INT-12B","INT-13B","INT-32B","INT-33B","INT-LETTERS","INT-BG-Letters","PRES"],
+        "time":0,
+        "audio":"upper circles dt",
+        "options":[
+          {
+          "label":"VERT",
+          "image_name":"VERT",
+          "image_selected":"VERT-S",
+          "nextQ":77,
+          "resultCode":"NTL",
+          "iSselected":true
+          },
+          {
+          "label":"BLUE",
+          "image_name":"BLUE",
+          "image_selected":"BLUE-S",
+          "resultCode":"NTR",
+          "nextQ":77,
+          "iSselected":false
+          }
+      ]
+    },
+    {
+        "id":73,
+        "name":"Vision intermédiaire Test N 10",
+        "label":"Vision intermédiaire Test N° 2",
+        "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail",
+        "visibales":["INTER"],
+        "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","INT-NT-DOTS-U","lettersContainer","INT-barrette","INT-12B","INT-13B","INT-32B","INT-33B","INT-LETTERS","INT-BG-Letters","PRES"],
+        "time":0,
+        "audio":"pictures audio",
+        "options":[
+          {
+           "label":"73-3-1",
+           "image_name":"73-3-1",
+           "image_selected":"73-3-1-S",
+           "nextQ":75,
+           "resultCode":"COR",
+           "iSselected":true
+          },
+          {
+            "label":"73-3-2",
+            "image_name":"73-3-2",
+            "image_selected":"73-3-2-S",
+            "nextQ":77,
+            "resultCode":"HR",
+            "iSselected":false
+          },
+          {
+            "label":"73-3-3",
+            "image_name":"73-3-3",
+            "image_selected":"73-3-3-S",
+            "nextQ":77,
+            "resultCode":"HO",
+            "iSselected":false
+          }
+         ]
+    },
+    {
+        "id":74,
+        "name":"Vision intermédiaire Test N 10",
+        "label":"Vision intermédiaire Test N° 2",
+        "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail",
+        "visibales":["INTER"],
+        "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-barrette","INT-12B","INT-13B","INT-32B","INT-33B","INT-LETTERS","INT-BG-Letters","PRES"],
+        "time":0,
+        "audio":"pictures audio",
+        "options":[
+          {
+          "label":"74-4-1",
+          "image_name":"74-4-1",
+          "image_selected":"74-4-1-S",
+          "nextQ":77,
+          "resultCode":"HR/MDP",
+          "iSselected":true
+         },
+         {
+           "label":"74-4-3",
+           "image_name":"74-4-3",
+           "image_selected":"74-4-3-S",
+           "nextQ":77,
+           "resultCode":"HO/MDP",
+           "iSselected":false
+         },
+         {
+           "label":"74-4-2",
+           "image_name":"74-4-2",
+           "image_selected":"74-4-2-S",
+           "nextQ":77,
+           "resultCode":"HR/INV/DP",
+           "iSselected":false
+         },
+         {
+          "label":"74-4-4",
+          "image_name":"74-4-4",
+          "image_selected":"74-4-4-S",
+          "nextQ":77,
+          "resultCode":"HO/INV/DP",
+          "iSselected":false
+        }
+      ]
+    },
+    {
+        "id":75,
+        "name":"Vision intermédiaire Test N 10",
+        "label":"Vision intermédiaire Test N° 2",
+        "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+        "visibales":["INTER"],
+        "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-barrette","INT-12B","INT-13B","INT-32B","INT-33B","INT-LETTERS","INT-BG-Letters","PRES"],
+        "time":0,
+        "audio":"9",
+        "options":[
+          {
+            "label":"NON",
+            "image_name":"NON",
+            "image_selected":"NON-S",
+            "nextQ":77,
+            "resultCode":"COR",
+            "iSselected":true
+           },
+           {
+            "label":"UN PEU",
+            "image_name":"UN PEU",
+            "image_selected":"UN PEU-S",
+            "nextQ":77,
+            "resultCode":"COR/INH",
+            "iSselected":false
+           },
+           {
+            "label":"BOUCOUP",
+            "image_name":"BOUCOUP",
+            "image_selected":"BOUCOUP-S",
+            "nextQ":77,
+            "resultCode":"COR/INH+",
+            "iSselected":false
+           }
+        ]
+    },
+  
+    {
+        "id":77,
+        "name":"Vision intermédiaire Test N 11",
+        "label":"Vision intermédiaire Test N° 3",
+        "questionString": "L'image est-elle stable ?",
+        "visibales":["INTER","INT-barrette"],
+        "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-12B","INT-13B","INT-32B","INT-33B","INT-LETTERS","INT-BG-Letters","PRES"],
+        "time":2,
+        "audio":"image stable",
+        "options":[
+          {
+            "label":"OUI",
+            "image_name":"OUI",
+            "image_selected":"OUI-S",
+            "nextQ":79,
+            "iSselected":true
+          },
+          {
+            "label":"Non",
+            "image_name":"NON",
+            "image_selected":"NON-S",
+            "nextQ":78,
+            "iSselected":false
+          }
+        ]   
+    },
+    {
+      "id":78,
+      "name":"Vision intermédiaire Test N 11",
+      "label":"Vision intermédiaire Test N° 3",
+      "questionString": "L'image est-elle stable ?",
+      "beforAudio":"helper first",
+      "visibales":["INTER","INT-barrette"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-12B","INT-13B","INT-32B","INT-33B","INT-LETTERS","INT-BG-Letters","PRES"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":79,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":83,
+          "resultCode":"NS",
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":79,
+      "name":"Vision intermédiaire Test N 11",
+      "label":"Vision intermédiaire Test N° 3",
+      "questionString": "Combien de cercles voyez-vous ?",
+      "visibales":["INTER","INT-barrette"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-12B","INT-13B","INT-32B","INT-33B","INT-LETTERS","INT-BG-Letters","PRES"],
+      "time":0,
+      "audio":"Combien de cercles",
+      "options":[{
+        "label":"3",
+        "image_name":"3",
+        "image_selected":"3-S",
+        "nextQ":83,
+        "resultCode":"NT",
+        "iSselected":true
+      },{
+        "label":"4",
+        "image_name":"4",
+        "image_selected":"4-S",
+        "nextQ":81,
+        "resultCode":"COR",
+        "iSselected":false
+      },{
+        "label":"5",
+        "image_name":"5",
+        "image_selected":"5-S",
+        "nextQ":83,
+        "resultCode":"HO/SUP/DP",
+        "iSselected":false
+      },{
+        "label":"6",
+        "image_name":"6",
+        "image_selected":"6-S",
+        "nextQ":80,
+        "iSselected":false
+      }]
+    },
+    {
+      "id":80,
+      "name":"Vision intermédiaire Test N 11",
+      "label":"Vision intermédiaire Test N° 3",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail ?",
+      "audio":"pictures audio",
+      "visibales":["INTER","INT-barrette"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-12B","INT-13B","INT-32B","INT-33B","INT-LETTERS","INT-BG-Letters","PRES"],
+      "time":0,
+      "options":[{
+        "label":"80-2-1",
+        "image_name":"80-2-1",
+        "image_selected":"80-2-1-S",
+        "nextQ":83,
+        "resultCode":"HR/DP",
+        "iSselected":true
+       },
+       {
+        "label":"80-2-2",
+        "image_name":"80-2-2",
+        "image_selected":"80-2-2-S",
+        "nextQ":83,
+        "resultCode":"HR/INV/DP",
+        "iSselected":false
+       }]
+    },
+    {
+      "id":81,
+      "name":"Vision intermédiaire Test N 11",
+      "label":"Vision intermédiaire Test N° 3",
+      "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+      "visibales":["INTER","INT-barrette"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-12B","INT-13B","INT-32B","INT-33B","INT-LETTERS","INT-BG-Letters","PRES"],
+      "time":0,
+      "audio":"9",
+      "options":[{
+        "label":"NON",
+        "image_name":"NON",
+        "image_selected":"NON-S",
+        "nextQ":83,
+        "resultCode":"COR",
+        "iSselected":true
+       },
+       {
+        "label":"UN PEU",
+        "image_name":"UN PEU",
+        "image_selected":"UN PEU-S",
+        "nextQ":83,
+        "resultCode":"COR/INH",
+        "iSselected":false
+       },
+       {
+        "label":"BOUCOUP",
+        "image_name":"BOUCOUP",
+        "image_selected":"BOUCOUP-S",
+        "nextQ":83,
+        "resultCode":"COR/INH+",
+        "iSselected":false
+       }]
+    },
+  
+    {
+      "id":83,
+      "name":"Vision intermédiaire Test N 12",
+      "label":"Vision intermédiaire Test N° 4",
+      "questionString": "L'image est-elle stable ?",
+      "visibales":["INTER","INT-LETTERS","INT-BG-Letters","INT-12B","INT-13B","INT-32B","INT-33B"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-barrette","PRES"],
+      "time":2,
+      "audio":"image stable",
+      "options":[ 
+        {
+        "label":"OUI",
+        "image_name":"OUI",
+        "image_selected":"OUI-S",
+        "nextQ":85,
+        "iSselected":true
+      },
+      {
+        "label":"Non",
+        "image_name":"NON",
+        "image_selected":"NON-S",
+        "nextQ":84,
+        "iSselected":false
+      }],"layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":84,
+      "name":"Vision intermédiaire Test N 12",
+      "label":"Vision intermédiaire Test N° 4",
+      "questionString": "L'image est-elle stable ?",
+      "beforAudio":"helper first",
+      "visibales":["INTER","INT-LETTERS","INT-BG-Letters","INT-12B","INT-13B","INT-32B","INT-33B"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-barrette","PRES"],
+      "time":2,
+      "audio":"image stable",
+      "options":[ 
+        {
+        "label":"OUI",
+        "image_name":"OUI",
+        "image_selected":"OUI-S",
+        "nextQ":85,
+        "iSselected":true
+      },
+      {
+        "label":"Non",
+        "image_name":"NON",
+        "image_selected":"NON-S",
+        "nextQ":91,
+        "resultCode":"NS",
+        "iSselected":false
+      }]
+      ,"layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":85,
+      "name":"Vision intermédiaire Test N 12",
+      "label":"Vision intermédiaire Test N° 4",
+      "questionString": "Combien de cercles voyez-vous ?",
+      "visibales":["INTER","INT-LETTERS","INT-BG-Letters","INT-12B","INT-13B","INT-32B","INT-33B"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-barrette","PRES"],
+      "time":0,
+      "audio":"Combien de cercles",
+      "options":[
+        {
+         "label":"2",
+         "image_name":"2",
+         "image_selected":"2-S",
+         "nextQ":86,
+         "iSselected":true
+        },
+        {
+         "label":"3",
+         "image_name":"3",
+         "image_selected":"3-S",
+         "nextQ":91,
+         "resultCode":"HR/SUP",
+         "iSselected":false
+        },
+        {
+          "label":"4",
+          "image_name":"4",
+          "image_selected":"4-S",
+          "nextQ":88,
+          "iSselected":false
+         }
+      ],
+      "layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":86,
+      "name":"Vision intermédiaire Test N 12",
+      "label":"Vision intermédiaire Test N° 4",
+      "questionString": "Voyez-vous un point noir au centre des 2 cercles ?",
+      "visibales":["INTER","INT-LETTERS","INT-BG-Letters","INT-12B","INT-13B","INT-32B","INT-33B","INT-NT-DOTS-U"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","lettersContainer","INT-barrette","PRES"],
+      "time":0,
+      "audio":"2",
+      "options":[ 
+        {
+        "label":"OUI",
+        "image_name":"OUI",
+        "image_selected":"OUI-S",
+        "nextQ":91,
+        "resultCode":"HR/SUP",
+        "iSselected":true
+      },
+      {
+        "label":"Non",
+        "image_name":"NON",
+        "image_selected":"NON-S",
+        "nextQ":87,
+        "iSselected":false
+      }],
+      "layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":87,
+      "name":"Vision intermédiaire Test N 12",
+      "label":"Vision intermédiaire Test N° 4",
+      "questionString": "Dans quel cercle voyez-vous\nle point noir ?",
+      "visibales":["INTER","INT-LETTERS","INT-BG-Letters","INT-12B","INT-13B","INT-32B","INT-33B","INT-NT-DOTS-U"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-barrette","PRES"],
+      "time":0,
+      "audio":"3",
+      "options":[
+        {
+          "label":"M",
+          "image_name":"M",
+          "image_selected":"M-S",
+          "resultCode":"NTL",
+          "nextQ":91,
+          "iSselected":false
+         },
+         {
+           "label":"Z",
+           "image_name":"Z",
+           "image_selected":"Z-S",
+           "nextQ":91,
+           "resultCode":"NTR",
+           "iSselected":true
+          }
+      ],
+      "layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":88,
+      "name":"Vision intermédiaire Test N 12",
+      "label":"Vision intermédiaire Test N° 4",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail",
+      "visibales":["INTER","INT-LETTERS","INT-BG-Letters","INT-12B","INT-13B","INT-32B","INT-33B"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-barrette","PRES"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+         "label":"88-5-1",
+         "image_name":"88-5-1",
+         "image_selected":"88-5-1-S",
+         "nextQ":89,
+         "resultCode":"COR",
+         "iSselected":true
+        },
+        {
+          "label":"88-5-4",
+          "image_name":"88-5-4",
+          "image_selected":"88-5-4-S",
+          "nextQ":91,
+          "resultCode":"HR",
+          "iSselected":false
+        },
+        {
+          "label":"88-5-2",
+          "image_name":"88-5-2",
+          "image_selected":"88-5-2-S",
+          "nextQ":91,
+          "resultCode":"HO",
+          "iSselected":false
+        },
+        {
+          "label":"88-5-5",
+          "image_name":"88-5-5",
+          "image_selected":"88-5-5-S",
+          "nextQ":91,
+          "resultCode":"HR/INV",
+          "iSselected":false
+        },
+        {
+          "label":"88-5-3",
+          "image_name":"88-5-3",
+          "image_selected":"88-5-3-S",
+          "nextQ":91,
+          "resultCode":"HO/INV",
+          "iSselected":false
+        }
+       ],
+      "layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":89,
+      "name":"Vision intermédiaire Test N 12",
+      "label":"Vision intermédiaire Test N° 4",
+      "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+      "visibales":["INTER","INT-LETTERS","INT-BG-Letters","INT-12B","INT-13B","INT-32B","INT-33B"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-barrette","PRES"],
+      "time":0,
+      "audio":"9",
+      "options":[
+          {
+            "label":"NON",
+            "image_name":"NON",
+            "image_selected":"NON-S",
+            "nextQ":91,
+            "resultCode":"COR",
+            "iSselected":true
+           },
+           {
+            "label":"UN PEU",
+            "image_name":"UN PEU",
+            "image_selected":"UN PEU-S",
+            "nextQ":91,
+            "resultCode":"COR/INH",
+            "iSselected":false
+           },
+           {
+            "label":"BOUCOUP",
+            "image_name":"BOUCOUP",
+            "image_selected":"BOUCOUP-S",
+            "nextQ":91,
+            "resultCode":"COR/INH+",
+            "iSselected":false
+           }
+        ],
+        "layouts": [
+          {
+            "name": "middleLettersContainer",
+            "value": 0.12195299
+          }
+        ]
+    },
+  
+    {
+      "id":91,
+      "name":"Vision intermédiaire Test N 13",
+      "label":"Vision intermédiaire Test N° 5",
+      "questionString": "L'image est-elle stable ?",
+      "visibales":["INTER","INT-LETTERS","INT-BG-Letters"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-barrette","INT-12B","INT-13B","INT-32B","INT-33B","PRES"],
+      "time":2,
+      "audio":"image stable",
+      "options":[ 
+        {
+        "label":"OUI",
+        "image_name":"OUI",
+        "image_selected":"OUI-S",
+        "nextQ":93,
+        "iSselected":true
+      },
+      {
+        "label":"Non",
+        "image_name":"NON",
+        "image_selected":"NON-S",
+        "nextQ":92,
+        "iSselected":false
+      }],
+      "layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":92,
+      "name":"Vision intermédiaire Test N 13",
+      "label":"Vision intermédiaire Test N° 5",
+      "questionString": "L'image est-elle stable ?",
+      "beforAudio":"helper first",
+      "visibales":["INTER","INT-LETTERS","INT-BG-Letters"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-barrette","INT-12B","INT-13B","INT-32B","INT-33B","PRES"],
+      "time":2,
+      "options":[ 
+        {
+        "label":"OUI",
+        "image_name":"OUI",
+        "image_selected":"OUI-S",
+        "nextQ":93,
+        "iSselected":true
+      },
+      {
+        "label":"Non",
+        "image_name":"NON",
+        "image_selected":"NON-S",
+        "nextQ":100,
+        "resultCode":"NS",
+        "iSselected":false
+      }],
+      "audio":"image stable",
+      "layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":93,
+      "name":"Vision intermédiaire Test N 13",
+      "label":"Vision intermédiaire Test N° 5",
+      "questionString": "Combien de cercles voyez-vous ?",
+      "visibales":["INTER","INT-LETTERS","INT-BG-Letters"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-barrette","INT-12B","INT-13B","INT-32B","INT-33B","PRES"],
+      "time":0,
+      "audio":"Combien de cercles",
+      "options":[
+        {
+          "label":"6",
+          "image_name":"6",
+          "image_selected":"6-S",
+          "nextQ":94,
+          "iSselected":true
+        },{
+          "label":"10",
+          "image_name":"10",
+          "image_selected":"10-S",
+          "nextQ":96,
+          "iSselected":false
+        },{
+          "label":"11",
+          "image_name":"11",
+          "image_selected":"11-S",
+          "nextQ":100,
+          "resultCode":"HO/SUP/DP",
+          "iSselected":false
+        },{
+          "label":"12",
+          "image_name":"12",
+          "image_selected":"12-S",
+          "nextQ":97,
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":94,
+      "name":"Vision intermédiaire Test N 13",
+      "label":"Vision intermédiaire Test N° 5",
+      "questionString": "Sur la ligne du haut,\n Voyez-vous un point noir\n au centre de chaque cercle ?",
+      "audio":"upper circles",
+      "visibales":["INTER","INT-LETTERS","INT-BG-Letters","INT-NT-DOTS"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS-U","lettersContainer","INT-barrette","INT-12B","INT-13B","INT-32B","INT-33B","PRES"],
+      "time":0,
+      "options":[{
+        "label":"OUI",
+        "image_name":"OUI",
+        "image_selected":"OUI-S",
+        "nextQ":100,
+        "resultCode":"HR/SUP",
+        "iSselected":true
+      },
+      {
+        "label":"Non",
+        "image_name":"NON",
+        "image_selected":"NON-S",
+        "nextQ":95,
+        "iSselected":false
+      }],
+      "layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":95,
+      "name":"Vision intermédiaire Test N 13",
+      "label":"Vision intermédiaire Test N° 5",
+      "questionString": "Sur la ligne du haut,\n quelle est \nle cercle qui a \nun point noir au milieu ?",
+      "visibales":["INTER","INT-LETTERS","INT-BG-Letters","INT-NT-DOTS"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS-U","lettersContainer","INT-barrette","INT-12B","INT-13B","INT-32B","INT-33B","PRES"],
+      "time":0,
+      "audio":"upper circles dt",
+      "options":[
+        {
+          "label":"O",
+          "image_name":"O",
+          "image_selected":"O-S",
+          "resultCode":"NTL",
+          "nextQ":100,
+          "iSselected":false
+         },
+         {
+           "label":"L",
+           "image_name":"L",
+           "image_selected":"L-S",
+           "nextQ":100,
+           "resultCode":"NTR",
+           "iSselected":true
+          }
+      ],
+      "layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":96,
+      "name":"Vision intermédiaire Test N 13",
+      "label":"Vision intermédiaire Test N° 5",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail",
+      "visibales":["INTER","INT-LETTERS","INT-BG-Letters"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-barrette","INT-12B","INT-13B","INT-32B","INT-33B","PRES"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+          "label":"96-3-1",
+          "image_name":"96-3-1",
+          "image_selected":"96-3-1-S",
+          "nextQ":98,
+          "resultCode":"COR",
+          "iSselected":true
+         },
+         {
+           "label":"96-3-3",
+           "image_name":"96-3-3",
+           "image_selected":"96-3-3-S",
+           "nextQ":100,
+           "resultCode":"HR",
+           "iSselected":false
+         },
+         {
+           "label":"96-3-2",
+           "image_name":"96-3-2",
+           "image_selected":"96-3-2-S",
+           "nextQ":100,
+           "resultCode":"HO",
+           "iSselected":false
+         }
+      ],
+      "layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":97,
+      "name":"Vision intermédiaire Test N 13",
+      "label":"Vision intermédiaire Test N° 5",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail",
+      "visibales":["INTER","INT-LETTERS","INT-BG-Letters"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-barrette","INT-12B","INT-13B","INT-32B","INT-33B","PRES"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+          "label":"97-4-1",
+          "image_name":"97-4-1",
+          "image_selected":"97-4-1-S",
+          "nextQ":100,
+          "resultCode":"HR/MDP",
+          "iSselected":true
+         },
+         {
+           "label":"97-4-3",
+           "image_name":"97-4-3",
+           "image_selected":"97-4-3-S",
+           "nextQ":100,
+           "resultCode":"HO/MDP",
+           "iSselected":false
+         },
+         {
+           "label":"97-4-2",
+           "image_name":"97-4-2",
+           "image_selected":"97-4-2-S",
+           "nextQ":100,
+           "resultCode":"HR/INV/DP",
+           "iSselected":false
+         },
+         {
+          "label":"97-4-4",
+          "image_name":"97-4-4",
+          "image_selected":"97-4-4-S",
+          "nextQ":100,
+          "resultCode":"HO/INV/DP",
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":98,
+      "name":"Vision intermédiaire Test N 13",
+      "label":"Vision intermédiaire Test N° 5",
+      "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+      "visibales":["INTER","INT-LETTERS","INT-BG-Letters"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-barrette","INT-12B","INT-13B","INT-32B","INT-33B","PRES"],
+      "time":0,
+      "audio":"9",
+      "options":[
+          {
+            "label":"NON",
+            "image_name":"NON",
+            "image_selected":"NON-S",
+            "nextQ":100,
+            "resultCode":"COR",
+            "iSselected":true
+           },
+           {
+            "label":"UN PEU",
+            "image_name":"UN PEU",
+            "image_selected":"UN PEU-S",
+            "nextQ":100,
+            "resultCode":"COR/INH",
+            "iSselected":false
+           },
+           {
+            "label":"BOUCOUP",
+            "image_name":"BOUCOUP",
+            "image_selected":"BOUCOUP-S",
+            "nextQ":100,
+            "resultCode":"COR/INH+",
+            "iSselected":false
+           }
+        ],
+        "layouts": [
+          {
+            "name": "middleLettersContainer",
+            "value": 0.12195299
+          }
+        ]
+    },
+  
+    {
+      "id":100,
+      "name":"Vision intermédiaire Test N 14",
+      "label":"Vision intermédiaire Test N° 6",
+      "questionString": "L'image est-elle stable ?",
+      "visibales":["INTER","INT-LETTERS","INT-BG-Letters","INT-barrette"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-12B","INT-13B","INT-32B","INT-33B","PRES"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":102,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":101,
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":101,
+      "name":"Vision intermédiaire Test N 14",
+      "label":"Vision intermédiaire Test N° 6",
+      "questionString": "L'image est-elle stable ?",
+      "beforAudio":"helper first",
+      "visibales":["INTER","INT-LETTERS","INT-BG-Letters","INT-barrette"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-12B","INT-13B","INT-32B","INT-33B","PRES"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":102,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":106,
+          "resultCode":"NS",
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":102,
+      "name":"Vision intermédiaire Test N 14",
+      "label":"Vision intermédiaire Test N° 6",
+      "questionString": "Combien de cercles voyez-vous ?",
+      "visibales":["INTER","INT-LETTERS","INT-BG-Letters","INT-barrette"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-12B","INT-13B","INT-32B","INT-33B","PRES"],
+      "time":0,
+      "audio":"Combien de cercles",
+      "options":[
+        {
+          "label":"3",
+          "image_name":"3",
+          "image_selected":"3-S",
+          "nextQ":106,
+          "resultCode":"NT",
+          "iSselected":true
+        },{
+          "label":"4",
+          "image_name":"4",
+          "image_selected":"4-S",
+          "nextQ":104,
+          "resultCode":"COR",
+          "iSselected":false
+        },{
+          "label":"5",
+          "image_name":"5",
+          "image_selected":"5-S",
+          "nextQ":106,
+          "resultCode":"HO/SUP/DP",
+          "iSselected":false
+        },{
+          "label":"6",
+          "image_name":"6",
+          "image_selected":"6-S",
+          "nextQ":103,
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":103,
+      "name":"Vision intermédiaire Test N 14",
+      "label":"Vision intermédiaire Test N° 6",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail",
+      "visibales":["INTER","INT-LETTERS","INT-BG-Letters","INT-barrette"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-12B","INT-13B","INT-32B","INT-33B","PRES"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+          "label":"103-2-1",
+          "image_name":"103-2-1",
+          "image_selected":"103-2-1-S",
+          "nextQ":106,
+          "resultCode":"HR/DP",
+          "iSselected":true
+         },
+         {
+          "label":"103-2-2",
+          "image_name":"103-2-2",
+          "image_selected":"103-2-2-S",
+          "nextQ":106,
+          "resultCode":"HR/INV/DP",
+          "iSselected":false
+         }
+      ],
+      "layouts": [
+        {
+          "name": "middleLettersContainer",
+          "value": 0.12195299
+        }
+      ]
+    },
+    {
+      "id":104,
+      "name":"Vision intermédiaire Test N 14",
+      "label":"Vision intermédiaire Test N° 6",
+      "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+      "visibales":["INTER","INT-LETTERS","INT-BG-Letters","INT-barrette"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INT-NT-DOTS","INT-NT-DOTS-U","lettersContainer","INT-12B","INT-13B","INT-32B","INT-33B","PRES","PRES-BARRET"],
+      "time":0,
+      "audio":"9",
+      "options":[
+          {
+            "label":"NON",
+            "image_name":"NON",
+            "image_selected":"NON-S",
+            "nextQ":106,
+            "resultCode":"COR",
+            "iSselected":true
+           },
+           {
+            "label":"UN PEU",
+            "image_name":"UN PEU",
+            "image_selected":"UN PEU-S",
+            "nextQ":106,
+            "resultCode":"COR/INH",
+            "iSselected":false
+           },
+           {
+            "label":"BOUCOUP",
+            "image_name":"BOUCOUP",
+            "image_selected":"BOUCOUP-S",
+            "nextQ":106,
+            "resultCode":"COR/INH+",
+            "iSselected":false
+           }
+        ],
+        "layouts": [
+          {
+            "name": "middleLettersContainer",
+            "value": 0.12195299
+          }
+        ]
+    },
+  
+    {
+      "id":106,
+      "name":"Vision de prés Test N 15",
+      "label":"Vision de prés Test N° 1",
+      "questionString": "L'image est-elle stable ?",
+      "visibales":["PRES"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","PRES-BARRET","short_holes_show","lettersContainer","INT-LETTERS","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":2,
+      "audio":"image stable",
+      "options":[ 
+        {
+        "label":"OUI",
+        "image_name":"OUI",
+        "image_selected":"OUI-S",
+        "nextQ":108,
+        "iSselected":true
+      },
+      {
+        "label":"Non",
+        "image_name":"NON",
+        "image_selected":"NON-S",
+        "nextQ":107,
+        "iSselected":false
+      }]
+    },
+    {
+      "id":107,
+      "name":"Vision de prés Test N 15",
+      "label":"Vision de prés Test N° 1",
+      "questionString": "L'image est-elle stable ?",
+      "beforAudio":"helper first",
+      "visibales":["PRES"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","PRES-BARRET","short_holes_show","lettersContainer","INT-LETTERS","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":2,
+      "audio":"image stable",
+      "options":[ 
+        {
+        "label":"OUI",
+        "image_name":"OUI",
+        "image_selected":"OUI-S",
+        "nextQ":108,
+        "iSselected":true
+      },
+      {
+        "label":"Non",
+        "image_name":"NON",
+        "image_selected":"NON-S",
+        "nextQ":114,
+        "resultCode":"NS",
+        "iSselected":false
+      }]
+    },
+    {
+      "id":108,
+      "name":"Vision de prés Test N 15",
+      "label":"Vision de prés Test N° 1",
+      "questionString": "Combien de cercles voyez-vous ?",
+      "visibales":["PRES"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","PRES-BARRET","short_holes_show","lettersContainer","INT-LETTERS","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":0,
+      "audio":"Combien de cercles",
+      "options":[
+        {
+         "label":"2",
+         "image_name":"2",
+         "image_selected":"2-S",
+         "nextQ":109,
+         "iSselected":true
+        },
+        {
+         "label":"3",
+         "image_name":"3",
+         "image_selected":"3-S",
+         "nextQ":114,
+         "resultCode":"HO/SUP",
+         "iSselected":false
+        },
+        {
+          "label":"4",
+          "image_name":"4",
+          "image_selected":"4-S",
+          "nextQ":111,
+          "iSselected":false
+         }
+      ]
+    },
+    {
+      "id":109,
+      "name":"Vision de prés Test N 15",
+      "label":"Vision de prés Test N° 1",
+      "questionString": " Voyez-vous un point noir\n au centre de chaque cercle ?",
+      "audio":"2",
+      "visibales":["PRES","PRES-UPPER-NT"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","PRES-BARRET","short_holes_show","lettersContainer","INT-LETTERS"],
+      "time":0,
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":114,
+          "resultCode":"HO/SUP",
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":110,
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":110,
+      "name":"Vision de prés Test N 15",
+      "label":"Vision de prés Test N° 1",
+      "questionString": "Dans quel cercle voyez-vous\nle point noir ?",
+      "visibales":["PRES","PRES-UPPER-NT"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","PRES-BARRET","short_holes_show","lettersContainer","INT-LETTERS","PRES-MIDDLE-NT"],
+      "time":0,
+      "audio":"upper circles dt",
+      "options":[
+        {
+         "label":"ROUGE",
+         "image_name":"ROUGE",
+         "image_selected":"ROUGE-S",
+         "nextQ":114,
+         "resultCode":"NTL",
+         "iSselected":true
+        },
+        {
+         "label":"BLUE",
+         "image_name":"BLUE",
+         "image_selected":"BLUE-S",
+         "resultCode":"NTR",
+         "nextQ":114,
+         "iSselected":false
+        }
+       ]
+    },
+    {
+      "id":111,
+      "name":"Vision de prés Test N 15",
+      "label":"Vision de prés Test N° 1",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail",
+      "visibales":["PRES"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","PRES-BARRET","short_holes_show","lettersContainer","INT-LETTERS","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+         "label":"5-5-1",
+         "image_name":"5-5-1",
+         "image_selected":"5-5-1-S",
+         "nextQ":112,
+         "resultCode":"COR",
+         "iSselected":true
+        },
+        {
+          "label":"5-5-2",
+          "image_name":"5-5-2",
+          "image_selected":"5-5-2-S",
+          "nextQ":114,
+          "resultCode":"HR",
+          "iSselected":false
+        },
+        {
+          "label":"5-5-4",
+          "image_name":"5-5-4",
+          "image_selected":"5-5-4-S",
+          "nextQ":114,
+          "resultCode":"HO",
+          "iSselected":false
+        },
+        {
+          "label":"5-5-5",
+          "image_name":"5-5-5",
+          "image_selected":"5-5-5-S",
+          "nextQ":114,
+          "resultCode":"HO/INV",
+          "iSselected":false
+        },
+        {
+          "label":"5-5-3",
+          "image_name":"5-5-3",
+          "image_selected":"5-5-3-S",
+          "nextQ":114,
+          "resultCode":"HR/INV",
+          "iSselected":false
+        }
+       ]
+    },
+    {
+      "id":112,
+      "name":"Vision de prés Test N 15",
+      "label":"Vision de prés Test N° 1",
+      "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+      "visibales":["PRES"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","PRES-BARRET","short_holes_show","lettersContainer","INT-LETTERS","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":0,
+      "audio":"9",
+      "options":[
+          {
+            "label":"NON",
+            "image_name":"NON",
+            "image_selected":"NON-S",
+            "nextQ":114,
+            "resultCode":"COR",
+            "iSselected":true
+           },
+           {
+            "label":"UN PEU",
+            "image_name":"UN PEU",
+            "image_selected":"UN PEU-S",
+            "nextQ":114,
+            "resultCode":"COR/INH",
+            "iSselected":false
+           },
+           {
+            "label":"BOUCOUP",
+            "image_name":"BOUCOUP",
+            "image_selected":"BOUCOUP-S",
+            "nextQ":114,
+            "resultCode":"COR/INH+",
+            "iSselected":false
+           }
+        ]
+    },
+  
+    { 
+      "id":114,
+      "name":"Vision de prés Test N 16",
+      "label":"Vision de prés Test N° 2",
+      "questionString": "L'image est-elle stable ?",
+      "visibales":["PRES"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","PRES-BARRET","short_holes_show","SHOW_MIDDLE","lettersContainer","INT-LETTERS","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":2,
+      "audio":"image stable",
+      "options":[ 
+        {
+        "label":"OUI",
+        "image_name":"OUI",
+        "image_selected":"OUI-S",
+        "nextQ":116,
+        "iSselected":true
+      },
+      {
+        "label":"Non",
+        "image_name":"NON",
+        "image_selected":"NON-S",
+        "nextQ":115,
+        "iSselected":false
+      }]
+    },
+    {
+      "id":115,
+      "name":"Vision de prés Test N 16",
+      "label":"Vision de prés Test N° 2",
+      "questionString": "L'image est-elle stable ?",
+      "beforAudio":"helper first",
+      "visibales":["PRES"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","PRES-BARRET","short_holes_show","SHOW_MIDDLE","lettersContainer","INT-LETTERS","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":2,
+      "audio":"image stable",
+      "options":[ 
+        {
+        "label":"OUI",
+        "image_name":"OUI",
+        "image_selected":"OUI-S",
+        "nextQ":116,
+        "iSselected":true
+      },
+      {
+        "label":"Non",
+        "image_name":"NON",
+        "image_selected":"NON-S",
+        "nextQ":123,
+        "resultCode":"NS",
+        "iSselected":false
+      }
+    ]
+    },
+    {
+      "id":116,
+      "name":"Vision de prés Test N 16",
+      "label":"Vision de prés Test N° 2",
+      "questionString": "Combien de cercles voyez-vous ?",
+      "visibales":["PRES"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","PRES-BARRET","short_holes_show","SHOW_MIDDLE","lettersContainer","INT-LETTERS","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":0,
+      "audio":"Combien de cercles",
+      "options":[
+        {
+          "label":"6",
+          "image_name":"6",
+          "image_selected":"6-S",
+          "nextQ":117,
+          "iSselected":true
+        },{
+          "label":"10",
+          "image_name":"10",
+          "image_selected":"10-S",
+          "nextQ":119,
+          "iSselected":false
+        },{
+          "label":"11",
+          "image_name":"11",
+          "image_selected":"11-S",
+          "nextQ":123,
+          "resultCode":"HO/SUP/DP",
+          "iSselected":false
+        },{
+          "label":"12",
+          "image_name":"12",
+          "image_selected":"12-S",
+          "nextQ":120,
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":117,
+      "name":"Vision de prés Test N 16",
+      "label":"Vision de prés Test N° 2",
+      "questionString": "Sur la ligne du haut,\n Voyez-vous un point noir\n au centre de chaque cercle ?",
+      "audio":"upper circles",
+      "visibales":["PRES","PRES-UPPER-NT"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","PRES-BARRET","short_holes_show","SHOW_MIDDLE","lettersContainer","INT-LETTERS","PRES-MIDDLE-NT"],
+      "time":0,
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":123,
+          "resultCode":"HR/SUP/DP",
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":118,
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":118,
+      "name":"Vision de prés Test N 16",
+      "label":"Vision de prés Test N° 2",
+      "questionString": "Sur la ligne du haut,\n quelle est \nle cercle qui a \nun point noir au milieu ?",
+      "visibales":["PRES","PRES-UPPER-NT"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","PRES-BARRET","short_holes_show","SHOW_MIDDLE","lettersContainer","INT-LETTERS","PRES-MIDDLE-NT"],
+      "time":0,
+      "audio":"upper circles dt",
+      "options":[
+        {
+          "label":"VERT",
+          "image_name":"VERT",
+          "image_selected":"VERT-S",
+          "nextQ":123,
+          "resultCode":"NTL",
+          "iSselected":true
+          },
+          {
+          "label":"ROUGE",
+          "image_name":"ROUGE",
+          "image_selected":"ROUGE-S",
+          "resultCode":"NTR",
+          "nextQ":123,
+          "iSselected":false
+          }
+      ]
+    },
+    {
+      "id":119,
+      "name":"Vision de prés Test N 16",
+      "label":"Vision de prés Test N° 2",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail",
+      "visibales":["PRES"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","PRES-BARRET","short_holes_show","SHOW_MIDDLE","lettersContainer","INT-LETTERS","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+          "label":"13-3-1",
+          "image_name":"13-3-1",
+          "image_selected":"13-3-1-S",
+          "nextQ":121,
+          "resultCode":"COR",
+          "iSselected":true
+         },
+         {
+           "label":"13-3-2",
+           "image_name":"13-3-2",
+           "image_selected":"13-3-2-S",
+           "nextQ":123,
+           "resultCode":"HR",
+           "iSselected":false
+         },
+         {
+           "label":"13-3-3",
+           "image_name":"13-3-3",
+           "image_selected":"13-3-3-S",
+           "nextQ":123,
+           "resultCode":"HO",
+           "iSselected":false
+         }
+      ]
+    },
+    {
+      "id":120,
+      "name":"Vision de prés Test N 16",
+      "label":"Vision de prés Test N° 2",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail",
+      "visibales":["PRES"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","PRES-BARRET","short_holes_show","SHOW_MIDDLE","lettersContainer","INT-LETTERS","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+          "label":"15-4-1",
+          "image_name":"15-4-1",
+          "image_selected":"15-4-1-S",
+          "nextQ":123,
+          "resultCode":"HR/MDP",
+          "iSselected":true
+         },
+         {
+           "label":"15-4-3",
+           "image_name":"15-4-3",
+           "image_selected":"15-4-3-S",
+           "nextQ":123,
+           "resultCode":"HO/MDP",
+           "iSselected":false
+         },
+         {
+           "label":"15-4-2",
+           "image_name":"15-4-2",
+           "image_selected":"15-4-2-S",
+           "nextQ":123,
+           "resultCode":"HR/INV/DP",
+           "iSselected":false
+         },
+         {
+          "label":"15-4-4",
+          "image_name":"15-4-4",
+          "image_selected":"15-4-4-S",
+          "nextQ":123,
+          "resultCode":"HO/INV/DP",
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":121,
+      "name":"Vision de prés Test N 16",
+      "label":"Vision de prés Test N° 2",
+      "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+      "visibales":["PRES"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","PRES-BARRET","short_holes_show","SHOW_MIDDLE","lettersContainer","INT-LETTERS","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":0,
+      "audio":"9",
+      "options":[
+        {
+          "label":"NON",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":123,
+          "resultCode":"COR",
+          "iSselected":true
+        },
+        {
+          "label":"UN PEU",
+          "image_name":"UN PEU",
+          "image_selected":"UN PEU-S",
+          "nextQ":123,
+          "resultCode":"COR/INH",
+          "iSselected":false
+        },
+        {
+          "label":"BOUCOUP",
+          "image_name":"BOUCOUP",
+          "image_selected":"BOUCOUP-S",
+          "nextQ":123,
+          "resultCode":"COR/INH+",
+          "iSselected":false
+        }
+      ]
+    },
+    
+    {
+      "id":123,
+      "name":"Vision de prés Test N 17",
+      "label":"Vision de prés Test N° 3",
+      "questionString": "L'image est-elle stable ?",
+      "visibales":["PRES","PRES-BARRET"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","short_holes_show","SHOW_MIDDLE","short_holes_show","lettersContainer","INT-LETTERS","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":125,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":124,
+          "iSselected":false
+        }
+      ]
+    },
+    {
+    "id":124,
+    "name":"Vision de prés Test N 17",
+    "label":"Vision de prés Test N° 3",
+    "questionString": "L'image est-elle stable ?",
+    "beforAudio":"helper first",
+    "visibales":["PRES","PRES-BARRET"],
+    "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","short_holes_show","SHOW_MIDDLE","lettersContainer","INT-LETTERS","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+    "time":2,
+    "audio":"image stable",
+    "options":[
+      {
+        "label":"OUI",
+        "image_name":"OUI",
+        "image_selected":"OUI-S",
+        "nextQ":125,
+        "iSselected":true
+      },
+      {
+        "label":"Non",
+        "image_name":"NON",
+        "image_selected":"NON-S",
+        "nextQ":129,
+        "resultCode":"NS",
+        "iSselected":false
+      }
+    ]
+    },
+    {
+      "id":125,
+      "name":"Vision de prés Test N 17",
+      "label":"Vision de prés Test N° 3",
+      "questionString": "Combien de cercles voyez-vous ?",
+      "visibales":["PRES","PRES-BARRET"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","short_holes_show","SHOW_MIDDLE","lettersContainer","INT-LETTERS","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":0,
+      "audio":"Combien de cercles",
+      "options":[
+        {
+          "label":"3",
+          "image_name":"3",
+          "image_selected":"3-S",
+          "nextQ":129,
+          "resultCode":"NT",
+          "iSselected":true
+        },{
+          "label":"4",
+          "image_name":"4",
+          "image_selected":"4-S",
+          "nextQ":127,
+          "resultCode":"COR",
+          "iSselected":false
+        },{
+          "label":"5",
+          "image_name":"5",
+          "image_selected":"5-S",
+          "nextQ":129,
+          "resultCode":"HO/SUP/DP",
+          "iSselected":false
+        },{
+          "label":"6",
+          "image_name":"6",
+          "image_selected":"6-S",
+          "nextQ":126,
+          "iSselected":false
+        }
+      ]
+    },
+    { 
+      "id":126,
+      "name":"Vision de prés Test N 17",
+      "label":"Vision de prés Test N° 3",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail ?",
+      "visibales":["PRES","PRES-BARRET"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","short_holes_show","SHOW_MIDDLE","lettersContainer","INT-LETTERS","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+          "label":"20-2-1",
+          "image_name":"20-2-1",
+          "image_selected":"20-2-1-S",
+          "nextQ":129,
+          "resultCode":"HR/DP",
+          "iSselected":true
+         },
+         {
+          "label":"20-2-2",
+          "image_name":"20-2-2",
+          "image_selected":"20-2-2-S",
+          "nextQ":129,
+          "resultCode":"HR/INV/DP",
+          "iSselected":false
+         }
+      ]
+    },
+    { 
+      "id":127,
+      "name":"Vision de prés Test N 17",
+      "label":"Vision de prés Test N° 3",
+      "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+      "visibales":["PRES","PRES-BARRET"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","short_holes_show","SHOW_MIDDLE","lettersContainer","INT-LETTERS","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":0,
+      "audio":"9",
+      "options":[
+          {
+            "label":"NON",
+            "image_name":"NON",
+            "image_selected":"NON-S",
+            "nextQ":129,
+            "resultCode":"COR",
+            "iSselected":true
+           },
+           {
+            "label":"UN PEU",
+            "image_name":"UN PEU",
+            "image_selected":"UN PEU-S",
+            "nextQ":129,
+            "resultCode":"COR/INH",
+            "iSselected":false
+           },
+           {
+            "label":"BOUCOUP",
+            "image_name":"BOUCOUP",
+            "image_selected":"BOUCOUP-S",
+            "nextQ":129,
+            "resultCode":"COR/INH+",
+            "iSselected":false
+           }
+        ]
+    },
+  
+    {
+      "id":129,
+      "name":"Vision de prés Test N 18",
+      "label":"Vision de prés Test N° 4",
+      "questionString": "L'image est-elle stable ?",
+      "visibales":["PRES","PRES-BARRET","1-1B","2-3B","short_holes_show"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","2-1B","1-3B","1-3B","1-2B","2-2B","large_holes_show","lettersContainer","INT-LETTERS","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":131,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":130,
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+        {
+          "name":"positive",
+          "value":0.0503
+         },
+         {
+           "name":"negative",
+           "value":-0.0364
+          },
+          {
+            "name":"P2W",
+            "value":0.01
+           },
+           {
+            "name":"P21R",
+            "value":0.009
+           },
+           {
+            "name":"P22G",
+            "value":0.07
+           },
+           {
+            "name":"P23Y",
+            "value":0.05
+           },
+           {
+            "name":"P24B",
+            "value":0.03
+           }
+      ]
+    },
+    {
+      "id":130,
+      "name":"Vision de prés Test N 18",
+      "label":"Vision de prés Test N° 4",
+      "questionString": "L'image est-elle stable ?",
+      "beforAudio":"helper first",
+      "visibales":["PRES","PRES-BARRET","1-1B","2-3B","short_holes_show"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","2-1B","1-3B","1-3B","1-2B","2-2B","large_holes_show","lettersContainer","INT-LETTERS","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":131,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":136,
+          "resultCode":"NS",
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+        {
+          "name":"positive",
+          "value":0.0503
+         },
+         {
+           "name":"negative",
+           "value":-0.0364
+          },
+          {
+            "name":"P2W",
+            "value":0.01
+           },
+           {
+            "name":"P21R",
+            "value":0.009
+           },
+           {
+            "name":"P22G",
+            "value":0.08
+           },
+           {
+            "name":"P23Y",
+            "value":0.08
+           },
+           {
+            "name":"P24B",
+            "value":0.08
+           }
+      ]
+    },
+    {
+      "id":131,
+      "name":"Vision de prés Test N 18",
+      "label":"Vision de prés Test N° 4",
+      "questionString": "Combien de cercles voyez-vous ?",
+      "visibales":["PRES","PRES-BARRET","1-1B","2-3B","short_holes_show"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","2-1B","1-3B","1-3B","1-2B","2-2B","large_holes_show","lettersContainer","INT-LETTERS"],
+      "time":0,
+      "audio":"Combien de cercles",
+      "options":[
+        {
+          "label":"2",
+          "image_name":"2",
+          "image_selected":"2-S",
+          "nextQ":136,
+          "resultCode":"NT",
+          "iSselected":true
+         },
+         {
+          "label":"3",
+          "image_name":"3",
+          "image_selected":"3-S",
+          "nextQ":133,
+          "iSselected":false
+         },
+         {
+           "label":"4",
+           "image_name":"4",
+           "image_selected":"4-S",
+           "nextQ":132,
+           "iSselected":false
+          }
+      ],
+      "layouts": [
+        {
+          "name":"positive",
+          "value":0.0503
+         },
+         {
+           "name":"negative",
+           "value":-0.0364
+          },
+          {
+            "name":"P2W",
+            "value":0.01
+           },
+           {
+            "name":"P21R",
+            "value":0.009
+           },
+           {
+            "name":"P22G",
+            "value":0.08
+           },
+           {
+            "name":"P23Y",
+            "value":0.08
+           },
+           {
+            "name":"P24B",
+            "value":0.08
+           }
+      ]
+    },
+    {
+      "id":132,
+      "name":"Vision de prés Test N 18",
+      "label":"Vision de prés Test N° 4",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail",
+      "visibales":["PRES","PRES-BARRET","1-1B","2-3B","short_holes_show"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","2-1B","1-3B","1-3B","1-2B","2-2B","large_holes_show","lettersContainer","INT-LETTERS"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+          "label":"27-2-1",
+          "image_name":"27-2-1",
+          "image_selected":"27-2-1-S",
+          "nextQ":136,
+          "resultCode":"HR/DP",
+          "iSselected":true
+         },
+         {
+          "label":"27-2-2",
+          "image_name":"27-2-2",
+          "image_selected":"27-2-2-S",
+          "nextQ":136,
+          "resultCode":"HR/INV/DP",
+          "iSselected":false
+         }
+      ],
+      "layouts": [
+        {
+          "name":"positive",
+          "value":0.0503
+         },
+         {
+           "name":"negative",
+           "value":-0.0364
+          },
+          {
+            "name":"P2W",
+            "value":0.01
+           },
+           {
+            "name":"P21R",
+            "value":0.009
+           },
+           {
+            "name":"P22G",
+            "value":0.08
+           },
+           {
+            "name":"P23Y",
+            "value":0.08
+           },
+           {
+            "name":"P24B",
+            "value":0.08
+           }
+      ]
+    },
+    {
+      "id":133,
+      "name":"Vision de prés Test N 18",
+      "label":"Vision de prés Test N° 4",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail",
+      "visibales":["PRES","PRES-BARRET","1-1B","2-3B","short_holes_show"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","2-1B","1-3B","1-3B","1-2B","2-2B","large_holes_show","lettersContainer","INT-LETTERS"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+          "label":"26-3-1",
+          "image_name":"26-3-1",
+          "image_selected":"26-3-1-S",
+          "nextQ":134,
+          "resultCode":"COR",
+          "iSselected":true
+         },
+         {
+           "label":"26-3-2",
+           "image_name":"26-3-2",
+           "image_selected":"26-3-2-S",
+           "nextQ":136,
+           "resultCode":"HO",
+           "iSselected":false
+         },
+         {
+           "label":"26-3-3",
+           "image_name":"26-3-3",
+           "image_selected":"26-3-3-S",
+           "nextQ":136,
+           "resultCode":"HR",
+           "iSselected":false
+         }
+      ],
+      "layouts": [
+        {
+          "name":"positive",
+          "value":0.0503
+         },
+         {
+           "name":"negative",
+           "value":-0.0364
+          },
+          {
+            "name":"P2W",
+            "value":0.01
+           },
+           {
+            "name":"P21R",
+            "value":0.009
+           },
+           {
+            "name":"P22G",
+            "value":0.08
+           },
+           {
+            "name":"P23Y",
+            "value":0.08
+           },
+           {
+            "name":"P24B",
+            "value":0.08
+           }
+      ]
+    },
+    {
+      "id":134,
+      "name":"Vision de prés Test N 18",
+      "label":"Vision de prés Test N° 4",
+      "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+      "visibales":["PRES","PRES-BARRET","1-1B","2-3B","short_holes_show"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","PRES-LETTERS","deviceFar","INTER","2-1B","1-3B","1-3B","1-2B","2-2B","large_holes_show","lettersContainer","INT-LETTERS"],
+      "time":0,
+      "audio":"9",
+      "options":[
+          {
+            "label":"NON",
+            "image_name":"NON",
+            "image_selected":"NON-S",
+            "nextQ":136,
+            "resultCode":"COR",
+            "iSselected":true
+           },
+           {
+            "label":"UN PEU",
+            "image_name":"UN PEU",
+            "image_selected":"UN PEU-S",
+            "nextQ":136,
+            "resultCode":"COR/INH",
+            "iSselected":false
+           },
+           {
+            "label":"BOUCOUP",
+            "image_name":"BOUCOUP",
+            "image_selected":"BOUCOUP-S",
+            "nextQ":136,
+            "resultCode":"COR/INH+",
+            "iSselected":false
+           }
+        ],
+        "layouts": [
+          {
+            "name":"positive",
+            "value":0.0503
+           },
+           {
+             "name":"negative",
+             "value":-0.0364
+            },
+            {
+              "name":"P2W",
+              "value":0.01
+             },
+             {
+              "name":"P21R",
+              "value":0.009
+             },
+             {
+              "name":"P22G",
+              "value":0.08
+             },
+             {
+              "name":"P23Y",
+              "value":0.08
+             },
+             {
+              "name":"P24B",
+              "value":0.08
+             }
+        ]
+    },
+  
+    {
+      "id":136,
+      "name":"Vision de prés Test N 19",
+      "label":"Vision de prés Test N° 5",
+      "questionString": "L'image est-elle stable ?",
+      "visibales":["PRES","PRES-LETTERS"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","deviceFar","INTER","PRES-BARRET","PRES-UPPER-NT","PRES-MIDDLE-NT","short_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":138,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":137,
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+        {
+          "name":"positive",
+          "value":0
+         },
+         {
+           "name":"negative",
+           "value":0
+          }
+      ]
+    },
+    {
+      "id":137,
+      "name":"Vision de prés Test N 19",
+      "label":"Vision de prés Test N° 5",
+      "questionString": "L'image est-elle stable ?",
+      "beforAudio":"helper first",
+      "visibales":["PRES","PRES-LETTERS"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","deviceFar","INTER","PRES-BARRET","PRES-UPPER-NT","PRES-MIDDLE-NT","short_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":138,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":144,
+          "resultCode":"NS",
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+        {
+          "name":"positive",
+          "value":0
+         },
+         {
+           "name":"negative",
+           "value":0
+          }
+      ]
+    },
+    {
+      "id":138,
+      "name":"Vision de prés Test N 19",
+      "label":"Vision de prés Test N° 5",
+      "questionString": "Combien de cercles voyez-vous ?",
+      "visibales":["PRES","PRES-LETTERS","PRES-UPPER-NT"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","deviceFar","INTER","PRES-BARRET","PRES-UPPER-NT","PRES-MIDDLE-NT","short_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R"],
+      "time":0,
+      "audio":"Combien de cercles",
+      "options":[
+        {
+          "label":"2",
+          "image_name":"2",
+          "image_selected":"2-S",
+          "nextQ":139,
+          "iSselected":true
+         },
+         {
+          "label":"3",
+          "image_name":"3",
+          "image_selected":"3-S",
+          "nextQ":144,
+          "resultCode":"HO/SUP",
+          "iSselected":false
+         },
+         {
+           "label":"4",
+           "image_name":"4",
+           "image_selected":"4-S",
+           "nextQ":141,
+           "iSselected":false
+          }
+      ],
+      "layouts": [
+        {
+          "name":"positive",
+          "value":0
+         },
+         {
+           "name":"negative",
+           "value":0
+          }
+      ]
+    },
+    {
+      "id":139,
+      "name":"Vision de prés Test N 19",
+      "label":"Vision de prés Test N° 5",
+      "questionString": "Sur la ligne du haut,\n Voyez-vous un point noir\n au centre de chaque cercle ?",
+      "audio":"upper circles",
+      "visibales":["PRES","PRES-LETTERS","PRES-MIDDLE-NT"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","deviceFar","INTER","PRES-BARRET","PRES-UPPER-NT","short_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R"],
+      "time":0,
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":144,
+          "resultCode":"HR/SUP",
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":140,
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+        {
+          "name":"positive",
+          "value":0
+         },
+         {
+           "name":"negative",
+           "value":0
+          }
+      ]
+    },
+    {
+      "id":140,
+      "name":"Vision de prés Test N 19",
+      "label":"Vision de prés Test N° 5",
+      "questionString": "Dans quel cercle voyez-vous\nle point noir ?",
+      "visibales":["PRES","PRES-LETTERS","PRES-MIDDLE-NT"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","deviceFar","INTER","PRES-BARRET","PRES-UPPER-NT","short_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R"],
+      "time":0,
+      "audio":"3",
+      "options":[
+        {
+         "label":"K",
+         "image_name":"K",
+         "image_selected":"K-S",
+         "nextQ":144,
+         "resultCode":"NTL",
+         "iSselected":true
+        },
+        {
+         "label":"A",
+         "image_name":"A",
+         "image_selected":"A-S",
+         "resultCode":"NTR",
+         "nextQ":144,
+         "iSselected":false
+        }
+       ],
+       "layouts": [
+        {
+          "name":"positive",
+          "value":0
+         },
+         {
+           "name":"negative",
+           "value":0
+          }
+      ]
+    },
+    {
+      "id":141,
+      "name":"Vision de prés Test N 19",
+      "label":"Vision de prés Test N° 5",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail",
+      "visibales":["PRES","PRES-LETTERS"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","deviceFar","INTER","PRES-BARRET","PRES-UPPER-NT","PRES-MIDDLE-NT","short_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+         "label":"141-5-1",
+         "image_name":"141-5-1",
+         "image_selected":"141-5-1-S",
+         "nextQ":142,
+         "resultCode":"COR",
+         "iSselected":true
+        },
+        {
+          "label":"141-5-4",
+          "image_name":"141-5-4",
+          "image_selected":"141-5-4-S",
+          "nextQ":144,
+          "resultCode":"HO",
+          "iSselected":false
+        },
+        {
+          "label":"141-5-2",
+          "image_name":"141-5-2",
+          "image_selected":"141-5-2-S",
+          "nextQ":144,
+          "resultCode":"HR",
+          "iSselected":false
+        },
+        {
+          "label":"141-5-3",
+          "image_name":"141-5-3",
+          "image_selected":"141-5-3-S",
+          "nextQ":144,
+          "resultCode":"HR/INV",
+          "iSselected":false
+        },
+        {
+          "label":"141-5-5",
+          "image_name":"141-5-5",
+          "image_selected":"141-5-5-S",
+          "nextQ":144,
+          "resultCode":"HO/INV",
+          "iSselected":false
+        }
+       ],
+       "layouts": [
+        {
+          "name":"positive",
+          "value":0
+         },
+         {
+           "name":"negative",
+           "value":0
+          }
+      ]
+    },
+    {
+      "id":142,
+      "name":"Vision de prés Test N 19",
+      "label":"Vision de prés Test N° 5",
+      "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+      "visibales":["PRES","PRES-LETTERS"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","deviceFar","INTER","PRES-BARRET","PRES-UPPER-NT","PRES-MIDDLE-NT","short_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R"],
+      "time":0,
+      "audio":"9",
+      "options":[
+          {
+            "label":"NON",
+            "image_name":"NON",
+            "image_selected":"NON-S",
+            "nextQ":144,
+            "resultCode":"COR",
+            "iSselected":true
+           },
+           {
+            "label":"UN PEU",
+            "image_name":"UN PEU",
+            "image_selected":"UN PEU-S",
+            "nextQ":144,
+            "resultCode":"COR/INH",
+            "iSselected":false
+           },
+           {
+            "label":"BOUCOUP",
+            "image_name":"BOUCOUP",
+            "image_selected":"BOUCOUP-S",
+            "nextQ":144,
+            "resultCode":"COR/INH+",
+            "iSselected":false
+           }
+        ],
+        "layouts": [
+          {
+            "name":"positive",
+            "value":0
+           },
+           {
+             "name":"negative",
+             "value":0
+            }
+        ]
+    },
+  
+    {
+      "id":144,
+      "name":"Vision de prés Test N 20",
+      "label":"Vision de prés Test N° 6",
+      "questionString": "L'image est-elle stable ?",
+      "visibales":["PRES","PRES-LETTERS"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","SHOW_MIDDLE","deviceFar","INTER","PRES-BARRET","PRES-UPPER-NT","PRES-MIDDLE-NT","short_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":146,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":145,
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":145,
+      "name":"Vision de prés Test N 20",
+      "label":"Vision de prés Test N° 6",
+      "questionString": "L'image est-elle stable ?",
+      "beforAudio":"helper first",
+      "visibales":["PRES","PRES-LETTERS"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","SHOW_MIDDLE","deviceFar","INTER","PRES-BARRET","PRES-UPPER-NT","PRES-MIDDLE-NT","short_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":146,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":153,
+          "resultCode":"NS",
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":146,
+      "name":"Vision de prés Test N 20",
+      "label":"Vision de prés Test N° 6",
+      "questionString": "Combien de cercles voyez-vous ?",
+      "time":0,
+      "audio":"Combien de cercles",
+      "visibales":["PRES","PRES-LETTERS"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","SHOW_MIDDLE","deviceFar","INTER","PRES-BARRET","PRES-UPPER-NT","PRES-MIDDLE-NT","short_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R"],
+      "options":[
+        {
+          "label":"6",
+          "image_name":"6",
+          "image_selected":"6-S",
+          "nextQ":147,
+          "iSselected":true
+        },{
+          "label":"10",
+          "image_name":"10",
+          "image_selected":"10-S",
+          "nextQ":149,
+          "iSselected":false
+        },{
+          "label":"11",
+          "image_name":"11",
+          "image_selected":"11-S",
+          "nextQ":153,
+          "resultCode":"HO/SUP/DP",
+          "iSselected":false
+        },{
+          "label":"12",
+          "image_name":"12",
+          "image_selected":"12-S",
+          "nextQ":150,
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":147,
+      "name":"Vision de prés Test N 20",
+      "label":"Vision de prés Test N° 6",
+      "questionString": "Sur la ligne du haut,\n Voyez-vous un point noir\n au centre de chaque cercle ?",
+      "audio":"upper circles",
+      "visibales":["PRES","PRES-LETTERS","PRES-UPPER-NT"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","SHOW_MIDDLE","deviceFar","INTER","PRES-BARRET","PRES-MIDDLE-NT","short_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R","PRES-MIDDLE-NT"],
+      "time":0,
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":153,
+          "resultCode":"HR/SUP/DP",
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":148,
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":148,
+      "name":"Vision de prés Test N 20",
+      "label":"Vision de prés Test N° 6",
+      "questionString": "Sur la ligne du haut,\n quelle est \nle cercle qui a \nun point noir au milieu ?",
+      "visibales":["PRES","PRES-LETTERS","PRES-UPPER-NT"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","SHOW_MIDDLE","deviceFar","INTER","PRES-BARRET","PRES-MIDDLE-NT","short_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R","PRES-MIDDLE-NT"],
+      "time":0,
+      "audio":"upper circles dt",
+      "options":[
+        {
+          "label":"D",
+          "image_name":"D",
+          "image_selected":"D-S",
+          "nextQ":153,
+          "resultCode":"NTL",
+          "iSselected":true
+         },
+         {
+          "label":"R",
+          "image_name":"R",
+          "image_selected":"R-S",
+          "resultCode":"NTR",
+          "nextQ":153,
+          "iSselected":false
+         }
+      ]
+    },
+    {
+      "id":149,
+      "name":"Vision de prés Test N 20",
+      "label":"Vision de prés Test N° 6",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail",
+      "visibales":["PRES","PRES-LETTERS"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","SHOW_MIDDLE","deviceFar","INTER","PRES-BARRET","PRES-UPPER-NT","PRES-MIDDLE-NT","short_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+          "label":"149-3-1",
+          "image_name":"149-3-1",
+          "image_selected":"149-3-1-S",
+          "nextQ":151,
+          "resultCode":"COR",
+          "iSselected":true
+         },
+         {
+          "label":"149-3-2",
+          "image_name":"149-3-2",
+          "image_selected":"149-3-2-S",
+          "resultCode":"HR",
+          "nextQ":153,
+          "iSselected":false
+         },
+         {
+          "label":"149-3-3",
+          "image_name":"149-3-3",
+          "image_selected":"149-3-3-S",
+          "resultCode":"HO",
+          "nextQ":153,
+          "iSselected":false
+         }
+      ]
+    },
+    {
+      "id":150,
+      "name":"Vision de prés Test N 20",
+      "label":"Vision de prés Test N° 6",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail",
+      "visibales":["PRES","PRES-LETTERS"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","SHOW_MIDDLE","deviceFar","INTER","PRES-BARRET","PRES-UPPER-NT","PRES-MIDDLE-NT","short_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+         "label":"150-4-3",
+         "image_name":"150-4-3",
+         "image_selected":"150-4-3-S",
+         "resultCode":"HR/MDP",
+         "nextQ":153,
+         "iSselected":false
+        },
+        {
+          "label":"150-4-1",
+          "image_name":"150-4-1",
+          "image_selected":"150-4-1-S",
+          "resultCode":"HO/MDP",
+          "nextQ":153,
+          "iSselected":true
+         },
+         {
+          "label":"150-4-2",
+          "image_name":"150-4-2",
+          "image_selected":"150-4-2-S",
+          "resultCode":"HO/INV/DP",
+          "nextQ":153,
+          "iSselected":false
+         },
+         {
+          "label":"150-4-4",
+          "image_name":"150-4-4",
+          "image_selected":"150-4-4-S",
+          "resultCode":"HR/INV/DP",
+          "nextQ":153,
+          "iSselected":false
+         }
+      ]
+    },
+    {
+      "id":151,
+      "name":"Vision de prés Test N 20",
+      "label":"Vision de prés Test N° 6",
+      "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+      "visibales":["PRES","PRES-LETTERS"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","SHOW_MIDDLE","deviceFar","INTER","PRES-BARRET","PRES-UPPER-NT","PRES-MIDDLE-NT","short_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":0,
+      "audio":"9",
+      "options":[
+          {
+            "label":"NON",
+            "image_name":"NON",
+            "image_selected":"NON-S",
+            "nextQ":153,
+            "resultCode":"COR",
+            "iSselected":true
+           },
+           {
+            "label":"UN PEU",
+            "image_name":"UN PEU",
+            "image_selected":"UN PEU-S",
+            "nextQ":153,
+            "resultCode":"COR/INH",
+            "iSselected":false
+           },
+           {
+            "label":"BOUCOUP",
+            "image_name":"BOUCOUP",
+            "image_selected":"BOUCOUP-S",
+            "nextQ":153,
+            "resultCode":"COR/INH+",
+            "iSselected":false
+           }
+        ],
+        "layouts": [
+          {
+            "name": "middleLettersContainer",
+            "value": 0.12195299
+          }
+        ]
+    },
+  
+    {
+      "id":153,
+      "name":"Vision de prés Test N 21",
+      "label":"Vision de prés Test N° 7",
+      "questionString": "L'image est-elle stable ?",
+      "visibales":["PRES","PRES-LETTERS","PRES-BARRET"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","SHOW_MIDDLE","deviceFar","INTER","short_holes_show","PRES-UPPER-NT","PRES-MIDDLE-NT","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":155,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":154,
+      "name":"Vision de prés Test N 21",
+      "label":"Vision de prés Test N° 7",
+      "questionString": "L'image est-elle stable ?",
+      "visibales":["PRES","PRES-LETTERS","PRES-BARRET"],
+      "beforAudio":"helper first",
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","SHOW_MIDDLE","deviceFar","INTER","short_holes_show","PRES-UPPER-NT","PRES-MIDDLE-NT","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":155,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":159,
+          "resultCode":"NS",
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":155,
+      "name":"Vision de prés Test N 21",
+      "label":"Vision de prés Test N° 7",
+      "questionString": "Combien de cercles voyez-vous ?",
+      "time":0,
+      "audio":"Combien de cercles",
+      "visibales":["PRES","PRES-LETTERS","PRES-BARRET"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","SHOW_MIDDLE","deviceFar","INTER","short_holes_show","PRES-UPPER-NT","PRES-MIDDLE-NT","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "options":[
+        {
+          "label":"3",
+          "image_name":"3",
+          "image_selected":"3-S",
+          "nextQ":159,
+          "resultCode":"NT",
+          "iSselected":true
+        },{
+          "label":"4",
+          "image_name":"4",
+          "image_selected":"4-S",
+          "nextQ":157,
+          "resultCode":"COR",
+          "iSselected":false
+        },{
+          "label":"5",
+          "image_name":"5",
+          "image_selected":"5-S",
+          "nextQ":159,
+          "resultCode":"HO/SUP/DP",
+          "iSselected":false
+        },{
+          "label":"6",
+          "image_name":"6",
+          "image_selected":"6-S",
+          "nextQ":156,
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":156,
+      "name":"Vision de prés Test N 21",
+      "label":"Vision de prés Test N° 7",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail",
+      "visibales":["PRES","PRES-LETTERS","PRES-BARRET"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","SHOW_MIDDLE","deviceFar","INTER","short_holes_show","PRES-UPPER-NT","PRES-MIDDLE-NT","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+          "label":"156-2-1",
+          "image_name":"156-2-1",
+          "image_selected":"156-2-1-S",
+          "nextQ":159,
+          "resultCode":"HR/DP",
+          "iSselected":false
+        },{
+          "label":"156-2-2",
+          "image_name":"156-2-2",
+          "image_selected":"156-2-2-S",
+          "nextQ":159,
+          "resultCode":"HR/INV/DP",
+          "iSselected":false
+        }
+      ]
+    },
+    {
+      "id":157,
+      "name":"Vision de prés Test N 21",
+      "label":"Vision de prés Test N° 7",
+      "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+      "visibales":["PRES","PRES-LETTERS","PRES-BARRET"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","SHOW_MIDDLE","deviceFar","INTER","short_holes_show","PRES-UPPER-NT","PRES-MIDDLE-NT","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":0,
+      "audio":"9",
+      "options":[
+            {
+              "label":"NON",
+              "image_name":"NON",
+              "image_selected":"NON-S",
+              "nextQ":159,
+              "resultCode":"COR",
+              "iSselected":true
+            },
+            {
+              "label":"UN PEU",
+              "image_name":"UN PEU",
+              "image_selected":"UN PEU-S",
+              "nextQ":159,
+              "resultCode":"COR/INH",
+              "iSselected":false
+            },
+            {
+              "label":"BOUCOUP",
+              "image_name":"BOUCOUP",
+              "image_selected":"BOUCOUP-S",
+              "nextQ":159,
+              "resultCode":"COR/INH+",
+              "iSselected":false
+            }
+          ]
+        
+    },
+  
+    {
+      "id":159,
+      "name":"Vision de prés Test N 22",
+      "label":"Vision de prés Test N° 8",
+      "questionString": "L'image est-elle stable ?",
+      "visibales":["PRES","PRES-LETTERS","PRES-BARRET","SHOW_MIDDLE","short_holes_show"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","deviceFar","INTER","large_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":161,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":160,
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+        {
+          "name":"positive",
+          "value":0.0503
+         },
+         {
+           "name":"negative",
+           "value":-0.0364
+          },
+          {
+            "name":"MLC-PRES",
+            "value":0.057
+           }
+          
+      ]
+    },
+    {
+      "id":160,
+      "name":"Vision de prés Test N 22",
+      "label":"Vision de prés Test N° 8",
+      "questionString": "L'image est-elle stable ?",
+      "visibales":["PRES","PRES-LETTERS","PRES-BARRET","SHOW_MIDDLE","short_holes_show"],
+      "beforAudio":"helper first",
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","deviceFar","INTER","large_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":2,
+      "audio":"image stable",
+      "options":[
+        {
+          "label":"OUI",
+          "image_name":"OUI",
+          "image_selected":"OUI-S",
+          "nextQ":161,
+          "iSselected":true
+        },
+        {
+          "label":"Non",
+          "image_name":"NON",
+          "image_selected":"NON-S",
+          "nextQ":166,
+          "resultCode":"NS",
+          "iSselected":false
+        }
+      ],
+      "layouts": [
+        {
+          "name":"positive",
+          "value":0.0503
+         },
+         {
+           "name":"negative",
+           "value":-0.0364
+          },
+          {
+            "name":"MLC-PRES",
+            "value":0.057
+           }
+          
+      ]
+      
+    },
+    {
+      "id":161,
+      "name":"Vision de prés Test N 22",
+      "label":"Vision de prés Test N° 8",
+      "questionString": "Combien de cercles voyez-vous ?",
+      "time":0,
+      "audio":"Combien de cercles",
+      "visibales":["PRES","PRES-LETTERS","PRES-BARRET","SHOW_MIDDLE","short_holes_show"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","deviceFar","INTER","large_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "options":[
+        {
+          "label":"2",
+          "image_name":"2",
+          "image_selected":"2-S",
+          "nextQ":166,
+          "resultCode":"NT",
+          "iSselected":true
+         },
+         {
+          "label":"3",
+          "image_name":"3",
+          "image_selected":"3-S",
+          "nextQ":163,
+          "iSselected":false
+         },
+         {
+           "label":"4",
+           "image_name":"4",
+           "image_selected":"4-S",
+           "nextQ":162,
+           "iSselected":false
+          }
+      ],
+      "layouts": [
+        {
+          "name":"positive",
+          "value":0.0503
+         },
+         {
+           "name":"negative",
+           "value":-0.0364
+          },
+          {
+            "name":"MLC-PRES",
+            "value":0.057
+           }
+          
+      ]
+    },
+    {
+      "id":162,
+      "name":"Vision de prés Test N 22",
+      "label":"Vision de prés Test N° 8",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail",
+      "visibales":["PRES","PRES-LETTERS","PRES-BARRET","SHOW_MIDDLE","short_holes_show"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","deviceFar","INTER","large_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+         "label":"162-2-1",
+         "image_name":"162-2-1",
+         "image_selected":"162-2-1-S",
+         "nextQ":166,
+         "resultCode":"HO/DP",
+         "iSselected":true
+        },
+        {
+          "label":"162-2-2",
+          "image_name":"162-2-2",
+          "image_selected":"162-2-2-S",
+          "nextQ":166,
+          "resultCode":"HR/DP",
+          "iSselected":false
+        }
+       ],
+       "layouts": [
+         {
+           "name":"positive",
+           "value":0.0503
+          },
+          {
+            "name":"negative",
+            "value":-0.0364
+           },
+           {
+             "name":"MLC-PRES",
+             "value":0.057
+            }
+           
+       ]
+    
+    },
+    {
+      "id":163,
+      "name":"Vision de prés Test N 22",
+      "label":"Vision de prés Test N° 8",
+      "questionString": "a partire de ces images lequel\n vous avez vu dans l'apparail",
+      "visibales":["PRES","PRES-LETTERS","PRES-BARRET","SHOW_MIDDLE","short_holes_show"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","deviceFar","INTER","large_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":0,
+      "audio":"pictures audio",
+      "options":[
+        {
+         "label":"163-3-1",
+         "image_name":"163-3-1",
+         "image_selected":"163-3-1-S",
+         "nextQ":164,
+         "resultCode":"COR",
+         "iSselected":true
+        },
+        {
+          "label":"163-3-2",
+          "image_name":"163-3-2",
+          "image_selected":"163-3-2-S",
+          "nextQ":166,
+          "resultCode":"HR",
+          "iSselected":false
+        },
+        {
+          "label":"163-3-3",
+          "image_name":"163-3-3",
+          "image_selected":"163-3-3-S",
+          "nextQ":166,
+          "resultCode":"HO",
+          "iSselected":false
+        }
+       ],
+       "layouts": [
+         {
+           "name":"positive",
+           "value":0.0503
+          },
+          {
+            "name":"negative",
+            "value":-0.0364
+           },
+           {
+             "name":"MLC-PRES",
+             "value":0.057
+            }
+           
+       ]
+    
+    },
+    {
+      "id":164,
+      "name":"Vision de prés Test N 22",
+      "label":"Vision de prés Test N° 8",
+      "questionString": "Avez-vous vu des cercles \ndisparaitre puis réapparaitre ?",
+      "visibales":["PRES","PRES-LETTERS","PRES-BARRET","SHOW_MIDDLE","short_holes_show"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","deviceFar","INTER","large_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":0,
+      "audio":"9",
+      "options":[
+            {
+              "label":"NON",
+              "image_name":"NON",
+              "image_selected":"NON-S",
+              "nextQ":166,
+              "resultCode":"COR",
+              "iSselected":true
+            },
+            {
+              "label":"UN PEU",
+              "image_name":"UN PEU",
+              "image_selected":"UN PEU-S",
+              "nextQ":166,
+              "resultCode":"COR/INH",
+              "iSselected":false
+            },
+            {
+              "label":"BOUCOUP",
+              "image_name":"BOUCOUP",
+              "image_selected":"BOUCOUP-S",
+              "nextQ":166,
+              "resultCode":"COR/INH+",
+              "iSselected":false
+            }
+          ],
+          "layouts": [
+            {
+              "name":"positive",
+              "value":0.0503
+             },
+             {
+               "name":"negative",
+               "value":-0.0364
+              },
+              {
+                "name":"MLC-PRES",
+                "value":0.057
+               }
+              
+          ]
+    }, 
+  
+    {
+      "id":166,
+      "name":"Vision de prés Test N 22",
+      "label":"Vision de prés Test N° 8",
+      "questionString": "tous les Test Ns terminés. cliquez sur le joystick pour afficher le bilon des Test Ns",
+      "visibales":["PRES","PRES-LETTERS","PRES-BARRET","SHOW_MIDDLE","short_holes_show"],
+      "hiddens": ["vpcover","vlcover","vicover","filter_title","deviceFar","INTER","large_holes_show","lettersContainer","INT-LETTERS","P11G","P12Y","P13R","P21R","P22G","P23Y","P24B","P31B","P32G","P33R","PRES-UPPER-NT","PRES-MIDDLE-NT"],
+      "time":2,
+      "audio":"alltests",
+      "options":[
+        {
+          "label":"quit",
+          "image_name":"quit",
+          "image_selected":"quit-S",
+          "nextQ":166,
+          "iSselected":true
+         },
+         {
+          "label":"quit",
+          "image_name":"quit",
+          "image_selected":"quit-S",
+          "nextQ":166,
+          "iSselected":true
+         }
+      ],
+      "layouts": [
+        {
+          "name":"positive",
+          "value":0.0503
+         },
+         {
+           "name":"negative",
+           "value":-0.0364
+          },
+          {
+            "name":"MLC-PRES",
+            "value":0.057
+           }
+          
+      ]
+    }
+  ]
+}

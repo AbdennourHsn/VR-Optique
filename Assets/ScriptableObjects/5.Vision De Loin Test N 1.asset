@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc855cc6593441d696382ad19fb2e4a, type: 3}
+  m_Name: 5.Vision De Loin Test N 1
+  m_EditorClassIdentifier: 
+  id: 5
+  beforAudio: 
+  name: Vision De Loin Test N 1
+  label: "Vision De Loin Test N\xB0 1"
+  questionString: "a partire de ces images lequel\n vous avez vu dans l'apparail"
+  time: 0
+  audio: pictures audio
+  visibales:
+  - 3 - 6 Holes
+  - 1 block
+  - 2 block
+  - 7 block
+  - 8 block
+  hiddens:
+  - vpcover
+  - vlcover
+  - vicover
+  - filter_title
+  - PRES-LETTERS
+  - barrette
+  - 4 - 5 Holes
+  - NB3
+  - NG1
+  - NG2
+  - NR1
+  - NR3
+  - NB2
+  - NR2
+  - LettersBoxes
+  - lettersContainer
+  - INTER
+  - INT-LETTERS
+  - PRES
+  - PRES-LETTERS
+  options:
+  - label: 5-5-1
+    image_name: 5-5-1
+    image_selected: 5-5-1-S
+    nextQ: 6
+    NextQestion: {fileID: 11400000, guid: 505b093c76b84418782918a663c72f73, type: 2}
+    resultCode: COR
+    iSselected: 1
+  - label: 5-5-4
+    image_name: 5-5-4
+    image_selected: 5-5-4-S
+    nextQ: 8
+    NextQestion: {fileID: 11400000, guid: 2d20dee8642774fb596318f7977c00cb, type: 2}
+    resultCode: HR
+    iSselected: 0
+  - label: 5-5-2
+    image_name: 5-5-2
+    image_selected: 5-5-2-S
+    nextQ: 8
+    NextQestion: {fileID: 11400000, guid: 2d20dee8642774fb596318f7977c00cb, type: 2}
+    resultCode: HO
+    iSselected: 0
+  - label: 5-5-3
+    image_name: 5-5-3
+    image_selected: 5-5-3-S
+    nextQ: 8
+    NextQestion: {fileID: 11400000, guid: 2d20dee8642774fb596318f7977c00cb, type: 2}
+    resultCode: HO/INV
+    iSselected: 0
+  - label: 5-5-5
+    image_name: 5-5-5
+    image_selected: 5-5-5-S
+    nextQ: 8
+    NextQestion: {fileID: 11400000, guid: 2d20dee8642774fb596318f7977c00cb, type: 2}
+    resultCode: HR/INV
+    iSselected: 0
+  layouts: []
+  action: 

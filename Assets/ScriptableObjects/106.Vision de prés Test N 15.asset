@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc855cc6593441d696382ad19fb2e4a, type: 3}
+  m_Name: "106.Vision de pr\xE9s Test N 15"
+  m_EditorClassIdentifier: 
+  id: 106
+  beforAudio: 
+  name: "Vision de pr\xE9s Test N 15"
+  label: "Vision de pr\xE9s Test N\xB0 1"
+  questionString: L'image est-elle stable ?
+  time: 2
+  audio: image stable
+  visibales:
+  - PRES
+  hiddens:
+  - vpcover
+  - vlcover
+  - vicover
+  - filter_title
+  - PRES-LETTERS
+  - deviceFar
+  - INTER
+  - PRES-BARRET
+  - short_holes_show
+  - lettersContainer
+  - INT-LETTERS
+  - PRES-UPPER-NT
+  - PRES-MIDDLE-NT
+  options:
+  - label: OUI
+    image_name: OUI
+    image_selected: OUI-S
+    nextQ: 108
+    NextQestion: {fileID: 11400000, guid: f44b361df366f4eacb5530cc83736fbd, type: 2}
+    resultCode: 
+    iSselected: 1
+  - label: Non
+    image_name: NON
+    image_selected: NON-S
+    nextQ: 107
+    NextQestion: {fileID: 11400000, guid: 4e365b8f06fa0478eada11cf1edaf254, type: 2}
+    resultCode: 
+    iSselected: 0
+  layouts: []
+  action: 

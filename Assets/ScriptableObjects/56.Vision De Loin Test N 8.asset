@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc855cc6593441d696382ad19fb2e4a, type: 3}
+  m_Name: 56.Vision De Loin Test N 8
+  m_EditorClassIdentifier: 
+  id: 56
+  beforAudio: 
+  name: Vision De Loin Test N 8
+  label: "Vision De Loin Test N\xB0 8"
+  questionString: "a partire de ces images lequel\n vous avez vu dans l'apparail
+    ?"
+  time: 0
+  audio: pictures audio
+  visibales:
+  - barrette
+  - 1 block
+  - 8 block
+  - 4 - 5 Holes
+  - LettersBoxes
+  - lettersContainer
+  hiddens:
+  - vpcover
+  - vlcover
+  - vicover
+  - filter_title
+  - PRES-LETTERS
+  - 3 - 6 Holes
+  - 2 block
+  - 7 block
+  - NB1
+  - NB2
+  - NB3
+  - NG1
+  - NG2
+  - NG3
+  - NR1
+  - NR2
+  - NR3
+  - 1G
+  - 1R
+  - 1Y
+  - 2R
+  - 2G
+  - 2Y
+  - 2B
+  - 3B
+  - 3G
+  - 3R
+  - INTER
+  - INT-LETTERS
+  - PRES
+  options:
+  - label: 56-3-1
+    image_name: 56-3-1
+    image_selected: 56-3-1-S
+    nextQ: 58
+    NextQestion: {fileID: 11400000, guid: 9aa3ef48e86b04e048a310a82fe517da, type: 2}
+    resultCode: COR
+    iSselected: 1
+  - label: 56-3-2
+    image_name: 56-3-2
+    image_selected: 56-3-2-S
+    nextQ: 60
+    NextQestion: {fileID: 11400000, guid: e684e0673da604d3fb1c5b0cba2f8801, type: 2}
+    resultCode: HO
+    iSselected: 0
+  - label: 56-3-3
+    image_name: 56-3-3
+    image_selected: 56-3-3-S
+    nextQ: 60
+    NextQestion: {fileID: 11400000, guid: e684e0673da604d3fb1c5b0cba2f8801, type: 2}
+    resultCode: HR
+    iSselected: 0
+  layouts:
+  - name: 2ND-LETTERS
+    value: 0.085
+  - name: middleLettersContainer
+    value: 0.15151
+  action: 

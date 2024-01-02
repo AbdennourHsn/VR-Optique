@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc855cc6593441d696382ad19fb2e4a, type: 3}
+  m_Name: 48.Vision De Loin Test N 7
+  m_EditorClassIdentifier: 
+  id: 48
+  beforAudio: helper first
+  name: Vision De Loin Test N 7
+  label: "Vision De Loin Test N\xB0 7"
+  questionString: L'image est-elle stable ?
+  time: 2
+  audio: image stable
+  visibales:
+  - 3 - 6 Holes
+  - barrette
+  - LettersBoxes
+  - lettersContainer
+  hiddens:
+  - vpcover
+  - vlcover
+  - vicover
+  - filter_title
+  - PRES-LETTERS
+  - 4 - 5 Holes
+  - 1 block
+  - 2 block
+  - 7 block
+  - 8 block
+  - NB1
+  - NB2
+  - NB3
+  - NG1
+  - NG2
+  - NG3
+  - NR1
+  - NR2
+  - NR3
+  - 1G
+  - 1R
+  - 1Y
+  - 2R
+  - 2G
+  - 2Y
+  - 2B
+  - 3B
+  - 3G
+  - 3R
+  - INTER
+  - INT-LETTERS
+  - PRES
+  options:
+  - label: OUI
+    image_name: OUI
+    image_selected: OUI-S
+    nextQ: 49
+    NextQestion: {fileID: 11400000, guid: 5c9c077c1abfd4d2bb54d6208c9d986b, type: 2}
+    resultCode: 
+    iSselected: 1
+  - label: Non
+    image_name: NON
+    image_selected: NON-S
+    nextQ: 53
+    NextQestion: {fileID: 11400000, guid: f5fcbced95e7342d891c71abc777e37a, type: 2}
+    resultCode: NS
+    iSselected: 0
+  layouts:
+  - name: middleLettersContainer
+    value: 0.12195299
+  action: 

@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc855cc6593441d696382ad19fb2e4a, type: 3}
+  m_Name: "138.Vision de pr\xE9s Test N 19"
+  m_EditorClassIdentifier: 
+  id: 138
+  beforAudio: 
+  name: "Vision de pr\xE9s Test N 19"
+  label: "Vision de pr\xE9s Test N\xB0 5"
+  questionString: Combien de cercles voyez-vous ?
+  time: 0
+  audio: Combien de cercles
+  visibales:
+  - PRES
+  - PRES-LETTERS
+  - PRES-UPPER-NT
+  hiddens:
+  - vpcover
+  - vlcover
+  - vicover
+  - filter_title
+  - deviceFar
+  - INTER
+  - PRES-BARRET
+  - PRES-UPPER-NT
+  - PRES-MIDDLE-NT
+  - short_holes_show
+  - lettersContainer
+  - INT-LETTERS
+  - P11G
+  - P12Y
+  - P13R
+  - P21R
+  - P22G
+  - P23Y
+  - P24B
+  - P31B
+  - P32G
+  - P33R
+  options:
+  - label: 2
+    image_name: 2
+    image_selected: 2-S
+    nextQ: 139
+    NextQestion: {fileID: 11400000, guid: 34b8eae5923554070bbab115e1189984, type: 2}
+    resultCode: 
+    iSselected: 1
+  - label: 3
+    image_name: 3
+    image_selected: 3-S
+    nextQ: 144
+    NextQestion: {fileID: 11400000, guid: da2f1b966478d450f9f2b41596e8c034, type: 2}
+    resultCode: HO/SUP
+    iSselected: 0
+  - label: 4
+    image_name: 4
+    image_selected: 4-S
+    nextQ: 141
+    NextQestion: {fileID: 11400000, guid: 34fc31fe650334a218a635c4bb732b7e, type: 2}
+    resultCode: 
+    iSselected: 0
+  layouts:
+  - name: positive
+    value: 0
+  - name: negative
+    value: 0
+  action: 

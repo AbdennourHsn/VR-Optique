@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc855cc6593441d696382ad19fb2e4a, type: 3}
+  m_Name: 11.Vision De Loin Test N 2
+  m_EditorClassIdentifier: 
+  id: 11
+  beforAudio: 
+  name: Vision De Loin Test N 2
+  label: "Vision De Loin Test N\xB0 2"
+  questionString: "Sur la ligne du haut,\n Voyez-vous un point noir\n au centre de
+    chaque cercle ?"
+  time: 0
+  audio: upper circles
+  visibales:
+  - 3 - 6 Holes
+  - NG1
+  - NR1
+  hiddens:
+  - vpcover
+  - vlcover
+  - vicover
+  - filter_title
+  - barrette
+  - 4 - 5 Holes
+  - 1 block
+  - 2 block
+  - 7 block
+  - 8 block
+  - NB3
+  - NB2
+  - NG2
+  - NG3
+  - NR2
+  - NR3
+  - LettersBoxes
+  - lettersContainer
+  - INTER
+  - INT-LETTERS
+  - PRES
+  - PRES-LETTERS
+  options:
+  - label: OUI
+    image_name: OUI
+    image_selected: OUI-S
+    nextQ: 17
+    NextQestion: {fileID: 11400000, guid: db4f0142162a94727ad77153fe22e02c, type: 2}
+    resultCode: HR/SUP/DP
+    iSselected: 1
+  - label: Non
+    image_name: NON
+    image_selected: NON-S
+    nextQ: 12
+    NextQestion: {fileID: 11400000, guid: d8a37091fa19b43619f5b6c335a0c8cb, type: 2}
+    resultCode: 
+    iSselected: 0
+  layouts: []
+  action: 

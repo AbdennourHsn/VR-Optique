@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc855cc6593441d696382ad19fb2e4a, type: 3}
+  m_Name: "79.Vision interm\xE9diaire Test N 11"
+  m_EditorClassIdentifier: 
+  id: 79
+  beforAudio: 
+  name: "Vision interm\xE9diaire Test N 11"
+  label: "Vision interm\xE9diaire Test N\xB0 3"
+  questionString: Combien de cercles voyez-vous ?
+  time: 0
+  audio: Combien de cercles
+  visibales:
+  - INTER
+  - INT-barrette
+  hiddens:
+  - vpcover
+  - vlcover
+  - vicover
+  - filter_title
+  - PRES-LETTERS
+  - deviceFar
+  - INT-NT-DOTS
+  - INT-NT-DOTS-U
+  - lettersContainer
+  - INT-12B
+  - INT-13B
+  - INT-32B
+  - INT-33B
+  - INT-LETTERS
+  - INT-BG-Letters
+  - PRES
+  options:
+  - label: 3
+    image_name: 3
+    image_selected: 3-S
+    nextQ: 83
+    NextQestion: {fileID: 11400000, guid: 54bd48099441d406c86a7c80225fbb12, type: 2}
+    resultCode: NT
+    iSselected: 1
+  - label: 4
+    image_name: 4
+    image_selected: 4-S
+    nextQ: 81
+    NextQestion: {fileID: 11400000, guid: 4d176a1fbbbb44f278d89e9ebd742be4, type: 2}
+    resultCode: COR
+    iSselected: 0
+  - label: 5
+    image_name: 5
+    image_selected: 5-S
+    nextQ: 83
+    NextQestion: {fileID: 11400000, guid: 54bd48099441d406c86a7c80225fbb12, type: 2}
+    resultCode: HO/SUP/DP
+    iSselected: 0
+  - label: 6
+    image_name: 6
+    image_selected: 6-S
+    nextQ: 80
+    NextQestion: {fileID: 11400000, guid: 06712654a07b54ba9b16164fc6cb2dfe, type: 2}
+    resultCode: 
+    iSselected: 0
+  layouts: []
+  action: 

@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc855cc6593441d696382ad19fb2e4a, type: 3}
+  m_Name: "96.Vision interm\xE9diaire Test N 13"
+  m_EditorClassIdentifier: 
+  id: 96
+  beforAudio: 
+  name: "Vision interm\xE9diaire Test N 13"
+  label: "Vision interm\xE9diaire Test N\xB0 5"
+  questionString: "a partire de ces images lequel\n vous avez vu dans l'apparail"
+  time: 0
+  audio: pictures audio
+  visibales:
+  - INTER
+  - INT-LETTERS
+  - INT-BG-Letters
+  hiddens:
+  - vpcover
+  - vlcover
+  - vicover
+  - filter_title
+  - PRES-LETTERS
+  - deviceFar
+  - INT-NT-DOTS
+  - INT-NT-DOTS-U
+  - lettersContainer
+  - INT-barrette
+  - INT-12B
+  - INT-13B
+  - INT-32B
+  - INT-33B
+  - PRES
+  options:
+  - label: 96-3-1
+    image_name: 96-3-1
+    image_selected: 96-3-1-S
+    nextQ: 98
+    NextQestion: {fileID: 11400000, guid: 9fc80c0a9031e49c290f178554d9940d, type: 2}
+    resultCode: COR
+    iSselected: 1
+  - label: 96-3-3
+    image_name: 96-3-3
+    image_selected: 96-3-3-S
+    nextQ: 100
+    NextQestion: {fileID: 11400000, guid: 07c97c447c81d4ff88b1864a46454d51, type: 2}
+    resultCode: HR
+    iSselected: 0
+  - label: 96-3-2
+    image_name: 96-3-2
+    image_selected: 96-3-2-S
+    nextQ: 100
+    NextQestion: {fileID: 11400000, guid: 07c97c447c81d4ff88b1864a46454d51, type: 2}
+    resultCode: HO
+    iSselected: 0
+  layouts:
+  - name: middleLettersContainer
+    value: 0.12195299
+  action: 

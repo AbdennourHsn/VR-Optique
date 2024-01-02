@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc855cc6593441d696382ad19fb2e4a, type: 3}
+  m_Name: "80.Vision interm\xE9diaire Test N 11"
+  m_EditorClassIdentifier: 
+  id: 80
+  beforAudio: 
+  name: "Vision interm\xE9diaire Test N 11"
+  label: "Vision interm\xE9diaire Test N\xB0 3"
+  questionString: "a partire de ces images lequel\n vous avez vu dans l'apparail
+    ?"
+  time: 0
+  audio: pictures audio
+  visibales:
+  - INTER
+  - INT-barrette
+  hiddens:
+  - vpcover
+  - vlcover
+  - vicover
+  - filter_title
+  - PRES-LETTERS
+  - deviceFar
+  - INT-NT-DOTS
+  - INT-NT-DOTS-U
+  - lettersContainer
+  - INT-12B
+  - INT-13B
+  - INT-32B
+  - INT-33B
+  - INT-LETTERS
+  - INT-BG-Letters
+  - PRES
+  options:
+  - label: 80-2-1
+    image_name: 80-2-1
+    image_selected: 80-2-1-S
+    nextQ: 83
+    NextQestion: {fileID: 11400000, guid: 54bd48099441d406c86a7c80225fbb12, type: 2}
+    resultCode: HR/DP
+    iSselected: 1
+  - label: 80-2-2
+    image_name: 80-2-2
+    image_selected: 80-2-2-S
+    nextQ: 83
+    NextQestion: {fileID: 11400000, guid: 54bd48099441d406c86a7c80225fbb12, type: 2}
+    resultCode: HR/INV/DP
+    iSselected: 0
+  layouts: []
+  action: 

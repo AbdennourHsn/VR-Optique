@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc855cc6593441d696382ad19fb2e4a, type: 3}
+  m_Name: "142.Vision de pr\xE9s Test N 19"
+  m_EditorClassIdentifier: 
+  id: 142
+  beforAudio: 
+  name: "Vision de pr\xE9s Test N 19"
+  label: "Vision de pr\xE9s Test N\xB0 5"
+  questionString: "Avez-vous vu des cercles \ndisparaitre puis r\xE9apparaitre ?"
+  time: 0
+  audio: 9
+  visibales:
+  - PRES
+  - PRES-LETTERS
+  hiddens:
+  - vpcover
+  - vlcover
+  - vicover
+  - filter_title
+  - deviceFar
+  - INTER
+  - PRES-BARRET
+  - PRES-UPPER-NT
+  - PRES-MIDDLE-NT
+  - short_holes_show
+  - lettersContainer
+  - INT-LETTERS
+  - P11G
+  - P12Y
+  - P13R
+  - P21R
+  - P22G
+  - P23Y
+  - P24B
+  - P31B
+  - P32G
+  - P33R
+  options:
+  - label: NON
+    image_name: NON
+    image_selected: NON-S
+    nextQ: 144
+    NextQestion: {fileID: 11400000, guid: da2f1b966478d450f9f2b41596e8c034, type: 2}
+    resultCode: COR
+    iSselected: 1
+  - label: UN PEU
+    image_name: UN PEU
+    image_selected: UN PEU-S
+    nextQ: 144
+    NextQestion: {fileID: 11400000, guid: da2f1b966478d450f9f2b41596e8c034, type: 2}
+    resultCode: COR/INH
+    iSselected: 0
+  - label: BOUCOUP
+    image_name: BOUCOUP
+    image_selected: BOUCOUP-S
+    nextQ: 144
+    NextQestion: {fileID: 11400000, guid: da2f1b966478d450f9f2b41596e8c034, type: 2}
+    resultCode: COR/INH+
+    iSselected: 0
+  layouts:
+  - name: positive
+    value: 0
+  - name: negative
+    value: 0
+  action: 
