@@ -42,7 +42,7 @@ public class loadScene : MonoBehaviour
         {
             delay = 23;
         }
-        await testRunner.WaitForSeconds(delay);
+        await TestRunner.WaitForSeconds(delay);
         //fadeToLevel();
         //whenFadeComplete(sceneId);
         loadNextLevel();
@@ -51,7 +51,7 @@ public class loadScene : MonoBehaviour
     {
         
         animator.SetTrigger("fadeOut");
-        await testRunner.WaitForSeconds(delay);
+        await TestRunner.WaitForSeconds(delay);
         SceneManager.LoadScene(sceneName);
     }
 

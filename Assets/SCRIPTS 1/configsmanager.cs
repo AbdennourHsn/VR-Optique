@@ -6,7 +6,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem.Controls;
 
-public class configsmanager : MonoBehaviour
+public class ConfigsManager : MonoBehaviour
 {
     // Declare a collection to hold the question objects
     public static Questions Q;
@@ -208,17 +208,17 @@ public class configsmanager : MonoBehaviour
         int basicSimpleDefault = 0;
         int basicSimpleDefault4 = 0;
 
-        foreach (string testName in configsmanager.answers.Keys)
+        foreach (string testName in ConfigsManager.answers.Keys)
         {
             int testNumber = int.Parse(testName.Split('N')[1]);
             if (testNumber >= start && testNumber <= end)
             {
-                if (configsmanager.answers[testName].StartsWith("COR")) 
+                if (ConfigsManager.answers[testName].StartsWith("COR")) 
                 {
                     correctAmmount++; // any correct test
                     
                 }
-                else if ( configsmanager.answers[testName] == "HO" || configsmanager.answers[testName] == "HR" )
+                else if ( ConfigsManager.answers[testName] == "HO" || ConfigsManager.answers[testName] == "HR" )
                 {
                     simpleDefectAmmount++; //any test with Ho or HR as result
                  
@@ -228,33 +228,33 @@ public class configsmanager : MonoBehaviour
                     ImoportantDefectAmmount++; // any thing else not HR not HO and not COR
                 }
 
-                if (configsmanager.answers[testName].StartsWith("HO"))
+                if (ConfigsManager.answers[testName].StartsWith("HO"))
                 {
                    hos++; //any results that has HO type
                 }
-                else if (configsmanager.answers[testName].StartsWith("HR"))
+                else if (ConfigsManager.answers[testName].StartsWith("HR"))
                 {
                    hrs++; //any results that has HR type
                 }
 
                 if (basicTests.Contains(testNumber))
                 {
-                    if (configsmanager.answers[testName].StartsWith("COR"))
+                    if (ConfigsManager.answers[testName].StartsWith("COR"))
                     {
                         corbasic++; //count correct test if test is basic (1,2,5,6,9,10,12,13,15,16,19,20)
                     }
-                    else if(configsmanager.answers[testName] == "HO" || configsmanager.answers[testName] == "HR")
+                    else if(ConfigsManager.answers[testName] == "HO" || ConfigsManager.answers[testName] == "HR")
                     {
                         basicSimpleDefault++;
                     }
                 }
                 if (basic4Circles.Contains(testNumber))
                 {
-                    if (configsmanager.answers[testName].StartsWith("COR"))//count correct test if test is basic (1,5,9,12,15,19)
+                    if (ConfigsManager.answers[testName].StartsWith("COR"))//count correct test if test is basic (1,5,9,12,15,19)
                     {
                         cor4basic++;
                     }
-                    else if (configsmanager.answers[testName] == "HO" || configsmanager.answers[testName] == "HR")
+                    else if (ConfigsManager.answers[testName] == "HO" || ConfigsManager.answers[testName] == "HR")
                     {
                         basicSimpleDefault4++;
                     }

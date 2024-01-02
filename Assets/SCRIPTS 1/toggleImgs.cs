@@ -9,7 +9,7 @@ public class toggleImgs : MonoBehaviour
 {
     public  List<Image> imgs;
     private PlayerInput testActions;
-    public testRunner ts;
+    public TestRunner ts;
     // Start is called before the first frame update
     private void Awake()
     {

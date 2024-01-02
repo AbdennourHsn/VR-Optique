@@ -23,7 +23,7 @@ public class ObjectState
     // Add any other relevant properties here
 }
 
-public class testRunner : MonoBehaviour
+public class TestRunner : MonoBehaviour
 {
     // Start is called before the first frame update
     public Questions Q;
@@ -176,19 +176,19 @@ public class testRunner : MonoBehaviour
                     //Debug.Log("Switch");
                     var output = summeyUI[0].GetComponentsInChildren<TextMeshProUGUI>().First();
 
-                    int currntScreen = configsmanager.screens.IndexOf(configsmanager.screens.Find(I => I == output.text).ToString());
+                    int currntScreen = ConfigsManager.screens.IndexOf(ConfigsManager.screens.Find(I => I == output.text).ToString());
 
                     int NewScreen = d == Direction.LEFT ? currntScreen - 1 : currntScreen + 1;
 
                     if (NewScreen < 0)
                     {
-                        NewScreen = configsmanager.screens.Count - 1;
+                        NewScreen = ConfigsManager.screens.Count - 1;
                     }
-                    else if (NewScreen >= configsmanager.screens.Count)
+                    else if (NewScreen >= ConfigsManager.screens.Count)
                     {
                         NewScreen = 0;
                     }
-                    output.text = configsmanager.screens[NewScreen];
+                    output.text = ConfigsManager.screens[NewScreen];
 
 
                 }
@@ -260,14 +260,14 @@ public class testRunner : MonoBehaviour
         // hide options gameObject
         optionsToogle(false);   //hide all option groups 2,3,4,5 
         questionUI.enabled = false; //hide question test
-        configsmanager.LoadQuestionFromResources(); //load json questions
+        ConfigsManager.LoadQuestionFromResources(); //load json questions
         
-        Q = configsmanager.Q; // set the load questions from questions.json
+        Q = ConfigsManager.Q; // set the load questions from questions.json
 
         loadQuestion(currentPos);
 
         if (output != null)
-        output.text = configsmanager.screens[0];
+        output.text = ConfigsManager.screens[0];
 
     }
     private void Update()
@@ -313,10 +313,10 @@ public class testRunner : MonoBehaviour
                 obj.SetActive(true);
 
                 // rest any movable object to it's original position (if any)
-                if (configsmanager.offsetedObjectXValueList.ContainsKey(obj.name))
+                if (ConfigsManager.offsetedObjectXValueList.ContainsKey(obj.name))
                 {
                 
-                    float initalX = configsmanager.offsetedObjectXValueList[obj.name];
+                    float initalX = ConfigsManager.offsetedObjectXValueList[obj.name];
                     if (obj.name=="2R"|| obj.name == "2G"|| obj.name == "2Y"|| obj.name == "2B")
                     {
                         initalX = 0f;
@@ -371,16 +371,16 @@ public class testRunner : MonoBehaviour
         int correctAmmount = 0;
         int simpleDefectAmmount = 0;
         int ImoportantDefectAmmount = 0;
-        foreach (string testName in configsmanager.answers.Keys)
+        foreach (string testName in ConfigsManager.answers.Keys)
         {
             int testNumber = int.Parse(testName.Split('N')[1]);
             if (testNumber >= start && testNumber <= end)
             {
-                if (configsmanager.answers[testName] == "COR" || configsmanager.answers[testName] == "INH" || configsmanager.answers[testName] == "INH+")
+                if (ConfigsManager.answers[testName] == "COR" || ConfigsManager.answers[testName] == "INH" || ConfigsManager.answers[testName] == "INH+")
                 {
                     correctAmmount++;
                 }
-                else if (configsmanager.answers[testName] == "NS" || configsmanager.answers[testName] == "HO" || configsmanager.answers[testName] == "HR" || configsmanager.answers[testName].StartsWith("NT"))
+                else if (ConfigsManager.answers[testName] == "NS" || ConfigsManager.answers[testName] == "HO" || ConfigsManager.answers[testName] == "HR" || ConfigsManager.answers[testName].StartsWith("NT"))
                 {
                     simpleDefectAmmount++;
                 }
@@ -637,7 +637,7 @@ public class testRunner : MonoBehaviour
 
     private bool isTestJustStarted(int qIndex)
     {
-        return configsmanager.beginTestIds.Contains(qIndex);
+        return ConfigsManager.beginTestIds.Contains(qIndex);
     }
 
     private void LoadAudio(string AudioName)
@@ -715,12 +715,12 @@ public class testRunner : MonoBehaviour
             {
                 string testName = current.name;
                 // unsaved results to to be saved for generating the summery
-                int currntScreen = configsmanager.screens.IndexOf(configsmanager.screens.Find(I => I == output.text).ToString());
-                configsmanager.saveAnswer(testName
+                int currntScreen = ConfigsManager.screens.IndexOf(ConfigsManager.screens.Find(I => I == output.text).ToString());
+                ConfigsManager.saveAnswer(testName
                     , current.selectedOption().resultCode);
                 Debug.Log(current.name + "  => " + current.selectedOption().resultCode + " id-> "+current.id);
                 TestSaver.instance.SendDataToServer(current.name , current.selectedOption().resultCode);
-                output.text = configsmanager.screens[currntScreen];
+                output.text = ConfigsManager.screens[currntScreen];
                 //to avoid endless refering to the same test
                
                 //if (Q.questions[nextQ].audio == "image changed" && Question.isRepeated)
