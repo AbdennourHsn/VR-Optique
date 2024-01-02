@@ -1,19 +1,13 @@
-
 using System.Collections.Generic;
 using UnityEngine;
-
 using System;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using System.Threading.Tasks;
-
-
 using Unity.XR.CoreUtils;
-
 using System.Linq;
 using System.Threading;
-
 [System.Serializable]
 public class ObjectState
 {
@@ -25,8 +19,8 @@ public class ObjectState
 
 public class TestRunner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public Questions Q;
+    public QA[] qas;
+    public Questions AllQuestions;
     //ui elements
   
     public TextMeshProUGUI questionUI;
@@ -260,9 +254,9 @@ public class TestRunner : MonoBehaviour
         // hide options gameObject
         optionsToogle(false);   //hide all option groups 2,3,4,5 
         questionUI.enabled = false; //hide question test
-        ConfigsManager.LoadQuestionFromResources(); //load json questions
-        
-        Q = ConfigsManager.Q; // set the load questions from questions.json
+        //ConfigsManager.LoadQuestionFromResources(); //load json questions
+        AllQuestions = new Questions(qas);
+        //AllQuestions = ConfigsManager.Q; // set the load questions from questions.json
 
         loadQuestion(currentPos);
 
@@ -409,7 +403,7 @@ public class TestRunner : MonoBehaviour
             if (optinsGroup.Count > 0)
             {
                 // get reference to current question 
-                Question current = Q.questions.Where(q=>q.id== currentPos).First();
+                Question current = AllQuestions.questions.Where(q=>q.id== currentPos).First();
 
                 // get selected option 
                 option o = current.selectedOption();
@@ -543,14 +537,14 @@ public class TestRunner : MonoBehaviour
             //TODO:: remove question id for visibleOotionsTxt
             visibleOptionsTxt.text = "les options sont masqu�es,\nappuyez sur le boutton[GRAB]\npour les afficher\n Q-id = " + qIndex;
             visibleOptionsTxt.enabled = false;
-            Question q = Q.questions.Where(qq=>qq.id==qIndex).First();
+            Question q = AllQuestions.questions.Where(qq=>qq.id==qIndex).First();
 
             if (questionUI != null) questionUI.enabled = false;
             if (loading != null)
                 loading.enabled = true;
             acceptInputs = false;
             //play question before audio if exists
-            if (q.beforAudio != null && !Question.isRepeated)
+            if (q.beforAudio != "" && !Question.isRepeated)
             {
                 LoadAudio(q.beforAudio);
             }
@@ -651,7 +645,7 @@ public class TestRunner : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Audio clip not found!");
+            Debug.LogError(audioClip+" Audio clip not found!");
         }
 
     }
@@ -701,7 +695,7 @@ public class TestRunner : MonoBehaviour
     {
         previous.Add(currentPos);// add to buffer history
  
-        Question current = Q.questions.Where(q=>q.id == currentPos).First();
+        Question current = AllQuestions.questions.Where(q=>q.id == currentPos).First();
         //Debug.Log(current.selectedOption().label+" "+ current.selectedOption().resultCode + " " + current.selectedOption().nextQ);
 
         uiAnswer.Play();//button press sound

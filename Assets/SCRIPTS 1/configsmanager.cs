@@ -317,7 +317,7 @@ public class ConfigsManager : MonoBehaviour
             Q = JsonUtility.FromJson<Questions>(jsonString);
             GameObject[] allObjects =  Resources.FindObjectsOfTypeAll<GameObject>();
 
-            for (int i = 0; i < Q.questions.Length; i++)
+            for (int i = 0; i < Q.questions.Count; i++)
             {
                 //Debug.Log(i);
                 Question q = Q.questions[i];
@@ -350,6 +350,21 @@ public class ConfigsManager : MonoBehaviour
 [System.Serializable]
 public class Question
 {
+    public Question(QA qa)
+    {
+        id = qa.id;
+        beforAudio = qa.beforAudio;
+        name = qa.name;
+        label = qa.label;
+        questionString = qa.questionString;
+        time = qa.time;
+        audio = qa.audio;
+        visibales = qa.visibales;
+        hiddens = qa.hiddens;
+        options = qa.options;
+        layouts = qa.layouts;
+        action = qa.action;
+    }
     public Question(Question Q)
     {
         name = Q.name;
@@ -363,8 +378,6 @@ public class Question
         audio = Q.audio;
         beforAudio = Q.beforAudio;
         label = Q.label;
-
-
     }
     public int id;
     public string beforAudio;
@@ -492,6 +505,14 @@ public class Layout
 [System.Serializable]
 public class Questions
 {
-    public Question[] questions;
+    public List<Question> questions=new List<Question>();
+
+    public Questions(QA[] qas)
+    {
+        foreach(QA qa in qas)
+        {
+            questions.Add(new Question(qa));
+        }
+    }
 }
 
