@@ -6,6 +6,7 @@ using UnityEngine;
 public class QA : ScriptableObject
 {
     public int id;
+    public int groupID;
     public string beforAudio;
     public string name;
     public string label;
@@ -15,7 +16,9 @@ public class QA : ScriptableObject
     public static bool isRepeated = false;
     public List<string> visibales;
     public List<string> hiddens;
-    public List<option> options;
+    public List<Option> options;
     public List<Layout> layouts;
     public string action;
+    public bool toBeVerified=false;
+    public bool keepSameImg = false;
 }

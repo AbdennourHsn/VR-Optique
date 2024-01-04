@@ -79,3 +79,5 @@ MonoBehaviour:
   - name: P24B
     value: 0.08
   action: 
+  toBeVerified: 1
+  keepSameImg: 0

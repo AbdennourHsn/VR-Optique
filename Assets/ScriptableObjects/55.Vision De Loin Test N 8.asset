@@ -85,3 +85,5 @@ MonoBehaviour:
   - name: middleLettersContainer
     value: 0.15151
   action: 
+  toBeVerified: 1
+  keepSameImg: 0

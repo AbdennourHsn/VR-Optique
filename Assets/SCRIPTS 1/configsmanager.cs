@@ -353,6 +353,7 @@ public class Question
     public Question(QA qa)
     {
         id = qa.id;
+        GroupId = qa.groupID;
         beforAudio = qa.beforAudio;
         name = qa.name;
         label = qa.label;
@@ -364,11 +365,14 @@ public class Question
         options = qa.options;
         layouts = qa.layouts;
         action = qa.action;
+        keepSameImg = qa.keepSameImg;
+        toBeVerified = qa.toBeVerified;
     }
     public Question(Question Q)
     {
         name = Q.name;
         id = Q.id;
+        GroupId = Q.GroupId;
         questionString = Q.questionString;
         hiddens = Q.hiddens;
         visibales = Q.visibales;
@@ -378,8 +382,11 @@ public class Question
         audio = Q.audio;
         beforAudio = Q.beforAudio;
         label = Q.label;
+        keepSameImg = Q.keepSameImg;
+        toBeVerified = Q.toBeVerified;
     }
     public int id;
+    public int GroupId;
     public string beforAudio;
     public string name;
     public string label;
@@ -389,12 +396,14 @@ public class Question
     public static bool isRepeated=false;
     public List<string> visibales;
     public List<string> hiddens;
-    public List<option> options;
+    public List<Option> options;
     public List<Layout> layouts;
     public string action;
-    public option selectedOption()
+    public bool toBeVerified=false;
+    public bool keepSameImg = false;
+    public Option selectedOption()
     {
-        foreach (option opt in options)
+        foreach (Option opt in options)
         {
             if (opt.iSselected) return opt;
         }
@@ -403,7 +412,7 @@ public class Question
 
     public void selectOption(int optionIndex)
     {
-        foreach (option op in options)
+        foreach (Option op in options)
         {
             op.iSselected = false;
         }
@@ -457,7 +466,7 @@ public class Question
 }
 
 [System.Serializable]
-public class option
+public class Option
 {
     public string label;
     public string image_name;
@@ -466,7 +475,7 @@ public class option
     public QA NextQestion;
     public string resultCode;
     public bool iSselected;
-    public bool hasSameValuesWith(option o)
+    public bool hasSameValuesWith(Option o)
     {
         return label == o.label && nextQ == o.nextQ && image_name == o.image_name && image_selected == o.image_selected;
     }

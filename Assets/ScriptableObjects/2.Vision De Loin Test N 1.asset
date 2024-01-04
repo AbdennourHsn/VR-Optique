@@ -53,14 +53,14 @@ MonoBehaviour:
     nextQ: 3
     NextQestion: {fileID: 11400000, guid: 6d91751780f6b4ecd99ae69e2ff5ef84, type: 2}
     resultCode: 
-    iSselected: 1
+    iSselected: 0
   - label: 3
     image_name: 3
     image_selected: 3-S
     nextQ: 8
     NextQestion: {fileID: 11400000, guid: 2d20dee8642774fb596318f7977c00cb, type: 2}
     resultCode: HO/SUP
-    iSselected: 0
+    iSselected: 1
   - label: 4
     image_name: 4
     image_selected: 4-S
@@ -70,3 +70,5 @@ MonoBehaviour:
     iSselected: 0
   layouts: []
   action: 
+  toBeVerified: 1
+  keepSameImg: 0

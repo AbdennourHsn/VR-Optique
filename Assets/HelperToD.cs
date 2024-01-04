@@ -14,12 +14,20 @@ public class HelperToD : MonoBehaviour
         StartCoroutine(Count());
 
     }
-
+    string a;
     IEnumerator Count()
     {
+        a = QAs[0].name;
         foreach (QA qa in QAs)
         {
-            Assigne(qa);
+            if (qa.questionString == "Combien de cercles voyez-vous ?")
+            {
+                
+                qa.toBeVerified = true;
+                EditorUtility.SetDirty(qa);
+                AssetDatabase.SaveAssets();
+                AssetDatabase.Refresh();
+            }
         }
         yield return new WaitForSeconds(1);
     }
@@ -27,7 +35,7 @@ public class HelperToD : MonoBehaviour
     public void Assigne(QA qa)
     {
         print("Im here");
-        foreach (option op in qa.options)
+        foreach (Option op in qa.options)
         {
             op.NextQestion = QAs.FirstOrDefault(q => q.id == op.nextQ);
         }

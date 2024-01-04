@@ -80,3 +80,5 @@ MonoBehaviour:
     iSselected: 0
   layouts: []
   action: 
+  toBeVerified: 1
+  keepSameImg: 0

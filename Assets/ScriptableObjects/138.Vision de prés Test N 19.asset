@@ -74,3 +74,5 @@ MonoBehaviour:
   - name: negative
     value: 0
   action: 
+  toBeVerified: 1
+  keepSameImg: 0

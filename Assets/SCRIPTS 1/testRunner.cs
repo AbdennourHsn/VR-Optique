@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using Unity.XR.CoreUtils;
 using System.Linq;
 using System.Threading;
+using Unity.VisualScripting;
+
 [System.Serializable]
 public class ObjectState
 {
@@ -20,29 +22,13 @@ public class ObjectState
 public class TestRunner : MonoBehaviour
 {
     public QA[] qas;
+    public QA verificationQuestion;
+    public QA verificationQuestionNo;
     public Questions AllQuestions;
     //ui elements
   
     public TextMeshProUGUI questionUI;
     public TextMeshProUGUI visibleOptionsTxt;
-
-    public Image Aimg;
-    public Image Bimg;
-
-    public Image Ximg;
-    public Image Yimg;
-    public Image Zimg;
-    
-    public Image _Aimg;
-    public Image _Bimg;
-    public Image _Cimg;
-    public Image _Dimg;
-
-    public Image __Aimg;
-    public Image __Bimg;
-    public Image __Cimg;
-    public Image __Dimg;
-    public Image __Eimg;
 
     public Image loading;
 
@@ -60,12 +46,17 @@ public class TestRunner : MonoBehaviour
     public List<Image> optinsGroup = new List<Image>();
     public static List<List<object>> Routes;
 
-    List<Image> _2s;
-    List<Image> _3s;
-    List<Image> _4s;
-    List<Image> _5s;
+    public List<Image> _2s;
+    public List<Image> _3s;
+    public List<Image> _4s;
+    public List<Image> _5s;
+    public List<Image> _6s;
     Thread tread;
     List<int> previous =new List<int>();
+    public static Dictionary<string, Vector3> sceneInitialState = new Dictionary<string, Vector3>();
+    private bool toggleSummeryView = true; //all test summery screen toggle
+    public List<GameObject> summeyUI = new List<GameObject>();
+    public GameObject pauseMenu;
     /// <summary>
     /// setting input system along with images options
     /// </summary>
@@ -74,11 +65,20 @@ public class TestRunner : MonoBehaviour
         testActions = transform.GetComponent<PlayerInput>();
         testActions.onActionTriggered += HandleInputs;
 
-        _2s = new List<Image> { Aimg, Bimg };
-        _3s = new List<Image> { Ximg, Yimg,Zimg};
-        _4s = new List<Image> { _Aimg, _Bimg,_Cimg,_Dimg};
-        _5s = new List<Image> { __Aimg, __Bimg,__Cimg,__Dimg,__Eimg};
+    }
 
+    void Start()
+    {
+        //save initialState of the scene in all objects
+        // hide options gameObject
+        optionsToogle(false);   //hide all option groups 2,3,4,5 
+        questionUI.enabled = false; //hide question test
+        ConfigsManager.LoadQuestionFromResources(); //load json questions
+        AllQuestions = new Questions(qas);
+        //AllQuestions = ConfigsManager.Q; // set the load questions from questions.json
+        loadQuestion(currentPos);
+        if (output != null)
+            output.text = ConfigsManager.screens[0];
 
     }
     /// <summary>
@@ -90,10 +90,7 @@ public class TestRunner : MonoBehaviour
         RIGHT
     }
 
-    public static Dictionary<string,Vector3> sceneInitialState = new Dictionary<string,Vector3>();
-    private bool toggleSummeryView = true; //all test summery screen toggle
-    public List<GameObject> summeyUI = new List<GameObject>();
-    public GameObject pauseMenu;
+
     void HandleInputs(InputAction.CallbackContext ctx) 
     {
         if (ctx.performed && ctx.action.name == "pause")
@@ -243,27 +240,7 @@ public class TestRunner : MonoBehaviour
     }
     bool isPaused=false;
     public TextMeshProUGUI output;
-    void Start()
-    {
-        
-        //save initialState of the scene in all objects
-        foreach (GameObject obj in Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[])
-        {
-            //Debug.Log(obj.name + " Active :" + obj.activeSelf);
-        }
-        // hide options gameObject
-        optionsToogle(false);   //hide all option groups 2,3,4,5 
-        questionUI.enabled = false; //hide question test
-        //ConfigsManager.LoadQuestionFromResources(); //load json questions
-        AllQuestions = new Questions(qas);
-        //AllQuestions = ConfigsManager.Q; // set the load questions from questions.json
 
-        loadQuestion(currentPos);
-
-        if (output != null)
-        output.text = ConfigsManager.screens[0];
-
-    }
     private void Update()
     {
        // Debug.Log(uiText.transform.position);
@@ -271,12 +248,15 @@ public class TestRunner : MonoBehaviour
 
     void optionsToogle(bool toogle)
     {
-        Aimg.enabled = Bimg.enabled = Ximg.enabled = Yimg.enabled = Zimg.enabled = _Aimg.enabled = _Bimg.enabled = _Cimg.enabled = _Dimg.enabled = toogle;
+        foreach (Image img in _2s) img.enabled = toogle;
+        foreach (Image img in _3s) img.enabled = toogle;
+        foreach (Image img in _4s) img.enabled = toogle;
+
     }
     
-    void UpdateUIImageWithQuestionOptions(List<Image> UiImages,List<option> options)
+    void UpdateUIImageWithQuestionOptions(List<Image> UiImages,List<Option> options)
     {
-        foreach (option op in options)
+        foreach (Option op in options)
         {
             int index = options.IndexOf(op);
             //Debug.Log(op.label + " -  " + index +" -- "+ UiImages[index].sprite.name +"  -- "+ options[index].iSselected);
@@ -332,11 +312,11 @@ public class TestRunner : MonoBehaviour
 
     public void hideAllOnScreenImages()
     {
-
-         Aimg.enabled=Bimg.enabled= false ;
-         Ximg.enabled = Yimg.enabled = Zimg.enabled =false;
-        _Aimg.enabled = _Bimg.enabled = _Cimg.enabled = _Dimg.enabled =false ;
-        __Aimg.enabled = __Bimg.enabled = __Cimg.enabled = __Dimg.enabled = __Eimg.enabled = false ;
+        foreach (Image ob in _2s) ob.enabled = false;
+        foreach (Image ob in _3s) ob.enabled = false;
+        foreach (Image ob in _4s) ob.enabled = false;
+        foreach (Image ob in _5s) ob.enabled = false;
+        foreach (Image ob in _6s) ob.enabled = false;
         summeyUI[0].SetActive(false);
     }
 
@@ -406,7 +386,7 @@ public class TestRunner : MonoBehaviour
                 Question current = AllQuestions.questions.Where(q=>q.id== currentPos).First();
 
                 // get selected option 
-                option o = current.selectedOption();
+                Option o = current.selectedOption();
                 // move to next option (if you already in the last one move to first one)
 
                 int currentOption = current.options.IndexOf(o);
@@ -528,7 +508,7 @@ public class TestRunner : MonoBehaviour
 
         }
     }
-    async void loadQuestion(int qIndex)
+    async void loadQuestion(int qIndex )
     {
         pauseMenu.SetActive(false);
         if (qIndex!=-1)
@@ -550,7 +530,7 @@ public class TestRunner : MonoBehaviour
             }
 
 
-            clearSetup();
+            if(!q.keepSameImg)clearSetup();
 
             q.init();
 
@@ -685,12 +665,43 @@ public class TestRunner : MonoBehaviour
                 }
                 optinsGroup = _5s;
                 break;
+            case 6:
+                foreach (Image item in _6s)
+                {
+                    item.enabled = true;
+                }
+                optinsGroup = _6s;
+                break;
         }
 
         // show correct sprites on current options
         UpdateUIImageWithQuestionOptions(optinsGroup, q.options);
 
     }
+
+    public Question VerifieQuestion( string aname , Option  oui, Question no)
+    {
+        verificationQuestion.name = aname;
+        Question question = new Question(verificationQuestion);
+        question.options[0].nextQ = oui.nextQ;
+        question.options[0].resultCode = oui.resultCode;
+        question.options[1].nextQ = 2000;
+        verificationQuestionNo.name = aname;
+        List<Option> optionsToNo=new List<Option>();
+        optionsToNo.AddRange(no.options);
+        optionsToNo.Add(new Option
+        {
+            label = "image non-stable",
+            image_name = "NON",
+            image_selected = "NON-S",
+            nextQ = oui.nextQ,
+            resultCode = "NS",
+        });
+        verificationQuestionNo.options = optionsToNo;
+        return question;
+    }
+    bool toBeVerified=true;
+    List<Option> optionTopass;
     public void Next()
     {
         previous.Add(currentPos);// add to buffer history
@@ -705,28 +716,29 @@ public class TestRunner : MonoBehaviour
         hideAllOnScreenImages();
         if (nextQ != -1)
         {
-            if (current.selectedOption().resultCode!=null)
+            if (current.toBeVerified)
             {
-                string testName = current.name;
-                // unsaved results to to be saved for generating the summery
-                int currntScreen = ConfigsManager.screens.IndexOf(ConfigsManager.screens.Find(I => I == output.text).ToString());
-                ConfigsManager.saveAnswer(testName
-                    , current.selectedOption().resultCode);
-                Debug.Log(current.name + "  => " + current.selectedOption().resultCode + " id-> "+current.id);
-                TestSaver.instance.SendDataToServer(current.name , current.selectedOption().resultCode);
-                output.text = ConfigsManager.screens[currntScreen];
-                //to avoid endless refering to the same test
-               
-                //if (Q.questions[nextQ].audio == "image changed" && Question.isRepeated)
-                //{
-                //    Debug.Log("loading next Test " + " cp: "+ currentPos + "  nQ : " +nextQ + "nex Q next = "+ Q.questions[nextQ].selectedOption().nextQ);
-                //    currentPos = nextQ++;
-                //    loadQuestion(currentPos);
-                //    Question.isRepeated = false;
-                //}
-
+                optionTopass = current.options;
+                Question verifir = VerifieQuestion(current.name, current.selectedOption(), current);
+                nextQ = verifir.id;
+                currentPos = nextQ;
+                hideAllOnScreenImages();
+                loadQuestion(currentPos);
+                toBeVerified = false;
+                return;
             }
-           
+            if (current.selectedOption().resultCode!="")
+            {
+                    string testName = current.name;
+                    // unsaved results to to be saved for generating the summery
+                    int currntScreen = ConfigsManager.screens.IndexOf(ConfigsManager.screens.Find(I => I == output.text).ToString());
+                    //ConfigsManager.saveAnswer(testName, current.selectedOption().resultCode);
+                    Debug.Log(current.name + "  => " + current.selectedOption().resultCode + " id-> " + current.id);
+                    TestSaver.instance.SendDataToServer(current.name, current.selectedOption().resultCode);
+                    output.text = ConfigsManager.screens[currntScreen];
+                    toBeVerified = true;
+                
+            }
             if (nextQ < currentPos && !Question.isRepeated)
             {
                 Question.isRepeated=true;

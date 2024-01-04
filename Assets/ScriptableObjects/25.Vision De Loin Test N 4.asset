@@ -82,3 +82,5 @@ MonoBehaviour:
   - name: 2Y
     value: 0.085
   action: 
+  toBeVerified: 1
+  keepSameImg: 0
