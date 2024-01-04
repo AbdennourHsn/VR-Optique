@@ -401,6 +401,26 @@ public class Question
     public string action;
     public bool toBeVerified=false;
     public bool keepSameImg = false;
+
+    public void UpdateValues(QA qa)
+    {
+        id = qa.id;
+        GroupId = qa.groupID;
+        beforAudio = qa.beforAudio;
+        name = qa.name;
+        label = qa.label;
+        questionString = qa.questionString;
+        time = qa.time;
+        audio = qa.audio;
+        visibales = qa.visibales;
+        hiddens = qa.hiddens;
+        options = qa.options;
+        layouts = qa.layouts;
+        action = qa.action;
+        keepSameImg = qa.keepSameImg;
+        toBeVerified = qa.toBeVerified;
+    }
+
     public Option selectedOption()
     {
         foreach (Option opt in options)

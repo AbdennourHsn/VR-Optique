@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: "130.Vision de pr\xE9s Test N 18"
   m_EditorClassIdentifier: 
   id: 130
+  groupID: 17
   beforAudio: helper first
   name: "Vision de pr\xE9s Test N 18"
   label: "Vision de pr\xE9s Test N\xB0 4"
@@ -74,3 +75,5 @@ MonoBehaviour:
   - name: P24B
     value: 0.08
   action: 
+  toBeVerified: 0
+  keepSameImg: 0

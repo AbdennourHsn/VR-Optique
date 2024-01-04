@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 43.Vision De Loin Test N 6
   m_EditorClassIdentifier: 
   id: 43
+  groupID: 5
   beforAudio: 
   name: Vision De Loin Test N 6
   label: "Vision De Loin Test N\xB0 6"
@@ -86,3 +87,5 @@ MonoBehaviour:
   - name: middleLettersContainer
     value: 0.12195299
   action: 
+  toBeVerified: 0
+  keepSameImg: 0

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: "84.Vision interm\xE9diaire Test N 12"
   m_EditorClassIdentifier: 
   id: 84
+  groupID: 11
   beforAudio: helper first
   name: "Vision interm\xE9diaire Test N 12"
   label: "Vision interm\xE9diaire Test N\xB0 4"
@@ -58,3 +59,5 @@ MonoBehaviour:
   - name: middleLettersContainer
     value: 0.12195299
   action: 
+  toBeVerified: 0
+  keepSameImg: 0

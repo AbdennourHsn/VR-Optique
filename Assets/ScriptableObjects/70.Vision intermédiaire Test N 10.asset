@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: "70.Vision interm\xE9diaire Test N 10"
   m_EditorClassIdentifier: 
   id: 70
+  groupID: 9
   beforAudio: 
   name: "Vision interm\xE9diaire Test N 10"
   label: "Vision interm\xE9diaire Test N\xB0 2"

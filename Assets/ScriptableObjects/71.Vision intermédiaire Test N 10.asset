@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: "71.Vision interm\xE9diaire Test N 10"
   m_EditorClassIdentifier: 
   id: 71
+  groupID: 9
   beforAudio: 
   name: "Vision interm\xE9diaire Test N 10"
   label: "Vision interm\xE9diaire Test N\xB0 2"
@@ -57,3 +58,5 @@ MonoBehaviour:
     iSselected: 0
   layouts: []
   action: 
+  toBeVerified: 0
+  keepSameImg: 0

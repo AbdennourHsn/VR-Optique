@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: "146.Vision de pr\xE9s Test N 20"
   m_EditorClassIdentifier: 
   id: 146
+  groupID: 19
   beforAudio: 
   name: "Vision de pr\xE9s Test N 20"
   label: "Vision de pr\xE9s Test N\xB0 6"

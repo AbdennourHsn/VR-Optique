@@ -517,6 +517,8 @@ public class TestRunner : MonoBehaviour
             //TODO:: remove question id for visibleOotionsTxt
             visibleOptionsTxt.text = "les options sont masqu�es,\nappuyez sur le boutton[GRAB]\npour les afficher\n Q-id = " + qIndex;
             visibleOptionsTxt.enabled = false;
+
+
             Question q = AllQuestions.questions.Where(qq=>qq.id==qIndex).First();
 
             if (questionUI != null) questionUI.enabled = false;
@@ -682,30 +684,41 @@ public class TestRunner : MonoBehaviour
     public Question VerifieQuestion( string aname , Option  oui, Question no)
     {
         verificationQuestion.name = aname;
+        verificationQuestion.groupID = no.GroupId;
         Question question = new Question(verificationQuestion);
         question.options[0].nextQ = oui.nextQ;
         question.options[0].resultCode = oui.resultCode;
-        question.options[1].nextQ = 2000;
         verificationQuestionNo.name = aname;
+        print("++");
+
+        int x = AllQuestions.questions.Where(q => q.GroupId == no.GroupId + 1).First().id;
+        print("++");
+
         List<Option> optionsToNo=new List<Option>();
         optionsToNo.AddRange(no.options);
         optionsToNo.Add(new Option
         {
             label = "image non-stable",
-            image_name = "NON",
-            image_selected = "NON-S",
-            nextQ = oui.nextQ,
+            image_name = "NonStable",
+            image_selected = "NonStable-S",
+            nextQ = x,
             resultCode = "NS",
         });
         verificationQuestionNo.options = optionsToNo;
+
+        Question b = AllQuestions.questions.FirstOrDefault(q => q.id == 1000);
+        b.UpdateValues(verificationQuestion);
+        Question a = AllQuestions.questions.FirstOrDefault(q => q.id == 2000);
+        a.UpdateValues(verificationQuestionNo);
+        question.options[1].nextQ = 2000;
         return question;
     }
+
     bool toBeVerified=true;
     List<Option> optionTopass;
     public void Next()
     {
         previous.Add(currentPos);// add to buffer history
- 
         Question current = AllQuestions.questions.Where(q=>q.id == currentPos).First();
         //Debug.Log(current.selectedOption().label+" "+ current.selectedOption().resultCode + " " + current.selectedOption().nextQ);
 

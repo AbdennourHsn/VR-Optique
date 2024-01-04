@@ -11,23 +11,33 @@ public class HelperToD : MonoBehaviour
 
     public void Start()
     {
-        StartCoroutine(Count());
-
+        a = QAs[0].name;
+        foreach (QA qa in QAs)
+        {
+            if (qa.name != a)
+            {
+                a = qa.name;
+                nb += 1;
+            }
+            qa.groupID = nb;
+            //EditorUtility.SetDirty(qa);
+            //AssetDatabase.SaveAssets();
+            //AssetDatabase.Refresh();
+        }
     }
     string a;
+    int nb = 0;
     IEnumerator Count()
     {
         a = QAs[0].name;
         foreach (QA qa in QAs)
         {
-            if (qa.questionString == "Combien de cercles voyez-vous ?")
+            if (qa.name != a)
             {
                 
-                qa.toBeVerified = true;
-                EditorUtility.SetDirty(qa);
-                AssetDatabase.SaveAssets();
-                AssetDatabase.Refresh();
+                nb += 1;
             }
+            qa.groupID = nb;
         }
         yield return new WaitForSeconds(1);
     }
@@ -42,9 +52,9 @@ public class HelperToD : MonoBehaviour
         string existingPath = "Assets/ScriptableObjects/"+ qa.id + "." + qa.name + ".asset";
 
         // Save the changes in the same folder
-        EditorUtility.SetDirty(qa);
-        AssetDatabase.SaveAssets();
-        AssetDatabase.Refresh();
+        //EditorUtility.SetDirty(qa);
+        //AssetDatabase.SaveAssets();
+        //AssetDatabase.Refresh();
 
     }
 }

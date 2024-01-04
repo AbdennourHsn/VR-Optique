@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 5.Vision De Loin Test N 1
   m_EditorClassIdentifier: 
   id: 5
+  groupID: 0
   beforAudio: 
   name: Vision De Loin Test N 1
   label: "Vision De Loin Test N\xB0 1"
@@ -84,3 +85,5 @@ MonoBehaviour:
     iSselected: 0
   layouts: []
   action: 
+  toBeVerified: 0
+  keepSameImg: 0

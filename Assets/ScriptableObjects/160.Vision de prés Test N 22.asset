@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: "160.Vision de pr\xE9s Test N 22"
   m_EditorClassIdentifier: 
   id: 160
+  groupID: 21
   beforAudio: helper first
   name: "Vision de pr\xE9s Test N 22"
   label: "Vision de pr\xE9s Test N\xB0 8"
@@ -70,3 +71,5 @@ MonoBehaviour:
   - name: MLC-PRES
     value: 0.057
   action: 
+  toBeVerified: 0
+  keepSameImg: 0
