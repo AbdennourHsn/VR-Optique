@@ -1279,6 +1279,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff2c87290219fa54fbe183ec7850b86a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tobeverifie: 1
+  groupId: 0
   qas:
   - {fileID: 11400000, guid: 541c37c5b540f45bfb2e081b09af51ab, type: 2}
   - {fileID: 11400000, guid: b9671c0362202480a8d936b3947e0199, type: 2}

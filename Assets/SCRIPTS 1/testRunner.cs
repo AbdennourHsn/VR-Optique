@@ -21,6 +21,8 @@ public class ObjectState
 
 public class TestRunner : MonoBehaviour
 {
+    public bool tobeverifie = true;
+    public int groupId=0;
     public QA[] qas;
     public QA verificationQuestion;
     public QA verificationQuestionNo;
@@ -689,13 +691,12 @@ public class TestRunner : MonoBehaviour
         question.options[0].nextQ = oui.nextQ;
         question.options[0].resultCode = oui.resultCode;
         verificationQuestionNo.name = aname;
-        print("++");
-
         int x = AllQuestions.questions.Where(q => q.GroupId == no.GroupId + 1).First().id;
-        print("++");
+
+        Question qNo= AllQuestions.questions.Where(q => q.GroupId == no.GroupId && q.questionString== "Combien de cercles voyez-vous ?").First();
 
         List<Option> optionsToNo=new List<Option>();
-        optionsToNo.AddRange(no.options);
+        optionsToNo.AddRange(qNo.options);
         optionsToNo.Add(new Option
         {
             label = "image non-stable",
@@ -705,7 +706,7 @@ public class TestRunner : MonoBehaviour
             resultCode = "NS",
         });
         verificationQuestionNo.options = optionsToNo;
-
+        verificationQuestionNo.groupID = no.GroupId;
         Question b = AllQuestions.questions.FirstOrDefault(q => q.id == 1000);
         b.UpdateValues(verificationQuestion);
         Question a = AllQuestions.questions.FirstOrDefault(q => q.id == 2000);
@@ -714,12 +715,18 @@ public class TestRunner : MonoBehaviour
         return question;
     }
 
-    bool toBeVerified=true;
-    List<Option> optionTopass;
+
     public void Next()
     {
         previous.Add(currentPos);// add to buffer history
         Question current = AllQuestions.questions.Where(q=>q.id == currentPos).First();
+
+        if(current.GroupId !=groupId)
+        {
+            print("Next group");
+            groupId = current.GroupId;
+            tobeverifie = true;
+        }
         //Debug.Log(current.selectedOption().label+" "+ current.selectedOption().resultCode + " " + current.selectedOption().nextQ);
 
         uiAnswer.Play();//button press sound
@@ -729,28 +736,28 @@ public class TestRunner : MonoBehaviour
         hideAllOnScreenImages();
         if (nextQ != -1)
         {
-            if (current.toBeVerified)
-            {
-                optionTopass = current.options;
-                Question verifir = VerifieQuestion(current.name, current.selectedOption(), current);
-                nextQ = verifir.id;
-                currentPos = nextQ;
-                hideAllOnScreenImages();
-                loadQuestion(currentPos);
-                toBeVerified = false;
-                return;
-            }
+
             if (current.selectedOption().resultCode!="")
             {
+                if (tobeverifie)
+                {
+                    tobeverifie = false;
+                    Question verifir = VerifieQuestion(current.name, current.selectedOption(), current);
+                    nextQ = verifir.id;
+                    currentPos = nextQ;
+                    hideAllOnScreenImages();
+                    loadQuestion(currentPos);
+                    Debug.Log(current.name + "  => " + current.selectedOption().resultCode + " id-> " + current.id);
+                    TestSaver.instance.SendDataToServer(current.name, current.selectedOption().resultCode, false);
+                    return;
+                }
                     string testName = current.name;
                     // unsaved results to to be saved for generating the summery
                     int currntScreen = ConfigsManager.screens.IndexOf(ConfigsManager.screens.Find(I => I == output.text).ToString());
                     //ConfigsManager.saveAnswer(testName, current.selectedOption().resultCode);
                     Debug.Log(current.name + "  => " + current.selectedOption().resultCode + " id-> " + current.id);
-                    TestSaver.instance.SendDataToServer(current.name, current.selectedOption().resultCode);
+                    TestSaver.instance.SendDataToServer(current.name, current.selectedOption().resultCode , true);
                     output.text = ConfigsManager.screens[currntScreen];
-                    toBeVerified = true;
-                
             }
             if (nextQ < currentPos && !Question.isRepeated)
             {

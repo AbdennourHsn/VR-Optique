@@ -28,6 +28,7 @@ public class TestDto
     public string name { get; set; }
     public bool isDone { get; set; }
     public int results { get; set; }
+    public bool verified { get; set; }
 }
 
 
@@ -114,6 +115,7 @@ public class ServerConnection : MonoBehaviour
         form.AddField("name", testDto.name);
         form.AddField("isDone", testDto.isDone.ToString());
         form.AddField("results", testDto.results);
+        form.AddField("verified", testDto.verified.ToString());
         UnityWebRequest www = UnityWebRequest.Post($"{apiUrl}Test/setResultat/{PlayerPrefs.GetString("UserIdentifier")}", form);
         www.SetRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         yield return www.SendWebRequest();
