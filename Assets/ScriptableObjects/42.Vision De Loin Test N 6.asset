@@ -68,14 +68,14 @@ MonoBehaviour:
     nextQ: 47
     NextQestion: {fileID: 11400000, guid: b547f5936f6b94293b6fbe3c42a69b54, type: 2}
     resultCode: NTL
-    iSselected: 0
+    iSselected: 1
   - label: I
     image_name: I
     image_selected: I-S
     nextQ: 47
     NextQestion: {fileID: 11400000, guid: b547f5936f6b94293b6fbe3c42a69b54, type: 2}
     resultCode: NTR
-    iSselected: 1
+    iSselected: 0
   layouts:
   - name: middleLettersContainer
     value: 0.12195299

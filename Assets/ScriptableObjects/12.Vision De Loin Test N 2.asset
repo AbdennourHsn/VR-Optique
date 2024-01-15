@@ -56,14 +56,14 @@ MonoBehaviour:
     nextQ: 17
     NextQestion: {fileID: 11400000, guid: db4f0142162a94727ad77153fe22e02c, type: 2}
     resultCode: NTL
-    iSselected: 0
+    iSselected: 1
   - label: ROUGE
     image_name: ROUGE
     image_selected: ROUGE-S
     nextQ: 17
     NextQestion: {fileID: 11400000, guid: db4f0142162a94727ad77153fe22e02c, type: 2}
     resultCode: NTR
-    iSselected: 1
+    iSselected: 0
   layouts: []
   action: 
   toBeVerified: 0

@@ -56,7 +56,7 @@ MonoBehaviour:
     nextQ: 159
     NextQestion: {fileID: 11400000, guid: 66dd3ef2e8b424ad48861dac1348decf, type: 2}
     resultCode: HR/DP
-    iSselected: 0
+    iSselected: 1
   - label: 156-2-2
     image_name: 156-2-2
     image_selected: 156-2-2-S

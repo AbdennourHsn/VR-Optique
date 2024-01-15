@@ -56,14 +56,14 @@ MonoBehaviour:
     nextQ: 153
     NextQestion: {fileID: 11400000, guid: 5e33f7a54d108423ca01958832414c11, type: 2}
     resultCode: HR/MDP
-    iSselected: 0
+    iSselected: 1
   - label: 150-4-1
     image_name: 150-4-1
     image_selected: 150-4-1-S
     nextQ: 153
     NextQestion: {fileID: 11400000, guid: 5e33f7a54d108423ca01958832414c11, type: 2}
     resultCode: HO/MDP
-    iSselected: 1
+    iSselected: 0
   - label: 150-4-2
     image_name: 150-4-2
     image_selected: 150-4-2-S
