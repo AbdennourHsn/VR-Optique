@@ -243,11 +243,6 @@ public class TestRunner : MonoBehaviour
     bool isPaused=false;
     public TextMeshProUGUI output;
 
-    private void Update()
-    {
-       // Debug.Log(uiText.transform.position);
-    }
-
     void optionsToogle(bool toogle)
     {
         foreach (Image img in _2s) img.enabled = toogle;
@@ -280,7 +275,6 @@ public class TestRunner : MonoBehaviour
 
     void clearSetup()
     {
-
         // set all game objects as active
         foreach (GameObject obj in Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[])
         {
@@ -298,14 +292,9 @@ public class TestRunner : MonoBehaviour
                         initalX = 0f;
                     }
                     obj.transform.position = new Vector3(initalX, obj.transform.position.y, obj.transform.position.z);
-               
                 }
-
-                
             }
-
         }
-
         //hide all onscreen options
         hideAllOnScreenImages();
         pauseMenu.SetActive(false);
@@ -421,17 +410,15 @@ public class TestRunner : MonoBehaviour
         objectStates.Clear();
         foreach (GameObject obj in Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[])
         {
+            if (obj.tag == "MainCamera") continue;
             // Exclude the Camera and Canvas from capturing their state
-            if (obj.GetComponent<Camera>() != null || obj.GetComponent<Canvas>() != null || obj.name== "--------UI"||obj.name == "------LOGIC -----")
+            if (obj.GetComponent<Camera>() != null || obj.GetComponent<Canvas>() != null || obj.name== "--------UI"||obj.name == "------LOGIC -----" || obj.name == "All")
                 continue;
 
             ObjectState state = new ObjectState();
             state.gameObject = obj;
             state.isActive = obj.activeSelf;
             state.position = obj.transform.position;
-
-            // Add any other relevant properties to 'state'
-
             objectStates.Add(state);
         }
     }
@@ -441,14 +428,12 @@ public class TestRunner : MonoBehaviour
     {
         foreach (ObjectState state in objectStates)
         {
+            if (state.gameObject.tag == "MainCamera") continue;
             // Exclude hiding the Camera and Canvas
             if (state.gameObject.GetComponent<Camera>() != null || state.gameObject.GetComponent<Canvas>() != null || state.gameObject.name == "--------UI"||state.gameObject.name== "------LOGIC -----" || state.gameObject.name== "video background") 
                 continue;
-
             state.gameObject.SetActive(false);
-           
         }
-
         // Add UI Text object as a child to the Canvas
         GameObject canvas = GameObject.Find("Canvas"); // Assuming the Canvas GameObject is named "Canvas"
 
@@ -500,6 +485,7 @@ public class TestRunner : MonoBehaviour
         uiText.text = "";
         foreach (ObjectState state in objectStates)
         {
+            if (state.gameObject.tag == "MainCamera") continue;
             // Exclude restoring the Camera and Canvas
             if (state.gameObject.GetComponent<Camera>() != null || state.gameObject.GetComponent<Canvas>() != null)
                 continue;
