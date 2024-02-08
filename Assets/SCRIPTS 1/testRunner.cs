@@ -285,13 +285,13 @@ public class TestRunner : MonoBehaviour
                 // rest any movable object to it's original position (if any)
                 if (ConfigsManager.offsetedObjectXValueList.ContainsKey(obj.name))
                 {
-                
+                    //print("Im here : " +obj.name + " " + ConfigsManager.offsetedObjectXValueList[obj.name]);
                     float initalX = ConfigsManager.offsetedObjectXValueList[obj.name];
                     if (obj.name=="2R"|| obj.name == "2G"|| obj.name == "2Y"|| obj.name == "2B")
                     {
                         initalX = 0f;
                     }
-                    obj.transform.position = new Vector3(initalX, obj.transform.position.y, obj.transform.position.z);
+                    obj.transform.localPosition = new Vector3(initalX, obj.transform.localPosition.y, obj.transform.localPosition.z);
                 }
             }
         }
@@ -410,15 +410,15 @@ public class TestRunner : MonoBehaviour
         objectStates.Clear();
         foreach (GameObject obj in Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[])
         {
-            if (obj.tag == "MainCamera") continue;
+            if (obj.tag == "Ignore") continue;
             // Exclude the Camera and Canvas from capturing their state
-            if (obj.GetComponent<Camera>() != null || obj.GetComponent<Canvas>() != null || obj.name== "--------UI"||obj.name == "------LOGIC -----" || obj.name == "All")
+            if (obj.GetComponent<Camera>() != null || obj.GetComponent<Canvas>() != null)
                 continue;
 
             ObjectState state = new ObjectState();
             state.gameObject = obj;
             state.isActive = obj.activeSelf;
-            state.position = obj.transform.position;
+            state.position = obj.transform.localPosition;
             objectStates.Add(state);
         }
     }
@@ -428,8 +428,6 @@ public class TestRunner : MonoBehaviour
     {
         foreach (ObjectState state in objectStates)
         {
-            if (state.gameObject.tag == "MainCamera") continue;
-            // Exclude hiding the Camera and Canvas
             if (state.gameObject.GetComponent<Camera>() != null || state.gameObject.GetComponent<Canvas>() != null || state.gameObject.name == "--------UI"||state.gameObject.name== "------LOGIC -----" || state.gameObject.name== "video background") 
                 continue;
             state.gameObject.SetActive(false);
@@ -446,7 +444,7 @@ public class TestRunner : MonoBehaviour
             uiText = uiTextObject.AddComponent<TextMeshProUGUI>();
             uiText.text = q.label;
             uiText.fontSize = 1.6f;
-            uiText.transform.position =new  Vector3(0.0f,.85f,0.56f);
+            uiText.transform.localPosition =new  Vector3(2.0f, -14.5f, 0.56f);
             uiText.alignment = TextAlignmentOptions.Center;
             // show cover pannel based on curret question
 
@@ -485,13 +483,12 @@ public class TestRunner : MonoBehaviour
         uiText.text = "";
         foreach (ObjectState state in objectStates)
         {
-            if (state.gameObject.tag == "MainCamera") continue;
             // Exclude restoring the Camera and Canvas
             if (state.gameObject.GetComponent<Camera>() != null || state.gameObject.GetComponent<Canvas>() != null)
                 continue;
 
             state.gameObject.SetActive(state.isActive);
-            state.gameObject.transform.position = state.position;
+            state.gameObject.transform.localPosition = state.position;
             // Restore any other relevant properties of the object if needed
 
         }
@@ -533,7 +530,7 @@ public class TestRunner : MonoBehaviour
 
                 // Step 3: Show the testTitle object for a specific duration (adjust 'titleVisibilityInterval' as needed)
                 await WaitForSeconds(titleVisibilityInterval); // Wait for the specified duration
-
+                print("Im here");
                 // Step 4: Reapply the captured object states
                 RestoreObjectStates();
             }

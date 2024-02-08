@@ -67,15 +67,15 @@ MonoBehaviour:
     iSselected: 0
   layouts:
   - name: 2F
-    value: 0.085
+    value: -0.08499999
   - name: 2R
-    value: 0.085
+    value: -0.08499999
   - name: 2B
-    value: 0.085
+    value: -0.08499999
   - name: 2G
-    value: 0.085
+    value: -0.08499999
   - name: 2Y
-    value: 0.085
+    value: -0.08499999
   action: 
   toBeVerified: 0
   keepSameImg: 0

@@ -8,18 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VL-tests.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
-  - enabled: 1
-    path: Assets/Connection.unity
-    guid: 6fb7b7c8c816648e9b9e3e14efd165c9
-  - enabled: 1
-    path: Assets/Scenes/tutorial.unity
-    guid: 17c4bef7295f7974d9cb6cf661618a5d
-  - enabled: 1
-    path: Assets/Scenes/before test.unity
-    guid: 353f6b9a5493db946acf656f22e72870
-  - enabled: 1
-    path: Assets/Scenes/VL-tests 2.unity
-    guid: 8bcd0591f375f446ea435e4a538cdebe
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6e43597eb2f5da9479a368a5a59171be, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2946b80cd7038f541a49d9dd422e5a21, type: 2}

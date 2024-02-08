@@ -64,7 +64,7 @@ MonoBehaviour:
     iSselected: 0
   layouts:
   - name: middleLettersContainer
-    value: 0.12195299
+    value: 0
   action: 
   toBeVerified: 1
   keepSameImg: 0

@@ -82,9 +82,9 @@ MonoBehaviour:
     iSselected: 0
   layouts:
   - name: 2ND-LETTERS
-    value: 0.085
+    value: -0.08499999
   - name: middleLettersContainer
-    value: 0.15151
+    value: 2.955803
   action: 
   toBeVerified: 0
   keepSameImg: 0

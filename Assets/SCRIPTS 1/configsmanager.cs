@@ -6,7 +6,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem.Controls;
 
-public class ConfigsManager : MonoBehaviour
+public class ConfigsManager  : MonoBehaviour
 {
     // Declare a collection to hold the question objects
     public static Questions Q;
@@ -14,8 +14,8 @@ public class ConfigsManager : MonoBehaviour
     public static Dictionary<string, float> offsetedObjectXValueList = new Dictionary<string, float>();
     // Use this for initialization
     public static Dictionary<string, string> answers = new Dictionary<string, string>();
-    public static List<int> beginTestIds = new List<int>{0,8,17,23,30,38,47,53,60,68,77,83,91,100,106,114,123,129,136,144,153,159};
-    public static List<int> basicTests = new List<int>{3,4,7,8,11,14,17,18,21,22};
+    public static List<int> beginTestIds = new List<int> { 0, 8, 17, 23, 30, 38, 47, 53, 60, 68, 77, 83, 91, 100, 106, 114, 123, 129, 136, 144, 153, 159 };
+    public static List<int> basicTests = new List<int> { 3, 4, 7, 8, 11, 14, 17, 18, 21, 22 };
     public static List<int> basic4Circles = new List<int> { 3, 7, 11, 14, 17, 21 };
 
     public static List<string> screens = new List<string> {
@@ -29,24 +29,7 @@ public class ConfigsManager : MonoBehaviour
     private static Dictionary<string, string> history = new Dictionary<string, string>();
     private void Start()
     {
-        //for (int i = 1;i<=22;i++)
-        //{
-        //    history.Add("$"+i.ToString()+"$", "$" + i.ToString() + "$");
-        //}
-        //initialScreens = new List<string>(screens);
-        //for (int i = 0; i < 26; i++)
-        //{
-        //    char character = (char)('A' + i);
-        //    history.Add("$" + character + "$", "$" + character + "$");
-        //}
-        //history.Add("$-A$", "$-A$");
-        //history.Add("$-B$", "$-B$");
-        //history.Add("$-C$", "$-C$");
-        //history.Add("$-1$", "$-1$");
-        //history.Add("$-2$", "$-2$");
-        //history.Add("$-3$", "$-3$");
-        //history.Add("$-4$", "$-4$");
-        //history.Add("$-5$", "$-5$");
+
     }
 
     public static void saveAnswer(string TestName, string TestResult)
@@ -189,14 +172,14 @@ public class ConfigsManager : MonoBehaviour
             }
         }
 
-        screens[3] = "distance = \n" + distance + "\n"+distance+" Cumul tests corrig�s et tests d�fauts simples = "+ s3d + "\n VI Cumul tests corrig�s et tests d�fauts simples = "+s3i+"\n\nprofile = " + profile + "\nHR = " + pHR + "\nHO = " + pHO + "\n\nl'excitant = " + excitant;
+        screens[3] = "distance = \n" + distance + "\n" + distance + " Cumul tests corrig�s et tests d�fauts simples = " + s3d + "\n VI Cumul tests corrig�s et tests d�fauts simples = " + s3i + "\n\nprofile = " + profile + "\nHR = " + pHR + "\nHO = " + pHO + "\n\nl'excitant = " + excitant;
     }
     private static string fval(string key)
     {
-        return answers.ContainsKey(key)  ? answers[key] : "...";
+        return answers.ContainsKey(key) ? answers[key] : "...";
     }
 
-    static List<int> SummarizeVisionType( int start, int end)
+    static List<int> SummarizeVisionType(int start, int end)
     {
         int correctAmmount = 0;
         int simpleDefectAmmount = 0;
@@ -213,15 +196,15 @@ public class ConfigsManager : MonoBehaviour
             int testNumber = int.Parse(testName.Split('N')[1]);
             if (testNumber >= start && testNumber <= end)
             {
-                if (ConfigsManager.answers[testName].StartsWith("COR")) 
+                if (ConfigsManager.answers[testName].StartsWith("COR"))
                 {
                     correctAmmount++; // any correct test
-                    
+
                 }
-                else if ( ConfigsManager.answers[testName] == "HO" || ConfigsManager.answers[testName] == "HR" )
+                else if (ConfigsManager.answers[testName] == "HO" || ConfigsManager.answers[testName] == "HR")
                 {
                     simpleDefectAmmount++; //any test with Ho or HR as result
-                 
+
                 }
                 else
                 {
@@ -230,11 +213,11 @@ public class ConfigsManager : MonoBehaviour
 
                 if (ConfigsManager.answers[testName].StartsWith("HO"))
                 {
-                   hos++; //any results that has HO type
+                    hos++; //any results that has HO type
                 }
                 else if (ConfigsManager.answers[testName].StartsWith("HR"))
                 {
-                   hrs++; //any results that has HR type
+                    hrs++; //any results that has HR type
                 }
 
                 if (basicTests.Contains(testNumber))
@@ -243,7 +226,7 @@ public class ConfigsManager : MonoBehaviour
                     {
                         corbasic++; //count correct test if test is basic (1,2,5,6,9,10,12,13,15,16,19,20)
                     }
-                    else if(ConfigsManager.answers[testName] == "HO" || ConfigsManager.answers[testName] == "HR")
+                    else if (ConfigsManager.answers[testName] == "HO" || ConfigsManager.answers[testName] == "HR")
                     {
                         basicSimpleDefault++;
                     }
@@ -269,8 +252,8 @@ public class ConfigsManager : MonoBehaviour
         stats.Add(ImoportantDefectAmmount);
         stats.Add(corbasic);
         stats.Add(basicSimpleDefault);
-        stats.Add(basicSimpleDefault+ corbasic);
-        stats.Add(basicSimpleDefault4+ cor4basic);
+        stats.Add(basicSimpleDefault + corbasic);
+        stats.Add(basicSimpleDefault4 + cor4basic);
         stats.Add(hrs);
         stats.Add(hos);
 
@@ -278,34 +261,6 @@ public class ConfigsManager : MonoBehaviour
         return stats;
 
     }
-
-    //public static void CreateQA(Question Q)
-    //{
-    //    QA qaData = ScriptableObject.CreateInstance<QA>();
-    //    qaData.id = Q.id;
-    //    qaData.name = Q.name;
-    //    qaData.questionString = Q.questionString;
-    //    qaData.hiddens = Q.hiddens;
-    //    qaData.visibales = Q.visibales;
-    //    qaData.options = Q.options;
-    //    qaData.layouts = Q.layouts;
-    //    qaData.time = Q.time;
-    //    qaData.audio = Q.audio;
-    //    qaData.beforAudio = Q.beforAudio;
-    //    qaData.label = Q.label;
-    //    string path = "Assets/ScriptableObjects/";
-        
-    //    // Ensure the directory exists, create it if necessary
-    //    if (!Directory.Exists(path))
-    //    {
-    //        Directory.CreateDirectory(path);
-    //    }
-    //    string fileName = Q.id+"."+Q.name+".asset";
-    //    string assetPath = Path.Combine(path, fileName);
-    //    AssetDatabase.CreateAsset(qaData, assetPath);
-    //    AssetDatabase.SaveAssets();
-    //    AssetDatabase.Refresh();
-    //}
 
     public static void LoadQuestionFromResources()
     {
@@ -315,22 +270,23 @@ public class ConfigsManager : MonoBehaviour
         try
         {
             Q = JsonUtility.FromJson<Questions>(jsonString);
-            GameObject[] allObjects =  Resources.FindObjectsOfTypeAll<GameObject>();
+            GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
 
             for (int i = 0; i < Q.questions.Count; i++)
             {
                 //Debug.Log(i);
                 Question q = Q.questions[i];
-               //CreateQA(q);
-               // Debug.Log("Current Q: "+q.id);
+                //CreateQA(q);
+                // Debug.Log("Current Q: "+q.id);
                 foreach (Layout l in q.layouts)
                 {
-                    GameObject objs = allObjects.Where(o=>o.name==l.name).First();
+                    GameObject objs = allObjects.Where(o => o.name == l.name).First();
                     if (objs != null)
                     {
                         if (!offsetedObjectXValueList.ContainsKey(objs.name))
                         {
-                            offsetedObjectXValueList.Add(objs.name, objs.transform.position.x);
+                            if(objs.name == "middleLettersContainer") print(objs.transform.localPosition.x);
+                            offsetedObjectXValueList.Add(objs.name, objs.transform.localPosition.x);
 
                         }
                     }
@@ -344,6 +300,29 @@ public class ConfigsManager : MonoBehaviour
         }
     }
 
+    public static Vector3 WorldToLocalPosition(Vector3 worldPosition, Transform onj)
+    {
+        if (onj.parent != null)
+        {
+            // Start with the initial object's position
+            Vector3 localPosition = worldPosition;
+
+            // Traverse up the hierarchy until the target parent is reached
+            Transform currentParent = onj.parent;
+            while (currentParent != null)
+            {
+                localPosition = currentParent.InverseTransformPoint(localPosition);
+                currentParent = currentParent.parent;
+            }
+
+            return localPosition;
+        }
+        else
+        {
+            Debug.LogError("Target parent is not assigned!");
+            return Vector3.zero;
+        }
+    }
 }
 
 // Declare the Question class
@@ -393,13 +372,13 @@ public class Question
     public string questionString;
     public float time;
     public string audio;
-    public static bool isRepeated=false;
+    public static bool isRepeated = false;
     public List<string> visibales;
     public List<string> hiddens;
     public List<Option> options;
     public List<Layout> layouts;
     public string action;
-    public bool toBeVerified=false;
+    public bool toBeVerified = false;
     public bool keepSameImg = false;
 
     public void UpdateValues(QA qa)
@@ -452,12 +431,12 @@ public class Question
             toogleActivity(objName, false);
         }
         //layouts
-        if (layouts != null && layouts.Count>0)
+        if (layouts != null && layouts.Count > 0)
         {
             foreach (var item in layouts)
             {
 
-                if (GameObject.Find(item.name)!=null)
+                if (GameObject.Find(item.name) != null)
                 {
                     Vector3 newpos = GameObject.Find(item.name).transform.position;
                     newpos.x = item.value;
@@ -478,7 +457,7 @@ public class Question
         //{
         //    go = GameObject.FindGameObjectWithTag(objName);
         //}
-        if (go != null )
+        if (go != null)
         {
             go.SetActive(value);
         }
@@ -534,11 +513,11 @@ public class Layout
 [System.Serializable]
 public class Questions
 {
-    public List<Question> questions=new List<Question>();
+    public List<Question> questions = new List<Question>();
 
     public Questions(QA[] qas)
     {
-        foreach(QA qa in qas)
+        foreach (QA qa in qas)
         {
             questions.Add(new Question(qa));
         }
