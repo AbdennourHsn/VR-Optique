@@ -12,13 +12,13 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - NoLight
   - Water
   - UI
   - visible
   - hidden
-  - 
-  - 
+  - .light
+  - cote
   - 
   - 
   - 

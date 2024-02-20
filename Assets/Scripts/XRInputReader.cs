@@ -42,7 +42,7 @@ public class XRInputReader : MonoBehaviour
                 timer += Time.deltaTime;
                 if (timer > 5)
                 {
-                    LoadFirstScene();
+                    //LoadFirstScene();
                 }
             }
         }

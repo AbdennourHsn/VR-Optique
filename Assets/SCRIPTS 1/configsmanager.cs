@@ -10,6 +10,7 @@ public class ConfigsManager  : MonoBehaviour
 {
     // Declare a collection to hold the question objects
     public static Questions Q;
+
     public static List<string> offsetedObjectNamesList = new List<string>();
     public static Dictionary<string, float> offsetedObjectXValueList = new Dictionary<string, float>();
     // Use this for initialization
