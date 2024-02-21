@@ -1,17 +1,36 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace CleanImplementation
 {
+    public enum Direction
+    {
+        LEFT,
+        RIGHT
+    }
+
     public class MenuOptions : MonoBehaviour
     {
         public MenuElement[] menuElements;
-        private int selectedElement = 0;
+        [HideInInspector]
+        public int selectedElement = 0;
 
-        private void Start()
+        private void OnEnable()
         {
-            //menuElements[selectedElement].Select();
+            
+        }
+
+        private void OnDisable()
+        {
+
+        }
+
+        private void Awake()
+        {
+            
         }
 
         public void SetUpOptions(List<OptionLoin> optionLoins)
@@ -21,8 +40,10 @@ namespace CleanImplementation
             {
                 for (int i = 0; i < menuElements.Length; i++)
                 {
-                    menuElements[i].SetUpElement(optionLoins[i].img, optionLoins[i].imgSelected);
+                    menuElements[i].SetUpElement(optionLoins[i]);
+                    menuElements[i].UnSelect();
                 }
+                selectedElement = 0;
                 menuElements[selectedElement].Select();
             }
         }

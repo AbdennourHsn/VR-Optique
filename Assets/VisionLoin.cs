@@ -8,6 +8,7 @@ public class VisionLoin : ScriptableObject
     public string Testname;
     public float Time;
     public AudioClip Audio;
+    public bool theMainQuestion;
     [Header("Box")]
     public bool LB;
 
@@ -20,6 +21,8 @@ public class VisionLoin : ScriptableObject
 
     public bool blockDown1;
     public bool blockDown2;
+
+    public bool barrete;
 
     [Header("Option")]
     public List<OptionLoin> Options;

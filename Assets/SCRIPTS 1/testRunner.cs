@@ -95,6 +95,7 @@ public class TestRunner : MonoBehaviour
 
     void HandleInputs(InputAction.CallbackContext ctx) 
     {
+        print("Called");
         if (ctx.performed && ctx.action.name == "pause")
         {
             // check if game pause

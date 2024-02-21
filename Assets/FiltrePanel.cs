@@ -17,7 +17,6 @@ namespace CleanImplementation
         public GameObject blockDown1;
         public GameObject blockDown2;
 
-
         private void HideAll()
         {
             blokUp1.SetActive(false);
