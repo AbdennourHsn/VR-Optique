@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2b2da1974a7423b9063b19315b6bf2, type: 3}
+  m_Name: 13
+  m_EditorClassIdentifier: 
+  Id: 13
+  Testname: Vision De Loin Test N 2
+  Time: 2
+  helper: 0
+  Audio: {fileID: 8300000, guid: f6aebd8601ff5954699cdcbd4fbe08e7, type: 3}
+  theMainQuestion: 0
+  LB: 0
+  blockUp1: 0
+  blockUp2: 0
+  block3_6: 1
+  block4_5: 0
+  blockDown1: 0
+  blockDown2: 0
+  barrete: 0
+  xPos: 0
+  Options:
+  - Label: 13-3-1
+    img: {fileID: 21300000, guid: 96da9ec195fe37d4e9345c53ab29f728, type: 3}
+    imgSelected: {fileID: 21300000, guid: a07d59255366b9544b655f04ecac7cb9, type: 3}
+    next: {fileID: 11400000, guid: 35fff00863b944e61b3060ab74b8df78, type: 2}
+    isLast: 0
+    ResultsCode: 1
+  - Label: 13-3-2
+    img: {fileID: 21300000, guid: 4dcce3dd5cc44784c9c823a25234c269, type: 3}
+    imgSelected: {fileID: 21300000, guid: df5fbaa583bcc4e4da5c979d76ec634d, type: 3}
+    next: {fileID: 0}
+    isLast: 1
+    ResultsCode: 2
+  - Label: 13-3-3
+    img: {fileID: 21300000, guid: 050ccb4992f1c4a40b511c45de9b6e14, type: 3}
+    imgSelected: {fileID: 21300000, guid: f33c2281fe85d0c42a327149db79aaef, type: 3}
+    next: {fileID: 0}
+    isLast: 1
+    ResultsCode: 3
