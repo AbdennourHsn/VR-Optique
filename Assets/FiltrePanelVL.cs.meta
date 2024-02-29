@@ -3,7 +3,15 @@ guid: 6e20fa844e34944c4b8c6d912ccee82c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - blokUp1: {instanceID: 0}
+  - blokUp2: {instanceID: 0}
+  - block3_6: {instanceID: 0}
+  - block4_5: {instanceID: 0}
+  - blockDown1: {instanceID: 0}
+  - blockDown2: {instanceID: 0}
+  - barrete: {instanceID: 0}
+  - textName: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
