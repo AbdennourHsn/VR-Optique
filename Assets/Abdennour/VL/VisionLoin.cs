@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "new Vision", menuName = "Create Test/Vision de Loin", order = 1)]
-public class VisionLoin : ScriptableObject
+public class VisionLoin : ScriptableObject , Vision
 {
     public int Id;
     public string Testname;

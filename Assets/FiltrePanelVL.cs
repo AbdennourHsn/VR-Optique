@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace CleanImplementation
 {
-    public class FiltrePanelVL : MonoBehaviour
+    public class FiltrePanelVL : MonoBehaviour , FiltrePanel<VisionLoin>
     {
         [Header("Up")]
         public GameObject blokUp1;
@@ -23,7 +23,7 @@ namespace CleanImplementation
 
         public TextMeshPro textName;
 
-        private void HideAll()
+        public void HideAll()
         {
             blokUp1.SetActive(false);
             blokUp2.SetActive(false);
@@ -34,7 +34,7 @@ namespace CleanImplementation
             barrete.SetActive(false);
         }
 
-        private void ShowAll()
+        public void ShowAll()
         {
             blokUp1.SetActive(true);
             blokUp2.SetActive(true);
