@@ -19,13 +19,6 @@ MonoBehaviour:
   Audio: {fileID: 8300000, guid: a6e2fbfda2684af4382f0131e178549e, type: 3}
   theMainQuestion: 0
   LB: 0
-  blockUp1: 0
-  blockUp2: 0
-  block3_6: 1
-  block4_5: 0
-  blockDown1: 0
-  blockDown2: 0
-  barrete: 0
   xPos: 0
   Options:
   - Label: VERT
@@ -40,3 +33,17 @@ MonoBehaviour:
     next: {fileID: 0}
     isLast: 1
     ResultsCode: 18
+  dots:
+    dotUp1: 1
+    dotUp2: 1
+    dotMiddle1: 0
+    dotMiddle2: 0
+    dotDown1: 0
+    dotDown2: 0
+  blockUp1: 0
+  blockUp2: 0
+  block3_6: 1
+  block4_5: 0
+  blockDown1: 0
+  blockDown2: 0
+  barrete: 0

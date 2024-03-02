@@ -33,6 +33,13 @@ MonoBehaviour:
     next: {fileID: 11400000, guid: d7bae5b81e533480ba8ec1726198df94, type: 2}
     isLast: 0
     ResultsCode: 0
+  dots:
+    dotUp1: 1
+    dotUp2: 1
+    dotMiddle1: 1
+    dotMiddle2: 1
+    dotDown1: 1
+    dotDown2: 1
   blockUp1: 1
   blockUp2: 1
   blockUp3: 1

@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89dfe054bb6754e619d9d6244cf855d7, type: 3}
+  m_Name: 96
+  m_EditorClassIdentifier: 
+  Id: 0
+  Testname: "Vision interm\xE9diaire Test N\xB0 5"
+  Time: 0
+  helper: 0
+  Audio: {fileID: 8300000, guid: f6aebd8601ff5954699cdcbd4fbe08e7, type: 3}
+  theMainQuestion: 0
+  LB: 1
+  xPos: 0
+  Options:
+  - Label: 96-3-1
+    img: {fileID: 21300000, guid: e1a981f36e94eae4eabe959646000caa, type: 3}
+    imgSelected: {fileID: 21300000, guid: f6e0c22e4ca226e4b97b8006a57683d3, type: 3}
+    next: {fileID: 11400000, guid: c6d8744fd97a9420987d3f5b6a05303f, type: 2}
+    isLast: 0
+    ResultsCode: 0
+  - Label: 96-3-3
+    img: {fileID: 21300000, guid: 6b785b74bc08c6147bd3cac693872e0b, type: 3}
+    imgSelected: {fileID: 21300000, guid: 4f622be404fef9342a9a04c695ad45ad, type: 3}
+    next: {fileID: 0}
+    isLast: 1
+    ResultsCode: 2
+  - Label: 96-3-2
+    img: {fileID: 21300000, guid: 32e5a2574c0514042beb0e9fe2f579ef, type: 3}
+    imgSelected: {fileID: 21300000, guid: 85834f36810b4c7449d93abf6dfeaf90, type: 3}
+    next: {fileID: 0}
+    isLast: 1
+    ResultsCode: 3
+  blockUp1: 1
+  blockUp2: 0
+  blockUp3: 0
+  blockUp4: 1
+  middle: 1
+  blockDowm1: 1
+  blockDowm2: 0
+  blockDowm3: 0
+  blockDowm4: 1
+  barrete: 0

@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89dfe054bb6754e619d9d6244cf855d7, type: 3}
+  m_Name: 88
+  m_EditorClassIdentifier: 
+  Id: 0
+  Testname: "Vision interm\xE9diaire Test N\xB0 4"
+  Time: 0
+  helper: 0
+  Audio: {fileID: 8300000, guid: f6aebd8601ff5954699cdcbd4fbe08e7, type: 3}
+  theMainQuestion: 0
+  LB: 1
+  xPos: 0
+  Options:
+  - Label: 88-5-1
+    img: {fileID: 21300000, guid: 0ac77c5a7fed8154ba70d01119a70879, type: 3}
+    imgSelected: {fileID: 21300000, guid: 539c08aa14aef1b41bb8d15dfd0dfbe2, type: 3}
+    next: {fileID: 11400000, guid: 398b9968249a94255a177ef6da5a2001, type: 2}
+    isLast: 0
+    ResultsCode: 0
+  - Label: 88-5-4
+    img: {fileID: 21300000, guid: 313d802485f6d7f4a9902523ef4bfd4e, type: 3}
+    imgSelected: {fileID: 21300000, guid: 59f80a4201670f1469f5b2b9ef5c5316, type: 3}
+    next: {fileID: 0}
+    isLast: 1
+    ResultsCode: 2
+  - Label: 88-5-2
+    img: {fileID: 21300000, guid: e356144bfed27f849843f39c6730acda, type: 3}
+    imgSelected: {fileID: 21300000, guid: bf93e386592fa5d48a857a7695a5dc37, type: 3}
+    next: {fileID: 0}
+    isLast: 1
+    ResultsCode: 3
+  - Label: 88-5-5
+    img: {fileID: 21300000, guid: dc88d564c912c2a4094db6f3d55e16a0, type: 3}
+    imgSelected: {fileID: 21300000, guid: d0b1fc2cb12130d4ba4cbf9b473a34aa, type: 3}
+    next: {fileID: 0}
+    isLast: 1
+    ResultsCode: 6
+  - Label: 88-5-3
+    img: {fileID: 21300000, guid: c8bbba3de0a8e124e830953051e8a312, type: 3}
+    imgSelected: {fileID: 21300000, guid: ad9df254efed6fd46a6018fbf753cda5, type: 3}
+    next: {fileID: 0}
+    isLast: 1
+    ResultsCode: 7
+  blockUp1: 1
+  blockUp2: 1
+  blockUp3: 1
+  blockUp4: 1
+  middle: 1
+  blockDowm1: 1
+  blockDowm2: 1
+  blockDowm3: 1
+  blockDowm4: 1
+  barrete: 0

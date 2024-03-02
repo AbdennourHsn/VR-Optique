@@ -33,6 +33,13 @@ MonoBehaviour:
     next: {fileID: 0}
     isLast: 1
     ResultsCode: 18
+  dots:
+    dotUp1: 1
+    dotUp2: 1
+    dotMiddle1: 1
+    dotMiddle2: 1
+    dotDown1: 1
+    dotDown2: 1
   blockUp1: 1
   blockUp2: 1
   blockUp3: 1

@@ -15,14 +15,11 @@ MonoBehaviour:
   Id: 4
   Testname: Vision De Loin Test N 1
   Time: 2
+  helper: 0
   Audio: {fileID: 8300000, guid: 6d851e1e045df344bae9201dbdf918d7, type: 3}
+  theMainQuestion: 0
   LB: 0
-  blockUp1: 1
-  blockUp2: 1
-  block3_6: 1
-  block4_5: 0
-  blockDown1: 1
-  blockDown2: 1
+  xPos: 0
   Options:
   - Label: ROUGE
     img: {fileID: 21300000, guid: 624929ed0aef2b84e850fb5f80613008, type: 3}
@@ -36,3 +33,17 @@ MonoBehaviour:
     next: {fileID: 0}
     isLast: 1
     ResultsCode: 18
+  dots:
+    dotUp1: 1
+    dotUp2: 1
+    dotMiddle1: 1
+    dotMiddle2: 1
+    dotDown1: 1
+    dotDown2: 1
+  blockUp1: 1
+  blockUp2: 1
+  block3_6: 1
+  block4_5: 0
+  blockDown1: 1
+  blockDown2: 1
+  barrete: 0

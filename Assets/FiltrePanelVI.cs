@@ -45,6 +45,7 @@ public class FiltrePanelVI : MonoBehaviour, FiltrePanel
         blockDowm2.SetActive(false);
         blockDowm3.SetActive(false);
         blockDowm4.SetActive(false);
+        barrete.SetActive(false);
     }
 
     public void HideTestName()
@@ -56,7 +57,6 @@ public class FiltrePanelVI : MonoBehaviour, FiltrePanel
     {
         if (Vision is VisionIntermediate vision)
         {
-            print(vision.blockUp1);
             blockUp1.SetActive(vision.blockUp1);
             blockUp2.SetActive(vision.blockUp2);
             blockUp3.SetActive(vision.blockUp3);
@@ -68,6 +68,7 @@ public class FiltrePanelVI : MonoBehaviour, FiltrePanel
             blockDowm2.SetActive(vision.blockDowm2);
             blockDowm3.SetActive(vision.blockDowm3);
             blockDowm4.SetActive(vision.blockDowm4);
+            barrete.SetActive(vision.barrete);
         }
     }
 
@@ -84,6 +85,7 @@ public class FiltrePanelVI : MonoBehaviour, FiltrePanel
         blockDowm2.SetActive(true);
         blockDowm3.SetActive(true);
         blockDowm4.SetActive(true);
+        barrete.SetActive(false);
     }
 
     public void ShowTestName(string name)

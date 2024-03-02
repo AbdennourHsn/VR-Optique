@@ -18,4 +18,6 @@ public abstract class Vision : ScriptableObject
 
     [Header("Option")]
     public List<OptionLoin> Options;
+
+    public Dots dots;
 }

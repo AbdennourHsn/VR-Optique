@@ -58,7 +58,7 @@ namespace CleanImplementation
         {
             ui.HideAll();
             filtrePanel.SetupFiltre(question);
-            box.SetBox(question.LB, question.xPos);
+            box.SetBox(question.LB, question.xPos , question.dots);
             if (question.helper)
             {
                 RunAudioClip(helper);

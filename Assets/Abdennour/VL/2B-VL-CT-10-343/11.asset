@@ -19,13 +19,6 @@ MonoBehaviour:
   Audio: {fileID: 8300000, guid: f722f1e9ab085a5499f15e6eab02b5d2, type: 3}
   theMainQuestion: 0
   LB: 0
-  blockUp1: 0
-  blockUp2: 0
-  block3_6: 1
-  block4_5: 0
-  blockDown1: 0
-  blockDown2: 0
-  barrete: 0
   xPos: 0
   Options:
   - Label: OUI
@@ -40,3 +33,17 @@ MonoBehaviour:
     next: {fileID: 11400000, guid: 0533c5e3245ee4e8da92d753d0d7b783, type: 2}
     isLast: 0
     ResultsCode: 0
+  dots:
+    dotUp1: 1
+    dotUp2: 1
+    dotMiddle1: 0
+    dotMiddle2: 0
+    dotDown1: 0
+    dotDown2: 0
+  blockUp1: 0
+  blockUp2: 0
+  block3_6: 1
+  block4_5: 0
+  blockDown1: 0
+  blockDown2: 0
+  barrete: 0
