@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface FiltrePanel<T>
+public interface FiltrePanel
 {
-    public void SetupFiltre(T vision);
+    public void SetupFiltre(Vision vision);
     public void HideAll();
     public void ShowAll();
     public void ShowTestName(string name);

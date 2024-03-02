@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace CleanImplementation
 {
-    public class FiltrePanelVL : MonoBehaviour , FiltrePanel<VisionLoin>
+    public class FiltrePanelVL : MonoBehaviour , FiltrePanel
     {
         [Header("Up")]
         public GameObject blokUp1;
@@ -46,15 +46,18 @@ namespace CleanImplementation
         }
 
 
-        public void SetupFiltre(VisionLoin vision)
+        public void SetupFiltre(Vision Vision)
         {
-            blokUp1.SetActive(vision.blockUp1);
-            blokUp2.SetActive(vision.blockUp2);
-            block3_6.SetActive(vision.block3_6);
-            block4_5.SetActive(vision.block4_5);
-            blockDown1.SetActive(vision.blockDown1);
-            blockDown2.SetActive(vision.blockDown2);
-            barrete.SetActive(vision.barrete);
+            if (Vision is VisionLoin vision)
+            {
+                blokUp1.SetActive(vision.blockUp1);
+                blokUp2.SetActive(vision.blockUp2);
+                block3_6.SetActive(vision.block3_6);
+                block4_5.SetActive(vision.block4_5);
+                blockDown1.SetActive(vision.blockDown1);
+                blockDown2.SetActive(vision.blockDown2);
+                barrete.SetActive(vision.barrete);
+            }
         }
 
         public void ShowTestName(string name)

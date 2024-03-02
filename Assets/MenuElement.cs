@@ -11,7 +11,6 @@ namespace CleanImplementation
     public class MenuElement : MonoBehaviour
     {
         public Image image;
-        public TestManager testManager;
         [Header("Images")]
         public Sprite img;
         public Sprite imgSelected;
@@ -20,7 +19,7 @@ namespace CleanImplementation
         public bool isLast;
         public Results resultat;
 
-        public VisionLoin nextQestion;
+        public Vision nextQestion;
 
         bool isSelected;
 
@@ -58,11 +57,11 @@ namespace CleanImplementation
         {
             if (isLast)
             {
-                testManager.VerifieQuestion(resultat);
+                TestManager.instance.VerifieQuestion(resultat);
             }
             else
             {
-                testManager.ChangeQuestion(nextQestion);
+                TestManager.instance.ChangeQuestion(nextQestion);
             }
         }
     }

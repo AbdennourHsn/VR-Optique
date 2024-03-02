@@ -7,8 +7,9 @@ namespace CleanImplementation
 {
     public class TestManager : MonoBehaviour
     {
+        public static TestManager instance;
         [Header("Dependecies")]
-        public FiltrePanelVL filtrePanel;
+        public FiltrePanel filtrePanel;
         public BoxOfColors box;
         public UiManager ui;
         public AudioSource audioSource;
@@ -17,12 +18,25 @@ namespace CleanImplementation
         [Space(20)]
         [Header("Tests")]
         public Test[] tests;
-        private VisionLoin currQuestion;
+        private Vision currQuestion;
         private int CurrTest=0;
+
+        private void Awake()
+        {
+            if (instance == null)
+            {
+                instance = this;
+            }
+            else
+            {
+                Destroy(gameObject);
+                return;
+            }
+        }
 
         public void Start()
         {
-            //ChangeQuestion(tests[CurrTest].visions[0]);
+            filtrePanel = transform.gameObject.GetComponentInChildren<FiltrePanel>();
             StartCoroutine(NextTest(CurrTest));
         }
 
@@ -35,12 +49,12 @@ namespace CleanImplementation
             ChangeQuestion(tests[index].visions[0]);
         }
 
-        public void ChangeQuestion(VisionLoin question)
+        public void ChangeQuestion(Vision question)
         {
             StartCoroutine(ChangeQuestionCourotine(question));
         }
 
-        public IEnumerator ChangeQuestionCourotine(VisionLoin question)
+        public IEnumerator ChangeQuestionCourotine(Vision question)
         {
             ui.HideAll();
             filtrePanel.SetupFiltre(question);
@@ -96,8 +110,8 @@ namespace CleanImplementation
     public struct Test
     {
         public string name;
-        public VisionLoin[] visions;
-        public VisionLoin verifie;
+        public Vision[] visions;
+        public Vision verifie;
         public bool isVerified;
     }
 }
