@@ -17,7 +17,9 @@ public abstract class Vision : ScriptableObject
     public float xPos;
 
     [Header("Option")]
-    public List<OptionLoin> Options;
+    public List<OptionLoin> Options=new List<OptionLoin>();
 
     public Dots dots;
+
+    public abstract void SetHoles(Vision vision);
 }

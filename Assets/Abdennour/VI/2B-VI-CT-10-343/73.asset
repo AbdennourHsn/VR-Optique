@@ -31,14 +31,21 @@ MonoBehaviour:
     img: {fileID: 21300000, guid: 20c6441811ab0474a88090080dffad23, type: 3}
     imgSelected: {fileID: 21300000, guid: ceccb44c355a65140a4aa910da0799fe, type: 3}
     next: {fileID: 0}
-    isLast: 0
+    isLast: 1
     ResultsCode: 2
   - Label: 73-3-3
     img: {fileID: 21300000, guid: acf81d6e5fa1f874abc53186bfd02286, type: 3}
     imgSelected: {fileID: 21300000, guid: 38c56271c81872442a3dc09e6652e6ef, type: 3}
     next: {fileID: 0}
-    isLast: 0
+    isLast: 1
     ResultsCode: 3
+  dots:
+    dotUp1: 0
+    dotUp2: 0
+    dotMiddle1: 0
+    dotMiddle2: 0
+    dotDown1: 0
+    dotDown2: 0
   blockUp1: 1
   blockUp2: 0
   blockUp3: 0

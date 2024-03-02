@@ -16,6 +16,41 @@ public class VisionLoin : Vision
 
     public bool barrete;
 
+    public VisionLoin()
+    {
+
+    }
+
+    public VisionLoin(Vision vision)
+    {
+        this.Id = vision.Id;
+        this.Testname = vision.Testname;
+        this.Time = vision.Time;
+        this.helper = vision.helper;
+        this.Audio = vision.Audio;
+        this.theMainQuestion = vision.theMainQuestion;
+        this.LB = vision.LB;
+        this.xPos = vision.xPos;
+        this.dots = vision.dots;
+        foreach(OptionLoin option in vision.Options)
+        {
+            this.Options.Add(option);
+        }
+    }
+
+    public override void SetHoles(Vision vision)
+    {
+        if(vision is VisionLoin visionLoin)
+        {
+            blockUp1 = visionLoin.blockUp1;
+            blockUp2 = visionLoin.blockUp2;
+            block4_5 = visionLoin.block4_5;
+            block3_6 = visionLoin.block3_6;
+            blockDown1 = visionLoin.blockDown1;
+            blockDown2 = visionLoin.blockDown2;
+            barrete = visionLoin.barrete;
+        }
+    }
 }
 
 [System.Serializable]

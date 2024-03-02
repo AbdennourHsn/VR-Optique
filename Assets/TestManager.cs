@@ -15,6 +15,9 @@ namespace CleanImplementation
         public AudioSource audioSource;
         public AudioClip helper;
 
+        public Sprite Non;
+        public Sprite Non_s;
+
         [Space(20)]
         [Header("Tests")]
         public Test[] tests;
@@ -91,7 +94,7 @@ namespace CleanImplementation
 
                 ///////////////////////////
                 var no = tests[CurrTest].verifie.Options[1];
-                no.next = tests[CurrTest].visions.First(t => t.theMainQuestion == true);
+                no.next = MainQuestionVerification( tests[CurrTest].visions.First(t => t.theMainQuestion == true));
                 tests[0].verifie.Options[1] = no;
 
                 RunAudioClip(tests[0].verifie.Audio);
@@ -103,6 +106,37 @@ namespace CleanImplementation
                 CurrTest += 1;
                 StartCoroutine(NextTest(CurrTest));
             }
+        }
+
+        private Vision MainQuestionVerification(Vision main)
+        {
+            if(main is VisionLoin mainQuestion)
+            {
+                VisionLoin vision = new VisionLoin(mainQuestion);
+                vision.Options.Add(NsOption());
+                vision.SetHoles(mainQuestion);
+                return vision;
+            }
+            else
+            {
+                VisionIntermediate vision = new VisionIntermediate(main);
+                vision.Options.Add(NsOption());
+                vision.SetHoles(main);
+                return vision;
+            }
+        }
+
+
+        public OptionLoin NsOption()
+        {
+            return new OptionLoin
+            {
+                Label = "NS",
+                img = Non,
+                imgSelected = Non_s,
+                isLast = true,
+                ResultsCode = Results.NS
+            };
         }
     }
 
