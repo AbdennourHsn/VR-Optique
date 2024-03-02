@@ -18,14 +18,14 @@ public class TestSaver : MonoBehaviour
     }
 
 
-    public void SendDataToServer(string name, string result , bool verified)
+    public void SendDataToServer(string name, Results result , bool verified)
     {
         if (ServerConnection.instance == null) return;
         TestDto dto = new TestDto
         {
-            name = filtreTest(name),
+            name = name,
             isDone = true,
-            results = ((int)filtreResult(result)),
+            results = (int)result,
             verified = verified
         };
         ServerConnection.OnSaveResultt?.Invoke(dto);

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using System.Collections;
+using System;
 
 namespace CleanImplementation
 {
@@ -87,12 +88,16 @@ namespace CleanImplementation
             if (!tests[CurrTest].isVerified)
             {
                 tests[CurrTest].isVerified = true;
+                TestSaver.instance.SendDataToServer(tests[CurrTest].name, result, false);
+
+                //Oui Option
                 var oui = tests[CurrTest].verifie.Options[0];
                 oui.ResultsCode = result;
                 oui.isLast=true;
                 tests[CurrTest].verifie.Options[0] = oui;
 
                 ///////////////////////////
+                //Non Option
                 var no = tests[CurrTest].verifie.Options[1];
                 no.next = MainQuestionVerification( tests[CurrTest].visions.First(t => t.theMainQuestion == true));
                 tests[0].verifie.Options[1] = no;
@@ -102,7 +107,8 @@ namespace CleanImplementation
             }
             else
             {
-                print("We Done : resultat : " + result);
+                print("We Done: Test" + tests[CurrTest].name + " : resultat : " + result);
+                TestSaver.instance.SendDataToServer(tests[CurrTest].name, result, true);
                 CurrTest += 1;
                 StartCoroutine(NextTest(CurrTest));
             }

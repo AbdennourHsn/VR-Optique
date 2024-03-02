@@ -732,7 +732,7 @@ public class TestRunner : MonoBehaviour
                     hideAllOnScreenImages();
                     loadQuestion(currentPos);
                     Debug.Log(current.name + "  => " + current.selectedOption().resultCode + " id-> " + current.id);
-                    TestSaver.instance.SendDataToServer(current.name, current.selectedOption().resultCode, false);
+                    //TestSaver.instance.SendDataToServer(current.name, current.selectedOption().resultCode, false);
                     return;
                 }
                     string testName = current.name;
@@ -740,7 +740,8 @@ public class TestRunner : MonoBehaviour
                     int currntScreen = ConfigsManager.screens.IndexOf(ConfigsManager.screens.Find(I => I == output.text).ToString());
                     //ConfigsManager.saveAnswer(testName, current.selectedOption().resultCode);
                     Debug.Log(current.name + "  => " + current.selectedOption().resultCode + " id-> " + current.id);
-                    TestSaver.instance.SendDataToServer(current.name, current.selectedOption().resultCode , true);
+                print(current.name);
+                    //TestSaver.instance.SendDataToServer(current.name, current.selectedOption().resultCode , true);
                     output.text = ConfigsManager.screens[currntScreen];
             }
             if (nextQ < currentPos && !Question.isRepeated)
