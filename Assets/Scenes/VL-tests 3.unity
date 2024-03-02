@@ -28462,7 +28462,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c6d8744fd97a9420987d3f5b6a05303f, type: 2}
     verifie: {fileID: 11400000, guid: 2f4e37213c2d34aa38819ce477e4dc26, type: 2}
     isVerified: 0
-  - name: "B/VI/NB/4/121\t"
+  - name: B/VI/NB/4/121
     visions:
     - {fileID: 11400000, guid: 454acac94e2814c5ba24973aa2c1a403, type: 2}
     - {fileID: 11400000, guid: ab6151258791a44aca138c42e6346e52, type: 2}
