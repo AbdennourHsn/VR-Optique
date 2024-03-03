@@ -30,7 +30,9 @@ namespace CleanImplementation
             panelColor1.gameObject.SetActive(!lb);
             panelColor2.gameObject.SetActive(!lb);
             panelColor3.gameObject.SetActive(!lb);
-            MoveMiddlePanel(xPos);
+
+            if (!lb) MoveMiddlePanelCT(xPos);
+            else MoveMiddlePanelLB(xPos);
 
             panelLB1.gameObject.SetActive(lb);
             panelLB2.gameObject.SetActive(lb);
@@ -39,11 +41,18 @@ namespace CleanImplementation
             this.dotsManager.SetupDots(dots);
         }
 
-        public void MoveMiddlePanel(float xValue)
+        public void MoveMiddlePanelCT(float xValue)
         {
             var pos = panelColor2.transform.localPosition;
             pos.x = xValue;
             panelColor2.transform.localPosition = pos;
+        }
+
+        public void MoveMiddlePanelLB(float xValue)
+        {
+            var pos = panelLB2.transform.localPosition;
+            pos.x = xValue;
+            panelLB2.transform.localPosition = pos;
         }
     }
 }
