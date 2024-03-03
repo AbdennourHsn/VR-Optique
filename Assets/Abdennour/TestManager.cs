@@ -8,6 +8,7 @@ namespace CleanImplementation
 {
     public class TestManager : MonoBehaviour
     {
+        public int visionNumber;
         public static TestManager instance;
         [Header("Dependecies")]
         public FiltrePanel filtrePanel;
@@ -36,6 +37,11 @@ namespace CleanImplementation
                 Destroy(gameObject);
                 return;
             }
+        }
+
+        private void OnDisable()
+        {
+            instance = null;
         }
 
         public void Start()
@@ -109,8 +115,17 @@ namespace CleanImplementation
             {
                 print("We Done: Test" + tests[CurrTest].name + " : resultat : " + result);
                 TestSaver.instance.SendDataToServer(tests[CurrTest].name, result, true);
-                CurrTest += 1;
-                StartCoroutine(NextTest(CurrTest));
+                if (CurrTest < tests.Length - 1)
+                {
+                    CurrTest += 1;
+                    StartCoroutine(NextTest(CurrTest));
+                }
+                else
+                {
+                    Manager.OnTestDone?.Invoke(visionNumber);
+                    print("Im xx");
+
+                }
             }
         }
 

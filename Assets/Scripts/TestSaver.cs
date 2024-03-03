@@ -6,7 +6,8 @@ using System.Linq;
 public class TestSaver : MonoBehaviour
 {
     public static TestSaver instance;
-    public List<string> saved = new List<string>();
+    public delegate void TestSaved(string name , Results results , bool verified);
+    public static TestSaved OnTestSaved;
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -28,6 +29,7 @@ public class TestSaver : MonoBehaviour
             results = (int)result,
             verified = verified
         };
+        OnTestSaved?.Invoke(name, result, verified);
         ServerConnection.OnSaveResultt?.Invoke(dto);
     }
 

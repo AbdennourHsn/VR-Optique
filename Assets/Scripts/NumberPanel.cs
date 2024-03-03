@@ -39,7 +39,6 @@ public class NumberPanel : MonoBehaviour
         {
             StartCoroutine(ServerConnection.instance.GetUserData(PlayerPrefs.GetString("UserIdentifier")));
         }
-        //RequestServer();
     }
 
     public void setNumber(int num)
@@ -70,10 +69,7 @@ public class NumberPanel : MonoBehaviour
 
     private void Update()
     {
-       // if (Input.GetKeyDown(KeyCode.Space))
-        //{
-            //RequestServer();
-        //}
+
     }
 
     public void Connected(User user)
