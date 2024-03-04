@@ -110,11 +110,13 @@ namespace CleanImplementation
 
                 RunAudioClip(tests[0].verifie.Audio);
                 ui.ShowOptions(tests[0].verifie.Options);
+                ResultsTable.instance.AddResults(tests[CurrTest].name, result, false);
             }
             else
             {
                 print("We Done: Test" + tests[CurrTest].name + " : resultat : " + result);
                 TestSaver.instance.SendDataToServer(tests[CurrTest].name, result, true);
+                ResultsTable.instance.AddResults(tests[CurrTest].name, result, true);
                 if (CurrTest < tests.Length - 1)
                 {
                     CurrTest += 1;
@@ -123,8 +125,6 @@ namespace CleanImplementation
                 else
                 {
                     Manager.OnTestDone?.Invoke(visionNumber);
-                    print("Im xx");
-
                 }
             }
         }

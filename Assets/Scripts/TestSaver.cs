@@ -29,7 +29,7 @@ public class TestSaver : MonoBehaviour
             results = (int)result,
             verified = verified
         };
-        OnTestSaved?.Invoke(name, result, verified);
+        //OnTestSaved?.Invoke(name, result, verified);
         ServerConnection.OnSaveResultt?.Invoke(dto);
     }
 

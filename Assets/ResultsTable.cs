@@ -8,6 +8,9 @@ public class ResultsTable : MonoBehaviour
     public Transform group;
     public Card card;
     public GameObject Line;
+
+    public static ResultsTable instance;
+
     private void OnEnable()
     {
         TestSaver.OnTestSaved += AddResults;
@@ -18,8 +21,14 @@ public class ResultsTable : MonoBehaviour
         TestSaver.OnTestSaved -= AddResults;
     }
 
+    private void Awake()
+    {
+        instance = this;
+    }
+
     public void AddResults(string name , Results results , bool verified)
     {
+        print("Im here");
         if (!verified) Instantiate(Line, group).SetActive(true); ;
         var newCard=Instantiate(card, group);
         newCard.test.text = name;

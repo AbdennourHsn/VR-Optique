@@ -20,6 +20,8 @@ namespace CleanImplementation
         [SerializeField]
         private MenuOptions sixOptions;
 
+        public GameObject TestResults;
+        public GameObject All;
 
         private MenuOptions currOptions;
 
@@ -34,12 +36,17 @@ namespace CleanImplementation
 
         public PlayerInput inputHandler;
 
+        private bool inputActivated;
+        InputAction ShowResults;
+
         private void Awake()
         {
             if (inputHandler != null)
             {
                 InputAction Navigation = inputHandler.actions["Navigation"];
                 InputAction select = inputHandler.actions["saveAnswer"];
+                ShowResults = inputHandler.actions["ShowResults"];
+                
                 if (Navigation != null)
                 {
                     Navigation.performed += ChangeOption;
@@ -56,6 +63,16 @@ namespace CleanImplementation
                 {
                     Debug.LogError("Select action not found!");
                 }
+
+                if (ShowResults != null)
+                {
+                    ShowResults.started += ShowResults_;
+                    ShowResults.canceled += ShowResultsEnd_;
+                }
+                else
+                {
+                    Debug.LogError("ShowResults action not found!");
+                }
             }
             else
             {
@@ -65,6 +82,7 @@ namespace CleanImplementation
 
         private void ChangeOption(InputAction.CallbackContext ctx)
         {
+            if (!inputActivated) return;
             Direction dir = Direction.RIGHT;
             var input = ctx.ReadValue<Vector2>();
             dir = input.x > 0 ? Direction.RIGHT : Direction.LEFT;
@@ -85,12 +103,38 @@ namespace CleanImplementation
 
         private void Choose(InputAction.CallbackContext ctx)
         {
+            if (!inputActivated) return;
             PlaySound(ok);
             currOptions.menuElements[currOptions.selectedElement].Trigger();
         }
 
+        private void ShowResults_(InputAction.CallbackContext ctx)
+        {
+            GetChildMeshRenderers(All.transform, false);
+        }
+
+        private void ShowResultsEnd_(InputAction.CallbackContext ctx)
+        {
+            GetChildMeshRenderers(All.transform, true);
+            print("pppppppppppppppp");
+        }
+
+        private void Update()
+        {
+            var value = ShowResults.ReadValue<float>();
+            if (value == 1)
+            {
+                TestResults.SetActive(true);
+            }
+            else
+            {
+                TestResults.SetActive(false);
+            }
+        }
+
         public void HideAll()
         {
+            inputActivated = false;
             twoOptions.gameObject.SetActive(false);
             treeOptions.gameObject.SetActive(false);
             foorOptions.gameObject.SetActive(false);
@@ -141,12 +185,26 @@ namespace CleanImplementation
                 sixOptions.gameObject.SetActive(true);
                 sixOptions.SetUpOptions(options);
             }
+            inputActivated = true;
         }
 
         private void PlaySound(AudioClip clip)
         {
             this.UiAudioSource.clip=clip;
             this.UiAudioSource.Play();
+        }
+
+        void GetChildMeshRenderers(Transform parent , bool istrue)
+        {
+            foreach (Transform child in parent)
+            {
+                MeshRenderer meshRenderer = child.GetComponent<MeshRenderer>();
+                if (meshRenderer != null)
+                {
+                    meshRenderer.enabled=istrue;
+                }
+                GetChildMeshRenderers(child , istrue);
+            }
         }
     }
 }
