@@ -20,8 +20,10 @@ namespace CleanImplementation
         [SerializeField]
         private MenuOptions sixOptions;
 
+        [Space(10)]
+        public GameObject canvas;
         public GameObject TestResults;
-        public GameObject All;
+        public MeshRendererHandler All;
 
         private MenuOptions currOptions;
 
@@ -38,6 +40,7 @@ namespace CleanImplementation
 
         private bool inputActivated;
         InputAction ShowResults;
+        InputAction toggleMeshes;
 
         private void Awake()
         {
@@ -45,7 +48,11 @@ namespace CleanImplementation
             {
                 InputAction Navigation = inputHandler.actions["Navigation"];
                 InputAction select = inputHandler.actions["saveAnswer"];
+                InputAction back = inputHandler.actions["backToPrevious"];
+
+
                 ShowResults = inputHandler.actions["ShowResults"];
+                toggleMeshes = inputHandler.actions["ToggleMesh"];
                 
                 if (Navigation != null)
                 {
@@ -67,7 +74,25 @@ namespace CleanImplementation
                 if (ShowResults != null)
                 {
                     ShowResults.started += ShowResults_;
-                    ShowResults.canceled += ShowResultsEnd_;
+                    ShowResults.canceled += HideResults_;
+                }
+                else
+                {
+                    Debug.LogError("ShowResults action not found!");
+                }
+                if (back != null)
+                {
+                    back.performed +=BackToPrevious;
+                }
+                else
+                {
+                    Debug.LogError("ShowResults action not found!");
+                }
+
+                if (toggleMeshes != null)
+                {
+                    toggleMeshes.started += ShowMeshes_;
+                    toggleMeshes.canceled += HideMeshes_;
                 }
                 else
                 {
@@ -101,6 +126,12 @@ namespace CleanImplementation
             }
         }
 
+        public void BackToPrevious(InputAction.CallbackContext ctx)
+        {
+            if (!inputActivated) return;
+            TestManager.instance.PrevieosQuestion();
+        }
+
         private void Choose(InputAction.CallbackContext ctx)
         {
             if (!inputActivated) return;
@@ -108,28 +139,51 @@ namespace CleanImplementation
             currOptions.menuElements[currOptions.selectedElement].Trigger();
         }
 
-        private void ShowResults_(InputAction.CallbackContext ctx)
+        private void ShowMeshes_(InputAction.CallbackContext ctx)
         {
-            GetChildMeshRenderers(All.transform, false);
+            {
+                print("On");
+                All.SetActiveMeshes(false);
+            }
         }
 
-        private void ShowResultsEnd_(InputAction.CallbackContext ctx)
+        private void HideMeshes_(InputAction.CallbackContext ctx)
         {
-            GetChildMeshRenderers(All.transform, true);
-            print("pppppppppppppppp");
+            {
+                print("off");
+                All.SetActiveMeshes(true);
+            }
+        }
+
+        public void ShowResults_(InputAction.CallbackContext ctx)
+        {
+            
+            {
+                All.SetActiveMeshes(false);
+                TestResults.SetActive(true);
+            }
+        }
+
+        public void HideResults_(InputAction.CallbackContext ctx)
+        {
+            
+            {
+                All.SetActiveMeshes(true);
+                TestResults.SetActive(false);
+            }
         }
 
         private void Update()
         {
-            var value = ShowResults.ReadValue<float>();
-            if (value == 1)
-            {
-                TestResults.SetActive(true);
-            }
-            else
-            {
-                TestResults.SetActive(false);
-            }
+            //var value = ShowResults.ReadValue<float>();
+            //if (value == 1)
+            //{
+            //    TestResults.SetActive(true);
+            //}
+            //else
+            //{
+            //    TestResults.SetActive(false);
+            //}
         }
 
         public void HideAll()
@@ -186,25 +240,13 @@ namespace CleanImplementation
                 sixOptions.SetUpOptions(options);
             }
             inputActivated = true;
+            //All.SetActiveMeshes(false);
         }
 
         private void PlaySound(AudioClip clip)
         {
             this.UiAudioSource.clip=clip;
             this.UiAudioSource.Play();
-        }
-
-        void GetChildMeshRenderers(Transform parent , bool istrue)
-        {
-            foreach (Transform child in parent)
-            {
-                MeshRenderer meshRenderer = child.GetComponent<MeshRenderer>();
-                if (meshRenderer != null)
-                {
-                    meshRenderer.enabled=istrue;
-                }
-                GetChildMeshRenderers(child , istrue);
-            }
         }
     }
 }

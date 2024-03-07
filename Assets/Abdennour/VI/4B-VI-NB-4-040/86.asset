@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 86
   m_EditorClassIdentifier: 
   Id: 0
+  testId: 3
   Testname: "Vision interm\xE9diaire Test N\xB0 4"
   Time: 0
   helper: 0

@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class Vision : ScriptableObject
 {
     public int Id;
+    public int testId;
     public string Testname;
     public float Time;
     public bool helper;

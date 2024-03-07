@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: 54
   m_EditorClassIdentifier: 
   Id: 24
+  testId: 7
   Testname: Vision De Loin Test N 8
   Time: 0
-  helper: 0
+  helper: 1
   Audio: {fileID: 8300000, guid: 6dbef139260da9a40946296bb5a74b9f, type: 3}
   theMainQuestion: 0
   LB: 1

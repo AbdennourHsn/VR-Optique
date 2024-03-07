@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 
 public class ResultsTable : MonoBehaviour
 {
     public Transform group;
-    public Card card;
-    public GameObject Line;
+    public List<Card> card= new List<Card>();
 
     public static ResultsTable instance;
 
@@ -28,14 +28,15 @@ public class ResultsTable : MonoBehaviour
 
     public void AddResults(string name , Results results , bool verified)
     {
-        print("Im here");
-        if (!verified) Instantiate(Line, group).SetActive(true); ;
-        var newCard=Instantiate(card, group);
-        newCard.test.text = name;
-        newCard.resultat.text = results.ToString();
-        if (verified) newCard.order.text = "2";
-        else newCard.order.text = "1";
-        newCard.gameObject.SetActive(true);
+        var card = GetCardByName(name);
+        if (!verified)
+            card.resultat.text = results.ToString();
+        else card.order.text = results.ToString();
+    }
+
+    public Card GetCardByName(string name)
+    {
+        return card.FirstOrDefault(c => c.name == name);
     }
 
 }

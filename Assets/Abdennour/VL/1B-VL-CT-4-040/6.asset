@@ -13,16 +13,14 @@ MonoBehaviour:
   m_Name: 6
   m_EditorClassIdentifier: 
   Id: 9
+  testId: 0
   Testname: Vision De Loin Test N 1
   Time: 2
+  helper: 0
   Audio: {fileID: 8300000, guid: b5210be4219cd18469ccb8b1a4d07a7a, type: 3}
+  theMainQuestion: 0
   LB: 0
-  blockUp1: 1
-  blockUp2: 1
-  block3_6: 1
-  block4_5: 0
-  blockDown1: 1
-  blockDown2: 1
+  xPos: 0
   Options:
   - Label: NON
     img: {fileID: 21300000, guid: f56219332508df34c8a352cba034ecff, type: 3}
@@ -42,3 +40,17 @@ MonoBehaviour:
     next: {fileID: 0}
     isLast: 1
     ResultsCode: 16
+  dots:
+    dotUp1: 0
+    dotUp2: 0
+    dotMiddle1: 0
+    dotMiddle2: 0
+    dotDown1: 0
+    dotDown2: 0
+  blockUp1: 1
+  blockUp2: 1
+  block3_6: 1
+  block4_5: 0
+  blockDown1: 1
+  blockDown2: 1
+  barrete: 0

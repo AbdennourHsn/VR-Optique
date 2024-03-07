@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: 100
   m_EditorClassIdentifier: 
   Id: 0
-  Testname: "Vision interm\xE9diaire Test N\xB0 3"
+  testId: 5
+  Testname: "Vision interm\xE9diaire Test N\xB0 6"
   Time: 0
   helper: 0
   Audio: {fileID: 8300000, guid: 6dbef139260da9a40946296bb5a74b9f, type: 3}
@@ -33,6 +34,13 @@ MonoBehaviour:
     next: {fileID: 11400000, guid: ab6151258791a44aca138c42e6346e52, type: 2}
     isLast: 0
     ResultsCode: 0
+  dots:
+    dotUp1: 0
+    dotUp2: 0
+    dotMiddle1: 0
+    dotMiddle2: 0
+    dotDown1: 0
+    dotDown2: 0
   blockUp1: 1
   blockUp2: 0
   blockUp3: 0

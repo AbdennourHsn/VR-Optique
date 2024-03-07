@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 77
   m_EditorClassIdentifier: 
   Id: 0
+  testId: 2
   Testname: "Vision interm\xE9diaire Test N\xB0 3"
   Time: 0
   helper: 0
@@ -33,6 +34,13 @@ MonoBehaviour:
     next: {fileID: 11400000, guid: 1ea1240ceb7624ac6a15abd693d2f7bf, type: 2}
     isLast: 0
     ResultsCode: 0
+  dots:
+    dotUp1: 0
+    dotUp2: 0
+    dotMiddle1: 0
+    dotMiddle2: 0
+    dotDown1: 0
+    dotDown2: 0
   blockUp1: 1
   blockUp2: 0
   blockUp3: 0

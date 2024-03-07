@@ -24,6 +24,7 @@ public class VisionLoin : Vision
     public VisionLoin(Vision vision)
     {
         this.Id = vision.Id;
+        this.testId = vision.testId;
         this.Testname = vision.Testname;
         this.Time = vision.Time;
         this.helper = vision.helper;

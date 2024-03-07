@@ -23,9 +23,10 @@ namespace CleanImplementation
         [Space(20)]
         [Header("Tests")]
         public Test[] tests;
-        private Vision currQuestion;
+        public Vision currQuestion;
         private int CurrTest=0;
 
+        public List<Vision> visionsDone = new List<Vision>();
         private void Awake()
         {
             if (instance == null)
@@ -64,7 +65,18 @@ namespace CleanImplementation
             StartCoroutine(ChangeQuestionCourotine(question));
         }
 
-        public IEnumerator ChangeQuestionCourotine(Vision question)
+
+        public void PrevieosQuestion()
+        {
+            if (visionsDone.Count > 1)
+            {
+                visionsDone.RemoveAt(visionsDone.Count - 1);
+                StartCoroutine(ChangeQuestionCourotine(visionsDone[visionsDone.Count - 1]));
+                tests[currQuestion.testId].isVerified = false;
+            }
+        }
+
+        public IEnumerator ChangeQuestionCourotine(Vision question )
         {
             ui.HideAll();
             filtrePanel.SetupFiltre(question);
@@ -79,6 +91,7 @@ namespace CleanImplementation
             yield return new WaitForSeconds(question.Audio.length*0.8f);
             ui.ShowOptions(question.Options);
             currQuestion = question;
+            if(!visionsDone.Contains(question)) visionsDone.Add(question);
         }
 
         private void RunAudioClip(AudioClip clip)
@@ -91,35 +104,35 @@ namespace CleanImplementation
         public void VerifieQuestion(Results result)
         {
             ui.HideAll();
-            if (!tests[CurrTest].isVerified)
+            if (!tests[currQuestion.testId].isVerified && !currQuestion.helper)
             {
-                tests[CurrTest].isVerified = true;
-                TestSaver.instance.SendDataToServer(tests[CurrTest].name, result, false);
+                tests[currQuestion.testId].isVerified = true;
+                TestSaver.instance.SendDataToServer(tests[currQuestion.testId].name, result, false);
 
                 //Oui Option
-                var oui = tests[CurrTest].verifie.Options[0];
+                var oui = tests[currQuestion.testId].verifie.Options[0];
                 oui.ResultsCode = result;
                 oui.isLast=true;
-                tests[CurrTest].verifie.Options[0] = oui;
+                tests[currQuestion.testId].verifie.Options[0] = oui;
 
                 ///////////////////////////
                 //Non Option
-                var no = tests[CurrTest].verifie.Options[1];
-                no.next = MainQuestionVerification( tests[CurrTest].visions.First(t => t.theMainQuestion == true));
+                var no = tests[currQuestion.testId].verifie.Options[1];
+                no.next = MainQuestionVerification( tests[currQuestion.testId].visions.First(t => t.theMainQuestion == true));
                 tests[0].verifie.Options[1] = no;
 
                 RunAudioClip(tests[0].verifie.Audio);
                 ui.ShowOptions(tests[0].verifie.Options);
-                ResultsTable.instance.AddResults(tests[CurrTest].name, result, false);
+                ResultsTable.instance.AddResults(tests[currQuestion.testId].name, result, false);
             }
             else
             {
-                print("We Done: Test" + tests[CurrTest].name + " : resultat : " + result);
-                TestSaver.instance.SendDataToServer(tests[CurrTest].name, result, true);
-                ResultsTable.instance.AddResults(tests[CurrTest].name, result, true);
+                print("We Done: Test" + tests[currQuestion.testId].name + " : resultat : " + result);
+                TestSaver.instance.SendDataToServer(tests[currQuestion.testId].name, result, true);
+                ResultsTable.instance.AddResults(tests[currQuestion.testId].name, result, true);
                 if (CurrTest < tests.Length - 1)
                 {
-                    CurrTest += 1;
+                    CurrTest = currQuestion.testId+1;
                     StartCoroutine(NextTest(CurrTest));
                 }
                 else

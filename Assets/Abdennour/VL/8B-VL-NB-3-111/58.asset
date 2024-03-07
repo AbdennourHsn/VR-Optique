@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 58
   m_EditorClassIdentifier: 
   Id: 28
+  testId: 7
   Testname: Vision De Loin Test N 8
   Time: 0
   helper: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   Id: 0
   Testname: "Vision interm\xE9diaire Test N\xB0 1"
   Time: 0
-  helper: 0
+  helper: 1
   Audio: {fileID: 8300000, guid: 87c6a05762d4c2744bff18ab7c747557, type: 3}
   theMainQuestion: 0
   LB: 0
@@ -33,6 +33,13 @@ MonoBehaviour:
     next: {fileID: 0}
     isLast: 1
     ResultsCode: 20
+  dots:
+    dotUp1: 0
+    dotUp2: 0
+    dotMiddle1: 0
+    dotMiddle2: 0
+    dotDown1: 0
+    dotDown2: 0
   blockUp1: 1
   blockUp2: 1
   blockUp3: 1

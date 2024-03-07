@@ -76,6 +76,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "ToggleMesh",
+                    "type": "Value",
+                    "id": "b4de0157-6a13-4efe-a9be-53ec9d2178f1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -258,11 +267,22 @@
                 {
                     "name": "",
                     "id": "383c5e01-b3c5-4394-89d6-f670b28a8dfa",
-                    "path": "<XRController>{RightHand}/gripButton",
+                    "path": "<XRController>{LeftHand}/gripButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "ShowResults",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "86281fc3-1dd9-411a-a9be-e4394ae9249c",
+                    "path": "<XRController>{RightHand}/gripButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ToggleMesh",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
