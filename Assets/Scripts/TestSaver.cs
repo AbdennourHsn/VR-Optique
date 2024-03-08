@@ -123,4 +123,5 @@ public enum Results
     NT_Right, //18- NT Right
     NT_Left, //19- NT Left
     NS, // Non stable
+    NT, //NT
 }

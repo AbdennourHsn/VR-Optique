@@ -31,15 +31,15 @@ MonoBehaviour:
   - Label: 35-5-2
     img: {fileID: 21300000, guid: defb2647e609611478cad3badec958e0, type: 3}
     imgSelected: {fileID: 21300000, guid: 5a3c9df025173c24a8f4acf9fe69f18c, type: 3}
-    next: {fileID: 11400000, guid: d93ae4746216147a288b49c3233e7a5d, type: 2}
+    next: {fileID: 0}
     isLast: 1
-    ResultsCode: 2
+    ResultsCode: 3
   - Label: 35-5-4
     img: {fileID: 21300000, guid: 3f21cc07f1d939c44b525956df969856, type: 3}
     imgSelected: {fileID: 21300000, guid: e9bd0036d63e6454c9d6e0b016f94fbc, type: 3}
     next: {fileID: 0}
     isLast: 1
-    ResultsCode: 7
+    ResultsCode: 2
   - Label: 35-5-5
     img: {fileID: 21300000, guid: c607f8f943249aa48bad6fcb8c53047b, type: 3}
     imgSelected: {fileID: 21300000, guid: f479e4afe6f01a2479116edda2a77e8a, type: 3}
@@ -51,7 +51,7 @@ MonoBehaviour:
     imgSelected: {fileID: 21300000, guid: fee5e9268d43ab541b166487d3e4318b, type: 3}
     next: {fileID: 0}
     isLast: 1
-    ResultsCode: 3
+    ResultsCode: 7
   dots:
     dotUp1: 0
     dotUp2: 0

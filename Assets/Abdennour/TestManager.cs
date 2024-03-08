@@ -112,6 +112,7 @@ namespace CleanImplementation
                 //Oui Option
                 var oui = tests[currQuestion.testId].verifie.Options[0];
                 oui.ResultsCode = result;
+                print(result.ToString());
                 oui.isLast=true;
                 tests[currQuestion.testId].verifie.Options[0] = oui;
 
@@ -121,8 +122,8 @@ namespace CleanImplementation
                 no.next = MainQuestionVerification( tests[currQuestion.testId].visions.First(t => t.theMainQuestion == true));
                 tests[0].verifie.Options[1] = no;
 
-                RunAudioClip(tests[0].verifie.Audio);
-                ui.ShowOptions(tests[0].verifie.Options);
+                RunAudioClip(tests[currQuestion.testId].verifie.Audio);
+                ui.ShowOptions(tests[currQuestion.testId].verifie.Options);
                 ResultsTable.instance.AddResults(tests[currQuestion.testId].name, result, false);
             }
             else
