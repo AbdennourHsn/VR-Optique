@@ -33,7 +33,7 @@ MonoBehaviour:
     imgSelected: {fileID: 21300000, guid: 48f0360509195a54f9cb0696211d8477, type: 3}
     next: {fileID: 0}
     isLast: 1
-    ResultsCode: 14
+    ResultsCode: 15
   dots:
     dotUp1: 0
     dotUp2: 0

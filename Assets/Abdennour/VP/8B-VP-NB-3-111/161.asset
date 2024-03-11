@@ -20,7 +20,7 @@ MonoBehaviour:
   Audio: {fileID: 8300000, guid: 2691663fee9b4a14d986b38a5b67ba63, type: 3}
   theMainQuestion: 1
   LB: 1
-  xPos: -0.085
+  xPos: 0.0275
   Options:
   - Label: 2
     img: {fileID: 21300000, guid: 73028ba9235d49f4898832cf324d63f7, type: 3}

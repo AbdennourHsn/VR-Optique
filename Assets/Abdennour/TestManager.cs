@@ -55,7 +55,7 @@ namespace CleanImplementation
         private IEnumerator NextTest(int index)
         {
             filtrePanel.ShowTestName(tests[index].visions[0].Testname);
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(0);
             filtrePanel.HideTestName();
             ChangeQuestion(tests[index].visions[0]);
         }
@@ -84,11 +84,11 @@ namespace CleanImplementation
             if (question.helper)
             {
                 RunAudioClip(helper);
-                yield return new WaitForSeconds(2);
+                yield return new WaitForSeconds(0);
             }
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0);
             RunAudioClip(question.Audio);
-            yield return new WaitForSeconds(question.Audio.length*0.8f);
+            yield return new WaitForSeconds(0);
             ui.ShowOptions(question.Options);
             currQuestion = question;
             if(!visionsDone.Contains(question)) visionsDone.Add(question);
