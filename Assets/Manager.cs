@@ -10,7 +10,7 @@ public class Manager : MonoBehaviour
 
     public TestManager VL;
     public TestManager VI;
-    //public TestManager VP;
+    public TestManager VP;
     
     public static UnityEvent<int> OnTestDone = new UnityEvent<int>();
 
@@ -38,11 +38,13 @@ public class Manager : MonoBehaviour
     {
         VL.gameObject.SetActive(false);
         VI.gameObject.SetActive(false);
+        VP.gameObject.SetActive(false);
         All.SetActive(false);
         yield return new WaitForSeconds(1);
         All.SetActive(true);
         print(number);
         if (number == 1) VI.gameObject.SetActive(true);
+        if (number == 2) VP.gameObject.SetActive(true);
     }
 
     public void ChangeTest(int num)
@@ -59,6 +61,6 @@ public class Manager : MonoBehaviour
 
     public void RunVP()
     {
-        print("VP is not done yet");
+        StartCoroutine(ChangeVision(2));
     }
 }

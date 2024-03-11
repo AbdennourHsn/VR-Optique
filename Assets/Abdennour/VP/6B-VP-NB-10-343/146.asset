@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2b2da1974a7423b9063b19315b6bf2, type: 3}
+  m_Name: 146
+  m_EditorClassIdentifier: 
+  Id: 10
+  testId: 5
+  Testname: "Vision de pr\xE9s Test  N 6"
+  Time: 2
+  helper: 0
+  Audio: {fileID: 8300000, guid: 2691663fee9b4a14d986b38a5b67ba63, type: 3}
+  theMainQuestion: 1
+  LB: 1
+  xPos: 0
+  Options:
+  - Label: 6
+    img: {fileID: 21300000, guid: a72d5d0e7a1cb39449b5989ef3b3b991, type: 3}
+    imgSelected: {fileID: 21300000, guid: 58021ac7b3dc5bc4fb66fff4d8113f94, type: 3}
+    next: {fileID: 11400000, guid: 08b710456b16d4c8a8e8f2652f0317b0, type: 2}
+    isLast: 0
+    ResultsCode: 0
+  - Label: 10
+    img: {fileID: 21300000, guid: 0a3ea07f9782ab9468fc87910811bdca, type: 3}
+    imgSelected: {fileID: 21300000, guid: 4dc7fb749cb94c0438e1869b77ca9cb2, type: 3}
+    next: {fileID: 11400000, guid: 3a356f462540e440788a2cb37bf6c4c2, type: 2}
+    isLast: 0
+    ResultsCode: 0
+  - Label: 11
+    img: {fileID: 21300000, guid: 756981bf6c7e9b742a2f4152174e510c, type: 3}
+    imgSelected: {fileID: 21300000, guid: b730a883305c14843ae9c038d29909b9, type: 3}
+    next: {fileID: 0}
+    isLast: 1
+    ResultsCode: 11
+  - Label: 12
+    img: {fileID: 21300000, guid: ad26b7f32d18f3c44a315468d9a9841b, type: 3}
+    imgSelected: {fileID: 21300000, guid: d77906fc74d32454284d2ebfc6824b57, type: 3}
+    next: {fileID: 11400000, guid: f01315a14659240e6b6b38d622a3b366, type: 2}
+    isLast: 0
+    ResultsCode: 0
+  dots:
+    dotUp1: 0
+    dotUp2: 0
+    dotMiddle1: 0
+    dotMiddle2: 0
+    dotDown1: 0
+    dotDown2: 0
+  blockUp1: 0
+  blockUp2: 0
+  block3_6: 1
+  block4_5: 0
+  blockDown1: 0
+  blockDown2: 0
+  barrete: 0

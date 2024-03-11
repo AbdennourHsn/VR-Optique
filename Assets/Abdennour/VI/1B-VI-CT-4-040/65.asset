@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 65
   m_EditorClassIdentifier: 
   Id: 0
+  testId: 0
   Testname: "Vision interm\xE9diaire Test N\xB0 1"
   Time: 0
   helper: 0
@@ -50,7 +51,14 @@ MonoBehaviour:
     imgSelected: {fileID: 21300000, guid: 43fcaf1f27eb3ee4a9872f2686b92401, type: 3}
     next: {fileID: 0}
     isLast: 1
-    ResultsCode: 8
+    ResultsCode: 6
+  dots:
+    dotUp1: 0
+    dotUp2: 0
+    dotMiddle1: 0
+    dotMiddle2: 0
+    dotDown1: 0
+    dotDown2: 0
   blockUp1: 1
   blockUp2: 1
   blockUp3: 1

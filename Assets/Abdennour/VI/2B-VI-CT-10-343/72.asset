@@ -24,7 +24,7 @@ MonoBehaviour:
   Options:
   - Label: VERT
     img: {fileID: 21300000, guid: 535da4c64a8b55245a218ce1dad223e5, type: 3}
-    imgSelected: {fileID: 21300000, guid: 3dba3cc9163269447bf22118eb932cc2, type: 3}
+    imgSelected: {fileID: 21300000, guid: fc7b8fe795225144a929242f5d03b957, type: 3}
     next: {fileID: 0}
     isLast: 1
     ResultsCode: 19

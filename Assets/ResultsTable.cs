@@ -28,10 +28,17 @@ public class ResultsTable : MonoBehaviour
 
     public void AddResults(string name , Results results , bool verified)
     {
-        var card = GetCardByName(name);
-        if (!verified)
-            card.resultat.text = results.ToString();
-        else card.order.text = results.ToString();
+        try
+        {
+            var card = GetCardByName(name);
+            if (!verified)
+                card.resultat.text = results.ToString();
+            else card.order.text = results.ToString();
+        }
+        catch
+        {
+            print("Error");
+        }
     }
 
     public Card GetCardByName(string name)

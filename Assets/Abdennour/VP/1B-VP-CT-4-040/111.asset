@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2b2da1974a7423b9063b19315b6bf2, type: 3}
+  m_Name: 111
+  m_EditorClassIdentifier: 
+  Id: 5
+  testId: 0
+  Testname: "Vision de pr\xE9s Test N 1"
+  Time: 2
+  helper: 0
+  Audio: {fileID: 8300000, guid: f6aebd8601ff5954699cdcbd4fbe08e7, type: 3}
+  theMainQuestion: 0
+  LB: 0
+  xPos: 0
+  Options:
+  - Label: 5-5-1
+    img: {fileID: 21300000, guid: 38ea7e4b69f69184f88842c46e0a854a, type: 3}
+    imgSelected: {fileID: 21300000, guid: 250ac4c5482345c428760c8b49ecae59, type: 3}
+    next: {fileID: 11400000, guid: 7d35b079cb6d94d2ea82ebfc43ec2f15, type: 2}
+    isLast: 0
+    ResultsCode: 0
+  - Label: 5-5-4
+    img: {fileID: 21300000, guid: e639d2a7580d5514fab26df1442b8f24, type: 3}
+    imgSelected: {fileID: 21300000, guid: 44c7c99e639392942a1ef84d27c988c1, type: 3}
+    next: {fileID: 11400000, guid: 7d35b079cb6d94d2ea82ebfc43ec2f15, type: 2}
+    isLast: 1
+    ResultsCode: 2
+  - Label: 5-5-3
+    img: {fileID: 21300000, guid: e14dfc3d2c161d84aabfd86ba01e5d58, type: 3}
+    imgSelected: {fileID: 21300000, guid: fe603565abadbb7489fc8d15d9dbfc61, type: 3}
+    next: {fileID: 0}
+    isLast: 1
+    ResultsCode: 7
+  - Label: 5-5-5
+    img: {fileID: 21300000, guid: 8f5bc3b69d8ddb546a6bb7344624ef16, type: 3}
+    imgSelected: {fileID: 21300000, guid: 47d5f9dc0108a384d908cd6db85780aa, type: 3}
+    next: {fileID: 0}
+    isLast: 1
+    ResultsCode: 6
+  - Label: 5-5-2
+    img: {fileID: 21300000, guid: 7dd56904ef56a4b4abda6198a5139aa6, type: 3}
+    imgSelected: {fileID: 21300000, guid: 298f1354bb117094db1980494fe14c52, type: 3}
+    next: {fileID: 0}
+    isLast: 1
+    ResultsCode: 3
+  dots:
+    dotUp1: 0
+    dotUp2: 0
+    dotMiddle1: 0
+    dotMiddle2: 0
+    dotDown1: 0
+    dotDown2: 0
+  blockUp1: 1
+  blockUp2: 1
+  block3_6: 1
+  block4_5: 0
+  blockDown1: 1
+  blockDown2: 1
+  barrete: 0

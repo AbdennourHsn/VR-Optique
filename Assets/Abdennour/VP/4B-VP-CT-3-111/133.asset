@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2b2da1974a7423b9063b19315b6bf2, type: 3}
+  m_Name: 133
+  m_EditorClassIdentifier: 
+  Id: 27
+  testId: 3
+  Testname: "Vision de pr\xE9s Test N 4"
+  Time: 0
+  helper: 0
+  Audio: {fileID: 8300000, guid: f6aebd8601ff5954699cdcbd4fbe08e7, type: 3}
+  theMainQuestion: 0
+  LB: 0
+  xPos: -0.085
+  Options:
+  - Label: 27-2-1
+    img: {fileID: 21300000, guid: ec1cd880ceebf354ea393b17506a74a0, type: 3}
+    imgSelected: {fileID: 21300000, guid: 1d090ecc431bae64c8355c6bf3b6cf33, type: 3}
+    next: {fileID: 0}
+    isLast: 1
+    ResultsCode: 8
+  - Label: 27-2-2
+    img: {fileID: 21300000, guid: 157b4a7910580ec4cade496985bc9ffc, type: 3}
+    imgSelected: {fileID: 21300000, guid: 3202f098c498808479d53996c8fb66cd, type: 3}
+    next: {fileID: 0}
+    isLast: 1
+    ResultsCode: 9
+  dots:
+    dotUp1: 0
+    dotUp2: 0
+    dotMiddle1: 0
+    dotMiddle2: 0
+    dotDown1: 0
+    dotDown2: 0
+  blockUp1: 1
+  blockUp2: 0
+  block3_6: 0
+  block4_5: 1
+  blockDown1: 0
+  blockDown2: 1
+  barrete: 1
