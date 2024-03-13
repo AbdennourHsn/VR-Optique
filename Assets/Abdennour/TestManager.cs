@@ -55,7 +55,7 @@ namespace CleanImplementation
         private IEnumerator NextTest(int index)
         {
             filtrePanel.ShowTestName(tests[index].visions[0].Testname);
-            yield return new WaitForSeconds(0);
+            yield return new WaitForSeconds(0f);
             filtrePanel.HideTestName();
             ChangeQuestion(tests[index].visions[0]);
         }
@@ -88,7 +88,7 @@ namespace CleanImplementation
             }
             yield return new WaitForSeconds(0);
             RunAudioClip(question.Audio);
-            yield return new WaitForSeconds(0);
+            yield return new WaitForSeconds(question.Audio.length*00f);
             ui.ShowOptions(question.Options);
             currQuestion = question;
             if(!visionsDone.Contains(question)) visionsDone.Add(question);
@@ -120,7 +120,7 @@ namespace CleanImplementation
                 //Non Option
                 var no = tests[currQuestion.testId].verifie.Options[1];
                 no.next = MainQuestionVerification( tests[currQuestion.testId].visions.First(t => t.theMainQuestion == true));
-                tests[0].verifie.Options[1] = no;
+                tests[currQuestion.testId].verifie.Options[1] = no;
 
                 RunAudioClip(tests[currQuestion.testId].verifie.Audio);
                 ui.ShowOptions(tests[currQuestion.testId].verifie.Options);
