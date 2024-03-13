@@ -9529,7 +9529,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000105, y: 0.0000007}
+  m_AnchoredPosition: {x: 0.000011, y: 0.0000007}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &462681353
@@ -9798,7 +9798,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000034, y: 0.0000005}
+  m_AnchoredPosition: {x: -0.000006, y: 0.0000005}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &469999371
@@ -19409,7 +19409,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000246, y: 0.0000005}
+  m_AnchoredPosition: {x: 0, y: 0.0000005}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &849911921
@@ -41183,7 +41183,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00004, y: 0.0000005}
+  m_AnchoredPosition: {x: -0.000016, y: 0.0000005}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1887105511
@@ -42568,7 +42568,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1966312930
 Transform:
   m_ObjectHideFlags: 0
@@ -42703,18 +42703,6 @@ MonoBehaviour:
   Non: {fileID: 21300000, guid: 35f89944906fa474e92eee5485825d92, type: 3}
   Non_s: {fileID: 21300000, guid: cbe7334b2e23f43c3ae964e04e1ec3a6, type: 3}
   tests:
-  - name: B/VI/NB/10/343
-    visions:
-    - {fileID: 11400000, guid: c92ae5590c604433099c794206f9c64f, type: 2}
-    - {fileID: 11400000, guid: 90fdff40adfc649519beeb501567be90, type: 2}
-    - {fileID: 11400000, guid: a24e6c5c8bd5e4ba9a41d4f6d0754584, type: 2}
-    - {fileID: 11400000, guid: ea505a27557924157b3a43592b26b628, type: 2}
-    - {fileID: 11400000, guid: b3ea09239d7594a11b939b5b600ca458, type: 2}
-    - {fileID: 11400000, guid: f8b1c53fcc7b541e18261ad60c2bd53e, type: 2}
-    - {fileID: 11400000, guid: abf701b8dadbd451b95bbba8759d1b84, type: 2}
-    - {fileID: 11400000, guid: c6d8744fd97a9420987d3f5b6a05303f, type: 2}
-    verifie: {fileID: 11400000, guid: 2f4e37213c2d34aa38819ce477e4dc26, type: 2}
-    isVerified: 0
   - name: B/VI/CT/4/040
     visions:
     - {fileID: 11400000, guid: a26a90930a5bf4ea28ff103104d0198a, type: 2}
@@ -42756,6 +42744,18 @@ MonoBehaviour:
     - {fileID: 11400000, guid: bd7349e5a60a24ad6a88e2043780a606, type: 2}
     - {fileID: 11400000, guid: 38785f6d2bf804a98bc3163aee9c0ec7, type: 2}
     - {fileID: 11400000, guid: 398b9968249a94255a177ef6da5a2001, type: 2}
+    verifie: {fileID: 11400000, guid: 2f4e37213c2d34aa38819ce477e4dc26, type: 2}
+    isVerified: 0
+  - name: B/VI/NB/10/343
+    visions:
+    - {fileID: 11400000, guid: c92ae5590c604433099c794206f9c64f, type: 2}
+    - {fileID: 11400000, guid: 90fdff40adfc649519beeb501567be90, type: 2}
+    - {fileID: 11400000, guid: a24e6c5c8bd5e4ba9a41d4f6d0754584, type: 2}
+    - {fileID: 11400000, guid: ea505a27557924157b3a43592b26b628, type: 2}
+    - {fileID: 11400000, guid: b3ea09239d7594a11b939b5b600ca458, type: 2}
+    - {fileID: 11400000, guid: f8b1c53fcc7b541e18261ad60c2bd53e, type: 2}
+    - {fileID: 11400000, guid: abf701b8dadbd451b95bbba8759d1b84, type: 2}
+    - {fileID: 11400000, guid: c6d8744fd97a9420987d3f5b6a05303f, type: 2}
     verifie: {fileID: 11400000, guid: 2f4e37213c2d34aa38819ce477e4dc26, type: 2}
     isVerified: 0
   - name: B/VI/NB/4/121
@@ -48829,7 +48829,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &919132149061329182
 AudioSource:
   m_ObjectHideFlags: 0
@@ -48946,6 +48946,18 @@ MonoBehaviour:
   Non: {fileID: 21300000, guid: 35f89944906fa474e92eee5485825d92, type: 3}
   Non_s: {fileID: 21300000, guid: cbe7334b2e23f43c3ae964e04e1ec3a6, type: 3}
   tests:
+  - name: B/VP/NB/10/343
+    visions:
+    - {fileID: 11400000, guid: f993f633ff11b4700aabbea3c55ae22d, type: 2}
+    - {fileID: 11400000, guid: d8068508e395d4a66bf2a77b1826098e, type: 2}
+    - {fileID: 11400000, guid: 0621880ba9b62484cb4813904601a7d6, type: 2}
+    - {fileID: 11400000, guid: 08b710456b16d4c8a8e8f2652f0317b0, type: 2}
+    - {fileID: 11400000, guid: f170201fdbfc244c4beeadd43ebd5596, type: 2}
+    - {fileID: 11400000, guid: 3a356f462540e440788a2cb37bf6c4c2, type: 2}
+    - {fileID: 11400000, guid: f01315a14659240e6b6b38d622a3b366, type: 2}
+    - {fileID: 11400000, guid: 631ec3cd16e9946228e8a48259e0f60d, type: 2}
+    verifie: {fileID: 11400000, guid: e28e1a8684b66404199230a15d863cbd, type: 2}
+    isVerified: 0
   - name: B/VP/CT/4/040
     visions:
     - {fileID: 11400000, guid: 424ac87ecc3994ad78d2c53632f7b318, type: 2}
@@ -48997,18 +49009,6 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 380f7f7e8675f4cfe9a50ff71d5117dd, type: 2}
     - {fileID: 11400000, guid: c2e04c52691fc4ed4b8691f4954ef1ce, type: 2}
     - {fileID: 11400000, guid: 08173624465a443df8efaf5ffa964bf8, type: 2}
-    verifie: {fileID: 11400000, guid: e28e1a8684b66404199230a15d863cbd, type: 2}
-    isVerified: 0
-  - name: B/VP/NB/10/343
-    visions:
-    - {fileID: 11400000, guid: f993f633ff11b4700aabbea3c55ae22d, type: 2}
-    - {fileID: 11400000, guid: d8068508e395d4a66bf2a77b1826098e, type: 2}
-    - {fileID: 11400000, guid: 0621880ba9b62484cb4813904601a7d6, type: 2}
-    - {fileID: 11400000, guid: 08b710456b16d4c8a8e8f2652f0317b0, type: 2}
-    - {fileID: 11400000, guid: f170201fdbfc244c4beeadd43ebd5596, type: 2}
-    - {fileID: 11400000, guid: 3a356f462540e440788a2cb37bf6c4c2, type: 2}
-    - {fileID: 11400000, guid: f01315a14659240e6b6b38d622a3b366, type: 2}
-    - {fileID: 11400000, guid: 631ec3cd16e9946228e8a48259e0f60d, type: 2}
     verifie: {fileID: 11400000, guid: e28e1a8684b66404199230a15d863cbd, type: 2}
     isVerified: 0
   - name: B/VP/NB/4/121
