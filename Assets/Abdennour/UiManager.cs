@@ -8,7 +8,7 @@ namespace CleanImplementation
 {
     public class UiManager : MonoBehaviour
     {
-        [Header("Menu Options")]
+        [Header("Menu Options Plaque filtre")]
         [SerializeField]
         private MenuOptions twoOptions;
         [SerializeField]
@@ -19,6 +19,18 @@ namespace CleanImplementation
         private MenuOptions fiveOptions;
         [SerializeField]
         private MenuOptions sixOptions;
+
+        [Header("Menu Options")]
+        [SerializeField]
+        private MenuOptions twoOptions_;
+        [SerializeField]
+        private MenuOptions treeOptions_;
+        [SerializeField]
+        private MenuOptions foorOptions_;
+        [SerializeField]
+        private MenuOptions fiveOptions_;
+        [SerializeField]
+        private MenuOptions sixOptions_;
 
         [Space(10)]
         public GameObject canvas;
@@ -194,51 +206,51 @@ namespace CleanImplementation
             foorOptions.gameObject.SetActive(false);
             fiveOptions.gameObject.SetActive(false);
             sixOptions.gameObject.SetActive(false);
+            twoOptions_.gameObject.SetActive(false);
+            treeOptions_.gameObject.SetActive(false);
+            foorOptions_.gameObject.SetActive(false);
+            fiveOptions_.gameObject.SetActive(false);
+            sixOptions_.gameObject.SetActive(false);
         }
 
-        public void ShowOptions(List<OptionLoin> options, float sc=2)
+        public void ShowOptions(List<OptionLoin> options , bool upOfPlaqueFilte = true , float sc = 2)
         {
-            StartCoroutine(ShowOptionCorotine(options, sc));
+            StartCoroutine(ShowOptionCorotine(options, sc , upOfPlaqueFilte));
         }
-        private IEnumerator ShowOptionCorotine(List<OptionLoin> options , float sc)
+        private IEnumerator ShowOptionCorotine(List<OptionLoin> options , float sc , bool upOfPlaqueFilte=true)
         {
             yield return new WaitForSeconds(sc);
-            SetUI(options);
+            SetUI(options , upOfPlaqueFilte);
         }
 
-        private void SetUI(List<OptionLoin> options)
+        private void SetUI(List<OptionLoin> options , bool upOfPlaqueFilte=true)
         {
             HideAll();
-            if (options.Count == 2)
+            Dictionary<int, MenuOptions> optionUIPairs = !upOfPlaqueFilte ?
+                new Dictionary<int, MenuOptions>
+                {
+            { 2, twoOptions },
+            { 3, treeOptions },
+            { 4, foorOptions },
+            { 5, fiveOptions },
+            { 6, sixOptions }
+                } :
+                new Dictionary<int, MenuOptions>
+                {
+            { 2, twoOptions_ },
+            { 3, treeOptions_ },
+            { 4, foorOptions_ },
+            { 5, fiveOptions_ },
+            { 6, sixOptions_ }
+                };
+
+            if (optionUIPairs.TryGetValue(options.Count, out MenuOptions selectedUI))
             {
-                currOptions = twoOptions;
-                twoOptions.gameObject.SetActive(true);
-                twoOptions.SetUpOptions(options);
+                currOptions = selectedUI;
+                selectedUI.gameObject.SetActive(true);
+                selectedUI.SetUpOptions(options);
             }
-            else if (options.Count == 3)
-            {
-                currOptions = treeOptions;
-                treeOptions.gameObject.SetActive(true);
-                treeOptions.SetUpOptions(options);
-            }
-            else if (options.Count == 4)
-            {
-                currOptions = foorOptions;
-                foorOptions.gameObject.SetActive(true);
-                foorOptions.SetUpOptions(options);
-            }
-            else if (options.Count == 5)
-            {
-                currOptions = fiveOptions;
-                fiveOptions.gameObject.SetActive(true);
-                fiveOptions.SetUpOptions(options);
-            }
-            else if (options.Count == 6)
-            {
-                currOptions = sixOptions;
-                sixOptions.gameObject.SetActive(true);
-                sixOptions.SetUpOptions(options);
-            }
+
             inputActivated = true;
             //All.SetActiveMeshes(false);
         }

@@ -25,6 +25,13 @@ namespace CleanImplementation
 
         public UnityEvent Next;
 
+        public float scaled=1;
+
+        private void Start()
+        {
+            
+        }
+
         public void SetUpElement(OptionLoin option)
         {
             this.img = option.img;
@@ -43,14 +50,14 @@ namespace CleanImplementation
         public void Select()
         {
             isSelected = true;
-            this.transform.localScale = Vector3.one * 1.5f;
+            this.transform.localScale = Vector3.one * (scaled*1.5f);
             image.sprite = imgSelected;
         }
 
         public void UnSelect()
         {
             isSelected = false;
-            this.transform.localScale = Vector3.one * 1f;
+            this.transform.localScale = Vector3.one * scaled;
             image.sprite = img;
         }
         public void Trigger()

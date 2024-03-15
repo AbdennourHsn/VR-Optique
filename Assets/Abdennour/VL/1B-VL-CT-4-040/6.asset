@@ -21,6 +21,7 @@ MonoBehaviour:
   theMainQuestion: 0
   LB: 0
   xPos: 0
+  close: 0
   Options:
   - Label: NON
     img: {fileID: 21300000, guid: f56219332508df34c8a352cba034ecff, type: 3}

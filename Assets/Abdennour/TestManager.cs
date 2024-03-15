@@ -89,7 +89,7 @@ namespace CleanImplementation
             yield return new WaitForSeconds(0);
             RunAudioClip(question.Audio);
             yield return new WaitForSeconds(question.Audio.length*00f);
-            ui.ShowOptions(question.Options);
+            ui.ShowOptions(question.Options , question.close);
             currQuestion = question;
             if(!visionsDone.Contains(question)) visionsDone.Add(question);
         }
@@ -123,7 +123,7 @@ namespace CleanImplementation
                 tests[currQuestion.testId].verifie.Options[1] = no;
 
                 RunAudioClip(tests[currQuestion.testId].verifie.Audio);
-                ui.ShowOptions(tests[currQuestion.testId].verifie.Options);
+                ui.ShowOptions(tests[currQuestion.testId].verifie.Options , false);
                 ResultsTable.instance.AddResults(tests[currQuestion.testId].name, result, false);
             }
             else

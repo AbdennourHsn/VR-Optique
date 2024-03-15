@@ -18,6 +18,7 @@ public abstract class Vision : ScriptableObject
     public float xPos;
 
     [Header("Option")]
+    public bool close;
     public List<OptionLoin> Options=new List<OptionLoin>();
 
     public Dots dots;
