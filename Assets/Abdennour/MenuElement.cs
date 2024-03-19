@@ -14,6 +14,7 @@ namespace CleanImplementation
         [Header("Images")]
         public Sprite img;
         public Sprite imgSelected;
+        public string message;
 
         [Header("Triggers")]
         public bool isLast;
@@ -37,6 +38,7 @@ namespace CleanImplementation
             this.img = option.img;
             this.imgSelected = option.imgSelected;
             image.sprite = this.img;
+            this.message = option.message;
             this.nextQestion = option.next;
             this.isLast = option.isLast;
             this.resultat = option.ResultsCode;
@@ -52,6 +54,7 @@ namespace CleanImplementation
             isSelected = true;
             this.transform.localScale = Vector3.one * (scaled*1.5f);
             image.sprite = imgSelected;
+            UiManager.OnSetMessage?.Invoke(this.message);
         }
 
         public void UnSelect()

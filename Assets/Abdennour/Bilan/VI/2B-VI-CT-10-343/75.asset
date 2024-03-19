@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89dfe054bb6754e619d9d6244cf855d7, type: 3}
+  m_Name: 75
+  m_EditorClassIdentifier: 
+  Id: 0
+  testId: 1
+  Testname: "Vision interm\xE9diaire Test N\xB0 2"
+  Time: 0
+  helper: 0
+  Audio: {fileID: 8300000, guid: b5210be4219cd18469ccb8b1a4d07a7a, type: 3}
+  theMainQuestion: 0
+  LB: 0
+  xPos: 0
+  close: 0
+  Options:
+  - Label: NON
+    img: {fileID: 21300000, guid: f56219332508df34c8a352cba034ecff, type: 3}
+    imgSelected: {fileID: 21300000, guid: 43e4d76487edb4fa1acb981b8cf5081d, type: 3}
+    next: {fileID: 0}
+    isLast: 1
+    ResultsCode: 1
+  - Label: UN PEU
+    img: {fileID: 21300000, guid: 22912fabbafba2b4393674d6a370ab27, type: 3}
+    imgSelected: {fileID: 21300000, guid: de4195b82a808a044b62b27bb407e472, type: 3}
+    next: {fileID: 0}
+    isLast: 1
+    ResultsCode: 17
+  - Label: BOUCOUP
+    img: {fileID: 21300000, guid: a2c9f69d209b4e7498cb9f59da074436, type: 3}
+    imgSelected: {fileID: 21300000, guid: 648f4789259e2f84cb988f868d6f081d, type: 3}
+    next: {fileID: 0}
+    isLast: 1
+    ResultsCode: 16
+  dots:
+    dotUp1: 0
+    dotUp2: 0
+    dotMiddle1: 0
+    dotMiddle2: 0
+    dotDown1: 0
+    dotDown2: 0
+  blockUp1: 1
+  blockUp2: 0
+  blockUp3: 0
+  blockUp4: 1
+  middle: 1
+  blockDowm1: 1
+  blockDowm2: 0
+  blockDowm3: 0
+  blockDowm4: 1
+  barrete: 0

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -37,6 +38,9 @@ namespace CleanImplementation
         public GameObject TestResults;
         public MeshRendererHandler All;
 
+        [Space(10)]
+        public TextMeshProUGUI messageArea;
+
         private MenuOptions currOptions;
 
         [Space(10)]
@@ -53,6 +57,19 @@ namespace CleanImplementation
         private bool inputActivated;
         InputAction ShowResults;
         InputAction toggleMeshes;
+
+        public delegate void SetMessage(string message);
+        public static SetMessage OnSetMessage;
+
+        private void OnEnable()
+        {
+            OnSetMessage += SetMessageText;
+        }
+
+        private void OnDisable()
+        {
+            OnSetMessage -= SetMessageText;
+        }
 
         private void Awake()
         {
@@ -148,6 +165,7 @@ namespace CleanImplementation
         {
             if (!inputActivated) return;
             PlaySound(ok);
+            SetMessageText("");
             currOptions.menuElements[currOptions.selectedElement].Trigger();
         }
 
@@ -185,6 +203,11 @@ namespace CleanImplementation
             }
         }
 
+        public void SetMessageText(string message)
+        {
+            this.messageArea.text = message;
+        }
+
         private void Update()
         {
             //var value = ShowResults.ReadValue<float>();
@@ -220,6 +243,7 @@ namespace CleanImplementation
         private IEnumerator ShowOptionCorotine(List<OptionLoin> options , float sc , bool upOfPlaqueFilte=true)
         {
             yield return new WaitForSeconds(sc);
+            All.SetActiveMeshes(!upOfPlaqueFilte);
             SetUI(options , upOfPlaqueFilte);
         }
 
